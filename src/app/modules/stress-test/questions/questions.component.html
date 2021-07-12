@@ -1,0 +1,4 @@
+
+<app-intro (IntroView)="displayIntro($event)" (ageValue)="setAge($event)" (genderValue)="setGender($event)" *ngIf="viewIntro"></app-intro>
+<app-survey (ScoreView)="displayScore($event)" (ScoreValue)="setScore($event)" *ngIf="viewSurvey"></app-survey>
+<app-score (ResetView)="ResetView($event)" *ngIf="viewScore"></app-score>

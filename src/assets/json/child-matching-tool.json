@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "display_name": "Communication",
+            "keyword": "Communication",
+            "image": {
+                "url": "/assets/images/child-challenges/Communication.png",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Behavior",
+            "keyword": "Behavior",
+            "image": {
+                "url": "/assets/images/child-challenges/Behaviour.png",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Educational",
+            "keyword": "Educational",
+            "image": {
+                "url": "/assets/images/child-challenges/Education.png",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Skills",
+            "keyword": "Skills",
+            "image": {
+                "url": "/assets/images/child-challenges/Skills.png",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Social Challenges",
+            "keyword": "Social Challenges",
+            "image": {
+                "url": "/assets/images/child-challenges/Social.png",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Technology addiction",
+            "keyword": "Technology addiction",
+            "image": {
+                "url": "/assets/images/child-challenges/Technology.png",
+                "code": ""
+            }
+        }
+    ]
+}

@@ -1,0 +1,237 @@
+
+@import './fonts';
+html, body { height: 100%; }
+body {
+    margin: 0; 
+    font-family:$font-family-default!important; 
+  }
+
+  
+  .bdrop {
+    background: rgba(0, 0, 0, 0.32);
+    backdrop-filter: blur(15px);  
+}
+
+
+.wrapper {
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    >* {
+      flex: 1;
+      max-width: 90px;
+      margin: 8px;
+    }
+  }
+
+  .default-padding-offset
+  {
+    min-width: 315px;
+    padding-left: 8em!important;
+    padding-right: 8em!important;
+    padding-bottom: 7em!important;
+  }
+
+  
+  @media screen and (max-width: 800px){
+    .default-padding-offset
+      {
+        padding-left: 2em!important;
+        padding-right: 2em!important;
+        padding-bottom: 2em!important;
+      }
+
+    }
+    
+  @media screen and (max-width: 600px){
+  .default-padding-offset
+    {
+      padding-left: 15px!important;
+      padding-right: 15px!important;
+      padding-bottom: 15px!important;
+    }
+  }
+
+
+
+  .outlet-padding-offset
+  {
+
+    padding-left: 3em!important;
+    padding-right: 3em!important;
+
+  }
+
+  .logo-frame{
+    width: 3.5em;
+  }
+
+  @media screen and (max-width: 900px){
+    .outlet-padding-offset
+      {
+        padding-left: 0em!important;
+        padding-right: 0em!important;
+
+      }
+
+    }
+   
+    .opcity{
+      opacity: 1;
+    }
+
+   div {
+     &:focus{
+      outline: unset;
+    }
+   }
+
+
+   .cursor-pointer{
+         cursor: pointer;
+    }
+
+button {
+  &:focus{
+    outline: unset!important;
+  }
+}
+
+.form-rounded{
+    border-radius: 0.2em;
+}
+
+.full-width{
+  width: 100%;
+}
+.mat-datepicker-popup {
+  top: calc(50% - 120px)!important; 
+}
+  
+.container{
+  margin: 0 !important;
+  max-width: 100%!important;
+}
+
+
+.mat-calendar-body-label{
+  //display: none!important;
+  color: transparent!important;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+
+input:focus{
+  outline:unset !important;
+}
+
+button:disabled,
+button[disabled]{
+  color: #c2c5ca;
+  background-color: #ebedf2;
+}
+
+
+.footer{
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left:10px;
+  background-color: #f8fbff;
+  width: 100%;
+}
+
+
+.multi-outlets
+  {
+    margin-left: -7em;
+    margin-right: -7em;
+    margin-bottom: -7em;
+    position: fixed;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  
+.specify-input{
+  background-color: #eef0f7 !important;
+  padding: 0.5em;
+  border-radius: 7px;
+  border: 1px solid #eef0f7 !important;
+}
+
+
+.add-new-form-icon{
+  width: 2.5em;
+}
+
+
+  .fixed-height{
+    position: fixed;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 900px){
+  .name-summary{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 9em;
+    white-space: nowrap;
+}
+  }
+
+
+  .mat-checkbox-inner-container
+  {
+    margin-top: 5px!important;
+  }
+  ::-webkit-scrollbar {
+    width: 6px !important;
+}
+ ::-webkit-scrollbar-thumb {
+    background-color: #bbbbbb !important;/* Update color */
+}
+ ::-webkit-scrollbar-thumb:hover { /* Scrollbar hover */
+    background-color: #666666 !important; /* Update hover color */
+}
+// #zmmtg-root .meeting-client .meeting-client-inner {
+//   width: 1000px;
+//   height: 500px;
+//   position: relative;
+// }
+
+// #wc-footer {
+//   bottom: auto !important;
+//   width: 1000px !important;
+// }
+
+// #dialog-join {
+//   width: 1000px !important;
+// }
+
+// #sv-active-video .active-main #sv-active-speaker-view .main-layout {
+//   height: 500px !important;
+//   width: 1000px !important;
+// }
+
+// .suspension-window {
+//   transform: translate(-444px, 10px) !important;
+// }
+
+// #dialog-invite {
+//   display: none;
+// }
+
+::ng-deep.footer__leave-btn {
+  display: none !important;
+}

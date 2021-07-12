@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "questionId": 1,
+            "section": "staticQuestion",
+            "header": "You are a?",
+            "type": 1,
+            "choices": [
+                {
+                    "choiceId": 1,
+                    "text": "Male",
+                    "nextQuestionId": 2
+                },
+                {
+                    "choiceId": 2,
+                    "text": "Female",
+                    "nextQuestionId": 2
+                },
+                {
+                    "choiceId": 3,
+                    "text": "Other",
+                    "nextQuestionId": 2
+                }
+            ],
+            "staticQuestionsAnswer":"",
+            "lastQuestion":false
+        },
+        {
+            "questionId": 2,
+            "section": "staticQuestion",
+            "header": "How old are you?",
+            "type": 3,
+            "choices": [],
+            "staticQuestionsAnswer":"",
+            "lastQuestion":false
+         }
+        
+    ]
+}

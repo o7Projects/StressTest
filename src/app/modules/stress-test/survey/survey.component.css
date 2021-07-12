@@ -1,0 +1,237 @@
+::ng-deep .mat-step-header {
+    background-color: #0FBFB3 !important;
+    height          : 20px !important;
+}
+
+.Step {
+    display        : inline-block;
+    width          : 9%;
+    margin-right   : 1%;
+    height         : 20px;
+    box-shadow     : 0px 1px 14px #0000001D;
+    opacity        : 1;
+    /* margin-right: 5px; */
+}
+
+.addGreen {
+    background: #14C2B6 0% 0% no-repeat padding-box !important;
+
+}
+
+.noneGreen {
+    background: #E7E7E7 0% 0% no-repeat padding-box !important;
+}
+
+.iterateStyle {
+    float: right;
+}
+
+.numberStyle {
+    color      : #14C2B6;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.QuesHead {
+    font          : normal normal normal 26px/45px 'Oswald', sans-serif;
+    letter-spacing: 0px;
+    color         : #919191;
+    opacity       : 1;
+    margin-top    : 15px;
+    font-family   : 'Quicksand', sans-serif;
+}
+
+.QuesContent {
+    letter-spacing: 0px;
+    color         : #232323;
+    opacity       : 1;
+    font-size     : 23px;
+    margin-top    : 20px;
+    line-height   : 1.5;
+    font-family   : 'Quicksand', sans-serif;
+}
+
+.boldTxt {
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btnNext {
+    background   : #CCCCCC 0% 0% no-repeat padding-box;
+    color        : white;
+    border-radius: 4px;
+    opacity      : 1;
+    width        : 125px;
+    height       : 45px;
+    margin-top   : 10px;
+    font-size    : 20px;
+    font-family  : 'Quicksand', sans-serif;
+    float        : right;
+    margin-right : 15%;
+
+}
+
+.radioBtn .col-lg-2 {
+    width: 20% !important;
+}
+
+.btnNextColored {
+    background  : #0FBFB3 0% 0% no-repeat padding-box;
+    border-color: transparent !important;
+}
+
+.btnNextColored:focus {
+    background-color: #0FBFB3 !important;
+    border-color    : transparent !important;
+    text-shadow     : 0px 0px !important;
+
+
+}
+
+.btnNextColored:active {
+    background-color: #0FBFB3 !important;
+    border-color    : transparent !important;
+    text-shadow     : 0px 0px !important;
+
+}
+
+
+
+.btnBack {
+    color              : #0FBFB3 !important;
+    /* font-weight     : bold; */
+    border             : 1px solid #0FBFB3;
+    background-color   : white;
+    border-radius      : 4px;
+    opacity            : 1;
+    color              : white;
+    width              : 125px;
+    height             : 45px;
+    margin-top         : 10px;
+    font-size          : 20px;
+    font-family        : 'Quicksand', sans-serif;
+
+}
+
+.btnBack:focus {
+    background-color: white !important;
+    border-color    : transparent !important;
+    text-shadow     : 0px 0px !important;
+
+
+}
+
+.btnBack:active {
+    background-color: white !important;
+    border-color    : transparent !important;
+    text-shadow     : 0px 0px !important;
+
+}
+
+.mat-radio-button {
+    /* display: block;  */
+    margin-top       : 10px;
+    font-size        : 18px;
+    letter-spacing   : 0px;
+    color            : #919191;
+    opacity          : 1;
+    margin-right     : 25px;
+    /* min-width     : 150px; */
+}
+
+::ng-deep .mat-radio-label {
+    font-weight: 400 !important;
+    font-family: 'Quicksand', sans-serif;
+}
+
+::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color      : #0FBFB3 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow   : none !important;
+    box-shadow        : none !important;
+}
+
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle,
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+.mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+    background-color  : #0FBFB3 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow   : none !important;
+    box-shadow        : none !important;
+
+}
+
+@media only screen and (max-width: 770px) and (min-width: 290px) {
+    .btnBack {
+        width    : 85px;
+        padding  : 0;
+        font-size: 16px;
+    }
+
+    .btnNext {
+        width       : 85px;
+        padding     : 0;
+        font-size   : 16px;
+        float       : right;
+        margin-right: 0px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 290px) and (min-width: 0px) {
+    /* .btnBack {
+        width    : 90px;
+        padding  : 0;
+        font-size: 16px;
+        display  : block;
+
+    }
+
+    .btnNext {
+        width    : 90px;
+        padding  : 0;
+        font-size: 16px;
+        float    : left;
+        display  : block;
+        margin-right: 0px;
+
+    } */
+
+    .btnBack {
+        width       : 70px;
+        padding     : 0;
+        font-size   : 13px;
+        margin-right: 0px;
+
+    }
+
+    .btnNext {
+        width       : 70px;
+        padding     : 0;
+        font-size   : 13px;
+        float       : right;
+        margin-right: 0px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 0px) {
+    .radio {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 300px) and (min-width: 0px) {
+    .QuesHead {
+        font-size: 20px;
+
+    }
+
+}

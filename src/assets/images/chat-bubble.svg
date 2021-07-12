@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>chat-bubble</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40"></rect>
+    </defs>
+    <g id="chat-bubble" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_notifications-copy">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+        </g>
+        <g id="msgs-copy" transform="translate(5.000000, 4.000000)" fill="#13C2B5">
+            <path d="M7.22626714,29.0640761 L0.165932812,30.9546037 L2.09825483,23.7433472 C0.767706315,21.4556759 0,18.7962609 0,15.9578583 C0,7.39802234 6.93974224,0.458333333 15.5003561,0.458333333 C24.0593082,0.458333333 31,7.39802234 31,15.9578583 C31,24.517457 24.0593082,31.4583333 15.5003561,31.4583333 C12.456118,31.4590451 9.62054231,30.5790619 7.22626714,29.0640761 L7.22626714,29.0640761 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

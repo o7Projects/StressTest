@@ -1,0 +1,111 @@
+<!-- <div id="contentShare" class="container content">
+
+    <div class="row">
+        <div class="col-md-5">
+            <h6 class="headScore">Your Stress Score Is</h6>
+
+            <p class="scoreValue">{{score}}</p>
+            <p class="scoreText {{className}}">{{scoreText}}</p>
+        </div>
+        <div class="col-md-7 text-center">
+            <p class="scoreText {{className}}">{{scoreText}}</p>
+            <p class="scoreInfo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.</p>
+            <div style="margin-top: 300px;">
+                <button type="button" class="btn btn-secondary btnNext" (click)="Reset()">Book stress therapy
+                    session</button>
+                <button type="button" class="btn btn-secondary btnBack"  (click)="share()"><img
+                        src="../../../assets/img/Group 30.svg"></button>
+            </div>
+
+        </div>
+
+        <div *ngIf="displayShareIcons">
+            <share-buttons style="padding-top: 25px;float: right;" [theme]="'material-dark'" [include]="['facebook','twitter']" [show]="9" [size]="1"
+                [title]="'My Stress Score In o7therapy'"
+                [url]="'https://o7therapy.com/'"
+                [image]="''"
+                [autoSetMeta]="false"></share-buttons>
+        </div>
+    </div>
+</div>
+ -->
+
+
+
+<div id="contentShare" class="container content">
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="col-md-12">
+                <h1 class="headScore">Your Score Is</h1>
+                <div #myIdentifier>
+                    <img #myMeter src="../../../../assets/images/meter.svg" class="meter">
+                </div>
+                <div #myMeterBelow>
+                    <img id="myMeterBelowImg" src="../../../../assets/images/Group 40.svg" class="meterBelow">
+                    <p id="scoreValue" class="scoreValue">{{score}}</p>
+                </div>
+
+                <!-- <div class="text-center">
+                    <img src="../../../assets/img/MeterImg.PNG" class="img-responsive" >
+                </div> -->
+
+                <div style="margin-top: 90px;">
+                    <p class="scoreText {{className}}">{{scoreText}}</p>
+
+                    <div class="col-md-6 offset-md-3">
+                        <p class="scoreInfo">{{scoreDetails1}}<br><br>{{scoreDetails2}}</p>
+                    </div>
+
+                    <div class="col-md-12" style="margin-top: 35px; margin-bottom: 30px;">
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3">
+                                <button style="width: 100%; margin-top: 10px;" type="button"
+                                    class="btn btn-secondary btnNext" (click)="Reset()">{{resBtnText}}</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button style="width: 100%; margin-top: 10px;" type="button"
+                                    class="btn btn-secondary btnBack" (click)="share()" data-toggle="collapse"
+                                    href="#multiCollapseExample1" role="button" aria-expanded="false"
+                                    aria-controls="multiCollapseExample1"><img
+                                        src="../../../../assets/images/Group 30.svg">
+                                    Share Test Results</button>
+
+
+                                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                    <div class="card card-body" style="margin-bottom: 25px; padding: 25px 0;">
+                                        <div class="col-md-12 text-center">
+                                            <button class="fontaws face" (click)="socialFace()"><i
+                                                    class="fa fa-facebook"></i></button>
+                                            <button class="fontaws twit" (click)="socialTwitter()"><i
+                                                    class="fa fa-twitter"></i></button>
+                                            <button class="fontaws whats" (click)="socialWhatsup()"><i
+                                                    class="fa fa-whatsapp"></i></button>
+
+
+                                        </div>
+
+                                        <!-- <button class="fontaws face" (click)="socialFace()">facebook</button>
+                                        <button class="fontaws twit" (click)="socialTwitter()">twitter</button>
+                                        <button class="fontaws whats" (click)="socialWhatsup()">whatsapp</button> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

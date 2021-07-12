@@ -1,0 +1,46 @@
+
+<div class="intro" #screen>
+    <!-- <div [socialShare]="'fb'">Facebook</div> -->
+
+
+    <div class="col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-6 offset-sm-3 col-10 offset-1" style="margin:auto;">
+        <p class="address text-center">Get Your Stress Score</p>
+
+        <form [formGroup]="form" (ngSubmit)="submit()">
+
+            <div class="form-group">
+                <p class="head">Age</p>
+                <input formControlName="age" placeholder="Insert Age" id="age" type="text" class="form-control txt">
+                <div *ngIf="f.age.invalid && ageNotValid" class="alert alert-danger">
+                    <div *ngIf="f.age.errors.required && ageNotValid">Age is required.</div>
+                    <div *ngIf="f.age.errors.min || f.age.errors.max || f.age.errors.pattern">Age should be greater
+                        than 0 and less than 100</div>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <p class="head">Gender</p>
+
+                <mat-radio-group formControlName="gender">
+                    <mat-radio-button value="0" (change)="radioChange($event)">Male</mat-radio-button>
+                    <mat-radio-button style="text-align:center ;" value="1" (change)="radioChange($event)">Female
+                    </mat-radio-button>
+                    <mat-radio-button style="text-align:end ;" value="2" (change)="radioChange($event)">Other
+                    </mat-radio-button>
+                </mat-radio-group>
+
+                <div *ngIf="genderNotValid" class="alert alert-danger">
+                    <div>Gender is required.</div>
+                </div>
+
+
+            </div>
+            <!-- <button class="btn strtbtn" type="submit" [disabled]="!form.valid">Start Stress Test</button> -->
+            <button class="btn strtbtn" type="submit">Start Stress Test</button>
+
+        </form>
+
+    </div>
+
+</div>

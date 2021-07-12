@@ -1,0 +1,60 @@
+$font-family-default:Quicksand-Regular;
+$font-family-medium :Quicksand-Medium;
+$font-family-bold :Quicksand-Bold;
+$font-family-Semi-bold :Quicksand-SemiBold;
+
+  // @font-face {
+  //   font-family: $font-family-default;
+  //   src: url(../assets/fonts/ITCAvantGardeStd-Bk.otf) format("opentype");
+  // }
+
+  // @font-face {
+  //   font-family: $font-family-demi;
+  //   src: url(../assets/fonts/ITCAvantGardeStd-Demi.otf) format("opentype");
+  // }
+
+  // @font-face {
+  //   font-family: $font-family-bold;
+  //   src: url(../assets/fonts/ITCAvantGardeStd-Bold.otf) format("opentype");
+  // }
+
+  @font-face {
+    font-family: $font-family-medium;
+    src: url(../assets/fonts/Quicksand-Medium.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: $font-family-default;
+    src: url(../assets/fonts/Quicksand-Regular.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: $font-family-Semi-bold;
+    src: url(../assets/fonts/Quicksand-SemiBold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: $font-family-bold;
+    src: url(../assets/fonts/Quicksand-Bold.ttf) format("truetype");
+  }
+
+
+
+
+  // @font-face {
+  //   font-family: $font-family-bold;
+  //   src: url(../assets/fonts/ITCAvantGardeStd-Demi.otf) format("opentype");//../assets/fonts/itcavantgardestd-bk-webfont.ttf) format("truetype");
+  // }
+$font-size-xsmall: 11px!important;
+$font-size-small: 14px!important;
+$font-size-medium: 18px!important; 
+$font-size-defualt: 20px!important; 
+$font-size-large: 24px!important;
+$font-size-xlarge: 36px!important;
+$font-weight-default: 300!important;
+$font-weight-bold: 900!important;
+
+// $line-height-small: 22px;
+// $line-height-medium: 28px;
+// $line-height-large: 52px;
+

@@ -1,0 +1,120 @@
+@import "./colors"; 
+
+// *************************
+//  snack-bar override
+// *************************
+
+.snack-bar-error {
+    //background-color: $error-color;
+    background: $secondary-color !important;
+    color: $white-color !important;
+        .mat-button {color: $white-color !important;
+        }
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid{
+    min-width: 71px;
+}
+
+.event-form-dialog{
+    mat-dialog-container {
+     border-radius: 18px !important;
+     padding: 1.5em !important;
+ }
+ }
+
+.custom-dialog-container .mat-dialog-container {
+   box-shadow: unset !important;
+}
+
+.snack-bar-default {
+    background-color: $primary-dark-color;
+    color: $white-color;
+        .mat-button {color: $white-color;
+        }
+}
+.snack-bar-success {
+    background-color: $primary-color !important;
+    color: $white-color !important;
+        .mat-button {color: $white-color !important;
+        }
+}
+
+// @mixin background-opacity($color, $opacity:1) {
+//     background: grey; /* The Fallback */
+//     color: $color !important;
+   
+// }
+
+.mat-calendar-body-cell {
+
+    .mat-calendar-body-today {
+        border: none!important;
+
+    }
+    .mat-calendar-body-cell-content {
+        background: rgba(#75cfce, 0.2)!important;
+        color:#0ebfb2;
+        // @include background-opacity($primary-color, 0.2);
+    }
+
+    .mat-calendar-body-selected{
+        background: rgba(#75cfce, 0.8)!important;
+        color:black!important;
+        box-shadow: none !important;
+    }
+}
+.mat-calendar-body-disabled{
+    .mat-calendar-body-cell-content {
+        background: none !important;
+        color: grey !important;
+        // rgba($primary-color, 0.5)!important;
+        // @include background-opacity($primary-color, 0.2);
+    }
+}
+ .mat-calendar
+ {
+    background: #dde1eb!important;
+ }
+
+ .toast-container .ngx-toastr{
+     padding: 15px !important;
+     width: 355px !important;
+ }
+
+ .toast-info {
+    background-image: unset !important;
+    background-color:   $primary-color;
+ }
+
+ .mat-dialog-container{
+     color: unset !important;
+     overflow: hidden !important;
+     padding: 0 !important;
+ }
+
+ .mat-datepicker-content{
+     color: unset !important;
+ }
+
+
+.mat-standard-chip{
+    background-color:#ccdbf0 !important;
+    color: #74899c !important;
+}
+
+.mat-chip-remove{
+    opacity: unset !important;
+}
+
+video{
+    position: absolute!important;
+    object-fit: contain!important;
+}
+
+.mirorr-enabled{
+    video { 
+      transform: unset !important;
+    }
+
+}

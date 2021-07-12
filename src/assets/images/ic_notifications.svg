@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40"></rect>
+    </defs>
+    <g id="ic_notifications" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_notifications-copy">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <path d="M28.5,25.198375 L28.5,18.051625 C28.5,14.02 25.77,10.77 22,9.86325 L22,8.948375 C22,7.908375 21.091625,7 20.051625,7 C19.01,7 18.10325,7.908375 18.10325,8.948375 L18.10325,9.86325 C14.331625,10.77 11.60325,14.02 11.60325,18.051625 L11.60325,25.198375 L9,27.801625 L9,29.10325 L31.10325,29.10325 L31.10325,27.801625 L28.5,25.198375 Z M20.051625,33 C21.48,33 22.64675,31.831625 22.64675,30.39675 L17.448375,30.39675 C17.448375,31.831625 18.62325,33 20.051625,33 L20.051625,33 Z" id="notification-bell" fill="#13C2B5" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

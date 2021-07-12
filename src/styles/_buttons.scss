@@ -1,0 +1,35 @@
+@import './colors';
+
+.secondary-button{
+    border-radius: 4px!important;
+    box-shadow: 4px 4px 40px 0 rgba($secondary-color,0.5)!important;
+    color: $white-color!important;
+    background-color: $secondary-color!important;
+    border: none;
+   }
+
+
+   .primary-button{
+    border: none;
+    background-color: $primary-color!important;
+    color:$white-color !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.10) !important;
+    border-radius: 0.3em;
+   }
+
+   .primary-dark-button{
+    border: none;
+    background-color: $primary-dark-color!important;
+    color:$white-color !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.10) !important;
+    border-radius: 0.3em;
+   }
+   
+
+   .white-button{
+    border: none;
+    background-color: $white-color!important;
+    //color:gray !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.10) !important;
+    border-radius: 0.3em;
+   }

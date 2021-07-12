@@ -1,0 +1,25 @@
+@import './colors.scss';
+
+.form-control:focus {
+  color: #495057;
+  background-color: #eef0f7 !important;
+  border-color: #ced4da !important;
+  outline: 0;
+  box-shadow: unset !important;
+}
+
+.form-control {
+  background-color: #eef0f7!important;
+  border-radius: 4px!important;
+  border: 1px solid #eef0f7 !important;
+  
+}
+
+.input-white.form-control {
+    background-color: white!important;
+  }
+
+
+.gray-input.form-control {
+    background-color:#EEF0F7!important;
+}

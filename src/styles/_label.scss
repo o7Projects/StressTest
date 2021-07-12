@@ -1,0 +1,626 @@
+@import './fonts';
+@import './colors';
+
+.font-default{
+    font-family: $font-family-default;
+}
+.font-bold{
+    font-family: $font-family-bold;
+}
+.font-demi{
+    font-family: $font-family-medium;
+}
+
+.font-semi-bold{
+    font-family: $font-family-Semi-bold;
+}
+
+
+.black-label{
+    color: $black-color; 
+}
+.gray-label{
+    color: $gray-color; 
+}
+.light-gray-label{
+    color: $light-gray-color; 
+}
+.dark-gray-label{
+    color: $dark-gray-color;
+}
+
+.quinary-dark-label{
+    color:$quinary-dark-color;
+}
+
+.white-label{
+    color: $white-color; 
+}
+.primary-label{
+    color: $primary-color; 
+}
+
+.light-primary-label{
+    color: $primary-light-color; 
+}
+
+
+.secondary-label{
+    color:$secondary-color
+}
+.xsmall-label{
+    font-size: $font-size-xsmall;
+}
+.small-label{
+    font-size: $font-size-small;
+}
+.medium-label{
+    font-size: $font-size-medium;
+}
+.default-size-label{
+    font-size:$font-size-defualt;
+}
+
+.large-label{
+    font-size: $font-size-large;
+}
+.xlarge-label{
+    font-size: $font-size-xlarge;
+}
+.default-label {
+    font-weight: $font-weight-default;
+}
+.bold-label{
+    font-weight: $font-weight-bold;
+}
+
+.medium-error-label{
+    color: $error-color;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+//-------------------------------------------------------
+//Primary Label
+
+.xsmall-black-label {
+    @extend .black-label;
+    @extend .xsmall-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.xsmall-bold-black-label{
+    @extend .black-label;
+    @extend .xsmall-label;
+    @extend .bold-label;
+    @extend .font-bold;
+}
+
+.small-black-label {
+    @extend .black-label;
+    @extend .small-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.small-bold-black-label{
+    @extend .black-label;
+    @extend .small-label;
+    @extend .bold-label;
+    @extend .font-bold;
+}
+
+.medium-bold-quinary-label{
+    @extend .quinary-dark-label;
+    @extend .medium-label;
+    @extend .bold-label;
+    @extend .font-bold;
+    
+}
+
+.small-bold-quinary-label{
+    @extend .quinary-dark-label;
+    @extend .small-label;
+    @extend .bold-label;
+    @extend .font-bold;
+    
+}
+
+
+.medium-quinary-label{
+    @extend .quinary-dark-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-default;
+    
+}
+
+.large-quinary-label{
+    @extend .quinary-dark-label;
+    @extend .large-label;
+    @extend .default-label;
+    @extend .font-default;
+    
+}
+
+.large-bold-quinary-label{
+    @extend .quinary-dark-label;
+    @extend .large-label;
+    @extend .bold-label; 
+    @extend .font-default;  
+    
+}
+
+
+.medium-black-label {
+    @extend .black-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.medium-bold-black-label{
+    @extend .black-label;
+    @extend .medium-label;
+    @extend .bold-label; 
+    @extend .font-default;  
+}
+
+.default-bold-black-label{
+    @extend .black-label;
+    @extend .default-size-label;
+    @extend .bold-label; 
+    @extend .font-default;  
+}
+
+.default-black-label{
+    @extend .black-label;
+    @extend .default-size-label;
+    @extend .default-label; 
+    @extend .font-default;  
+}
+
+.large-black-label {
+    @extend .black-label;
+    @extend .large-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.large-bold-black-label{
+    @extend .black-label;
+    @extend .large-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+.xlarge-black-label {
+    @extend .black-label;
+    @extend .xlarge-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.xlarge-bold-black-label{
+    @extend .black-label;
+    @extend .xlarge-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+//------------------------------------------------------------------
+
+
+.xsmall-gray-label {
+    @extend .gray-label;
+    @extend .xsmall-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.xsmall-bold-gray-label{
+    @extend .gray-label;
+    @extend .xsmall-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+.small-gray-label {
+    @extend .gray-label;
+    @extend .small-label;
+    @extend .default-label;
+    @extend .font-default;
+
+}
+
+.small-dark-gray-label {
+    @extend .dark-gray-label;
+    @extend .small-label;
+    @extend .default-label;
+    @extend .font-default;
+
+}
+
+.small-bold-dark-gray-label {
+    @extend .dark-gray-label;
+    @extend .small-label;
+    @extend .bold-label;
+    @extend .font-default;
+
+}
+
+.xsmall-dark-gray-label {
+    @extend .dark-gray-label;
+    @extend .xsmall-label;
+    @extend .default-label;
+    @extend .font-default;
+
+}
+
+
+
+.small-light-gray-label {
+    @extend .light-gray-label;
+    @extend .small-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+    
+ .xsmall-bold-light-gray-label {
+     @extend .light-gray-label;
+     @extend .xsmall-label;
+     @extend .default-label;
+     @extend .font-bold;
+ 
+ }
+
+ .small-bold-light-gray-label {
+    @extend .light-gray-label;
+    @extend .small-label;
+    @extend .default-label;
+    @extend .font-bold;
+
+}
+
+
+.medium-light-gray-label{
+    @extend .light-gray-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-default;
+
+}
+
+.medium-dark-gray-label{
+    @extend .dark-gray-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-default;
+
+}
+
+.large-gray-label{
+    @extend .dark-gray-label;
+    @extend .large-label;
+    @extend .default-label;
+    @extend .font-default;
+
+}
+
+
+
+.medium-bold-dark-gray-label{
+    @extend .dark-gray-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-bold;
+
+}
+
+
+.medium-bold-light-gray-label{
+    @extend .light-gray-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-bold;
+
+}
+
+
+.xsmall-light-gray-label {
+    @extend .light-gray-label;
+    @extend .xsmall-label;
+    @extend .default-label;
+    @extend .font-default;
+
+}
+
+
+.small-bold-gray-label{
+    @extend .gray-label;
+    @extend .small-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+.medium-gray-label {
+    @extend .gray-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.default-gray-label{
+    @extend .gray-label;
+    @extend .default-size-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+
+.medium-bold-gray-label{
+    @extend .gray-label;
+    @extend .medium-label;
+    @extend .bold-label;  
+    @extend .font-default; 
+}
+.large-gray-label {
+    @extend .gray-label;
+    @extend .large-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.large-bold-gray-label{
+    @extend .gray-label;
+    @extend .large-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+.xlarge-gray-label {
+    @extend .gray-label;
+    @extend .xlarge-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.xlarge-bold-gray-label{
+    @extend .gray-label;
+    @extend .xlarge-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+.large-bold-dark-gray-label{
+    @extend .dark-gray-label;
+    @extend .large-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+//------------------------------------------------------------------
+//White Label
+
+.xsmall-white-label {
+    @extend .white-label;
+    @extend .xsmall-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.xsmall-bold-white-label{
+    @extend .white-label;
+    @extend .xsmall-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+.small-white-label {
+    @extend .white-label;
+    @extend .small-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.small-bold-white-label{
+    @extend .white-label;
+    @extend .small-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+.medium-white-label {
+    @extend .white-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.medium-bold-white-label{
+    @extend .white-label;
+    @extend .medium-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+.large-white-label {
+    @extend .white-label;
+    @extend .large-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.large-bold-white-label{
+    @extend .white-label;
+    @extend .large-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+.xlarge-white-label {
+    @extend .white-label;
+    @extend .xlarge-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.xlarge-bold-white-label{
+    @extend .white-label;
+    @extend .xlarge-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+
+//---------------------------------------------------
+//Accent Label
+
+.medium-bold-primary-label{
+    @extend .primary-label;
+    @extend .medium-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+.xsmall-bold-primary-label{
+   @extend .primary-label;
+    @extend .xsmall-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+.small-bold-primary-label{
+    @extend .primary-label;
+     @extend .small-label;
+     @extend .bold-label;
+     @extend .font-default;
+ }
+
+  .large-bold-primary-label{
+     @extend .primary-label; 
+  }  
+
+.large-bold-primary-label{
+    @extend .primary-label;
+    @extend .large-label;
+    @extend .bold-label;
+    @extend .font-default;
+}
+
+.large-primary-label{
+    @extend .primary-label;
+    @extend .large-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.medium-primary-label{
+    @extend .primary-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.small-primary-label{
+    @extend .primary-label;
+    @extend .small-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+.xsmall-primary-label{
+    @extend .primary-label;
+    @extend .xsmall-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.small-light-primary-label{
+    @extend .light-primary-label;
+    @extend .small-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.medium-light-primary-label{
+    @extend .light-primary-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+//-------------------------------------------------------------------
+//Secondary-label
+
+.xlarge-secondary-label{
+    @extend .secondary-label;
+    @extend .xlarge-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.large-secondary-label{
+    @extend .secondary-label;
+    @extend .large-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+.xlarge-bold-secondary-label{
+    @extend .secondary-label;
+    @extend .xlarge-label;
+    @extend .default-label;
+    @extend .font-bold;
+}
+
+.large-bold-secondary-label{
+    @extend .secondary-label;
+    @extend .large-label;
+    @extend .default-label;
+    @extend .font-bold;
+}
+.medium-secondary-label{
+    @extend .secondary-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.medium-bold-secondary-label{
+    @extend .secondary-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-bold;
+}
+.xsmall-secondary-label{
+    @extend .secondary-label;
+    @extend .xsmall-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.small-secondary-label{
+    @extend .secondary-label;
+    @extend .small-label;
+    @extend .default-label;
+    @extend .font-default;
+}
+
+.xsmall-bold-secondary-label{
+    @extend .secondary-label;
+    @extend .xsmall-label;
+    @extend .default-label;
+    @extend .font-bold;
+}
+
+.small-bold-secondary-label{
+    @extend .secondary-label;
+    @extend .small-label;
+    @extend .default-label;
+    @extend .font-bold;
+}
+
+.medium-secondary-label{
+    @extend .secondary-label;
+    @extend .medium-label;
+    @extend .default-label;
+    @extend .font-default;
+}

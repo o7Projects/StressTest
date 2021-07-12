@@ -1,0 +1,193 @@
+{
+    "data": [
+        {
+            "section": 1,
+            "id": 1,
+            "type":"SCQ",
+            "question": "Have you been consistently depressed, most of the day, nearly every day, for the past 2 weeks?",
+            "answer": "",
+            "next": [
+                {
+                    "answer": "NEVER",
+                    "section": 2,
+                    "id": 1
+                }
+            ]
+        },
+        {
+            "section": 1,
+            "id": 2,
+            "type":"SCQ",
+            "question": "In the past 2 weeks, have you been less interested in most things or less able to enjoy the things you used to enjoy most of the time?",
+            "answer": ""
+        },
+        {
+            "section": 1,
+            "id": 3,
+            "type":"SCQ",
+            "question": "Have you felt sad, low or depressed most of the time for the last two years?",
+            "answer": ""
+        },
+        {
+            "section": 1,
+            "id": 4,
+            "type":"SCQ",
+            "question": "In the past month, did you think that you would be better off dead or wish you were dead?",
+            "answer": ""
+        },
+        {
+            "section": 2,
+            "id": 1,
+            "type":"SCQ",
+            "question": "Have you ever had a period of time when you were feeling hyper or so full of energy or full of yourself that you got into trouble or that other people thought you were not your usual self? (Do not consider times when you were intoxicated on drugs or alcohol.) ",
+            "answer": "",
+            "next": [
+                {
+                    "answer": "NEVER",
+                    "section": 3,
+                    "id": 1
+                }
+            ]
+        },
+        {
+            "section": 2,
+            "id": 2,
+            "type":"SCQ",
+            "question": "Have you ever had a period of time of inflated self-esteem, decreased need for sleep, pressured speech or racing thoughts and excess pleasurable or risky activity?",
+            "answer": ""
+        },
+        {
+            "section": 3,
+            "id": 1,
+            "type":"SCQ",
+            "question": "Have you had one or more occasions when you felt intensely anxious, frightened or uneasy even when most people would not feel that way? Did these intense feelings get to be their worst within 10 minutes?",
+            "answer": "",
+            "next": [
+                {
+                    "answer": "NEVER",
+                    "section": 4,
+                    "id": 1
+                }
+            ]
+        },
+        {
+            "section": 3,
+            "id": 2,
+            "type":"SCQ",
+            "question": "Do you feel anxious or uneasy in places or situations where you might have the panic-like symptoms we just spoke about? Or do you feel anxious or uneasy in situations where help might not be available or escape might be difficult?",
+            "answer": ""
+        },
+        {
+            "section": 4,
+            "id": 1,
+            "type":"SCQ",
+            "question": "Do you worry generally excessively about different things?",
+            "answer": "",
+            "next": [
+                {
+                    "answer": "NEVER",
+                    "section": 5,
+                    "id": 1
+                }
+            ]
+        },
+        {
+            "section": 4,
+            "id": 2,
+            "type":"SCQ",
+            "question": "Are these worries present most days? ",
+            "answer": ""
+        },
+        {
+            "section": 4,
+            "id": 3,
+            "type":"SCQ",
+            "question": "Do you afraid or embarrassed when others are watching you, or when you are the focus of attention? Do you feel afraid of being humiliated?",
+            "answer": ""
+        },
+        {
+            "section": 4,
+            "id": 4,
+            "type":"SCQ",
+            "question": "Are you being bothered by thoughts that you can’t get rid of that are unwanted, distasteful, inappropriate, intrusive or distressing even though you feel they are absurd?",
+            "answer": ""
+        },
+        {
+            "section": 4,
+            "id": 5,
+            "type":"SCQ",
+            "question": "Do you afraid or embarrassed when others are watching you, or when you are the focus of attention? Do you feel afraid of being humiliated?",
+            "answer": ""
+        },
+        {
+            "section": 4,
+            "id": 6,
+            "type":"SCQ",
+            "question": "Have you ever experienced or witnessed an extremely traumatic event that included actual or threatened death or serious injury to you or someone else?",
+            "answer": ""
+        },
+        {
+            "section": 4,
+            "id": 7,
+            "type":"SCQ",
+            "question": "Have you ever believed or do you feel that that people are spying on you, or that someone is plotting against you, trying to hurt you, being possessed, or having super natural powers?",
+            "answer": ""
+        },
+        {
+            "section": 4,
+            "id": 8,
+            "type":"SCQ",
+            "question": "Have you ever heard things others couldn’t hear, such as voices? ",
+            "answer": ""
+        },
+        {
+            "section": 4,
+            "id": 9,
+            "type":"SCQ",
+            "question": "Have you ever seen things others couldn’t see?",
+            "answer": ""
+        },
+        {
+            "section": 5,
+            "id": 1,
+            "type":"SCQ",
+            "question": "Have people annoyed you by criticizing your drinking? (Or other substance)",
+            "answer": "",
+            "next": [
+                {
+                    "answer": "NEVER",
+                    "section": 6,
+                    "id": 1
+                }
+            ]
+        },
+        {
+            "section": 5,
+            "id": 2,
+            "type":"SCQ",
+            "question": "Have you ever felt guilty about drinking? (Or other substance)",
+            "answer": ""
+        },
+        {
+            "section": 5,
+            "id": 3,
+            "type":"SCQ",
+            "question": "Have you ever felt you needed a drink first thing in the morning (eye-opener) to steady your nerves or to get rid of a hangover? (Or other substance) ",
+            "answer": ""
+        },
+        {
+            "section": 5,
+            "id": 4,
+            "type":"SCQ",
+            "question": "Was there ever a period in your life when you spent a lot of time thinking and worrying about gaining weight, becoming fat, or controlling your eating? To the extent that you needed to go for severe dieting, engaging in much exercise to compensate for binge eating , or forcing yourself to throw up? ",
+            "answer": ""
+        },
+        {
+            "section": 6,
+            "id": 1,
+            "type":"Comment",
+            "question": "Any further significant data you want to add?",
+            "answer": ""
+        }
+    ]
+}

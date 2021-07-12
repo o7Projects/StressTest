@@ -1,0 +1,464 @@
+<div style="width: 100%;">
+    <div id="step1" class="Step">
+    </div>
+    <div id="step2" class="Step">
+    </div>
+    <div id="step3" class="Step">
+    </div>
+    <div id="step4" class="Step">
+    </div>
+    <div id="step5" class="Step">
+    </div>
+    <div id="step6" class="Step">
+    </div>
+    <div id="step7" class="Step">
+    </div>
+    <div id="step8" class="Step">
+    </div>
+    <div id="step9" class="Step">
+    </div>
+    <div id="step10" class="Step" style="margin-right: 0; width: 10%;">
+    </div>
+</div>
+
+
+<div class="container" style="padding-bottom: 25px;">
+    <div class="col-md-11 offset-md-1">
+
+        <div *ngIf="current==1">
+            <form [formGroup]="firstFormGroup">
+                <div class="row">
+                    <div class="col-md-7" style="margin:auto">
+                        <div class="iterate"><span class="iterateStyle"><span class="numberStyle">01</span>/10</span>
+                        </div>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <h4 class="QuesHead">Question 1</h4>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <p class="QuesContent">In the <span class="boldTxt">Last Month</span>, how often have
+                            you <br>
+                            <span class="boldTxt">Been upset because of something that
+                                happened
+                                unexpectedly?</span>
+                        </p>
+
+
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <mat-radio-group formControlName="question1">
+                            <div class="radioBtn">
+                                <mat-radio-button class="radio" value="0">Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="1">Almost Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="2">Sometimes</mat-radio-button>
+                                <mat-radio-button class="radio" value="3">Fairly Often</mat-radio-button>
+                                <mat-radio-button class="radio" value="4">Very Often</mat-radio-button>
+                            </div>
+
+                        </mat-radio-group>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <button type="button" class="btn btn-secondary btnNext" *ngIf="!firstFormGroup.valid"
+                            [disabled]="!firstFormGroup.valid">Next</button>
+                        <button type="button" class="btn btn-secondary btnNext btnNextColored"
+                            *ngIf="firstFormGroup.valid" [disabled]="!firstFormGroup.valid"
+                            (click)="next(2)">Next</button>
+
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <div *ngIf="current==2">
+            <form [formGroup]="secondFormGroup">
+                <div class="row">
+                    <div class="col-md-7" style="margin:auto">
+                        <div class="iterate"><span class="iterateStyle"><span class="numberStyle">02</span>/10</span>
+                        </div>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <h4 class="QuesHead">Question 2</h4>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <p class="QuesContent">In the <span class="boldTxt">Last Month</span>, how often have you <br>
+                            <span class="boldTxt">Felt that you were unable to control the important
+                                things in your life?</span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px;margin:auto">
+                        <mat-radio-group formControlName="question2">
+                            <div class="radioBtn">
+                                <mat-radio-button class="radio" value="0">Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="1">Almost Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="2">Sometimes</mat-radio-button>
+                                <mat-radio-button class="radio" value="3">Fairly Often</mat-radio-button>
+                                <mat-radio-button class="radio" value="4">Very Often</mat-radio-button>
+                            </div>
+                        </mat-radio-group>
+                    </div>
+                    <div class="col-md-10" style="padding-top: 45px;margin:auto">
+                        <button type="button" class="btn btn-secondary btnBack" (click)="next(1)">Back</button>
+
+                        <button type="button" class="btn btn-secondary btnNext" *ngIf="!secondFormGroup.valid"
+                            [disabled]="!secondFormGroup.valid">Next</button>
+                        <button type="button" class="btn btn-secondary btnNext btnNextColored"
+                            *ngIf="secondFormGroup.valid" [disabled]="!secondFormGroup.valid"
+                            (click)="next(3)">Next</button>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div *ngIf="current==3">
+            <form [formGroup]="thirdFormGroup">
+                <div class="row">
+                    <div class="col-md-7" style="margin:auto">
+                        <div class="iterate"><span class="iterateStyle"><span class="numberStyle">03</span>/10</span>
+                        </div>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <h4 class="QuesHead">Question 3</h4>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <p class="QuesContent">In the <span class="boldTxt">Last Month</span>, how often have you <br>
+                            <span class="boldTxt">Felt nervous and "stressed"?</span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px;margin:auto">
+                        <mat-radio-group formControlName="question3">
+                            <div class="radioBtn">
+                                <mat-radio-button class="radio" value="0">Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="1">Almost Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="2">Sometimes</mat-radio-button>
+                                <mat-radio-button class="radio" value="3">Fairly Often</mat-radio-button>
+                                <mat-radio-button class="radio" value="4">Very Often</mat-radio-button>
+                            </div>
+                        </mat-radio-group>
+                    </div>
+                    <div class="col-md-10" style="padding-top: 45px;margin:auto">
+                        <button type="button" class="btn btn-secondary btnBack" (click)="next(2)">Back</button>
+
+                        <button type="button" class="btn btn-secondary btnNext" *ngIf="!thirdFormGroup.valid"
+                            [disabled]="!thirdFormGroup.valid">Next</button>
+                        <button type="button" class="btn btn-secondary btnNext btnNextColored"
+                            *ngIf="thirdFormGroup.valid" [disabled]="!thirdFormGroup.valid"
+                            (click)="next(4)">Next</button>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div *ngIf="current==4">
+            <form [formGroup]="fourthFormGroup">
+                <div class="row">
+                    <div class="col-md-7" style="margin:auto">
+                        <div class="iterate"><span class="iterateStyle"><span class="numberStyle">04</span>/10</span>
+                        </div>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <h4 class="QuesHead">Question 4</h4>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <p class="QuesContent">In the <span class="boldTxt">Last Month, </span>how often have you
+                            <br>
+                            <span class="boldTxt"> Felt confident about your
+                                ability to handle your personal problems?</span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px;margin:auto">
+                        <mat-radio-group formControlName="question4">
+                            <div class="radioBtn">
+                                <mat-radio-button class="radio" value="4">Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="3">Almost Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="2">Sometimes</mat-radio-button>
+                                <mat-radio-button class="radio" value="1">Fairly Often</mat-radio-button>
+                                <mat-radio-button class="radio" value="0">Very Often</mat-radio-button>
+                            </div>
+
+                        </mat-radio-group>
+                    </div>
+                    <div class="col-md-10" style="padding-top: 45px;margin:auto">
+                        <button type="button" class="btn btn-secondary btnBack" (click)="next(3)">Back</button>
+                        <button type="button" class="btn btn-secondary btnNext" *ngIf="!fourthFormGroup.valid"
+                            [disabled]="!fourthFormGroup.valid">Next</button>
+                        <button type="button" class="btn btn-secondary btnNext btnNextColored"
+                            *ngIf="fourthFormGroup.valid" [disabled]="!fourthFormGroup.valid"
+                            (click)="next(5)">Next</button>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div *ngIf="current==5">
+            <form [formGroup]="fifthFormGroup">
+                <div class="row">
+                    <div class="col-md-7" style="margin:auto">
+                        <div class="iterate"><span class="iterateStyle"><span class="numberStyle">05</span>/10</span>
+                        </div>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <h4 class="QuesHead">Question 5</h4>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <p class="QuesContent">In the <span class="boldTxt">Last Month,</span> how often have you
+                            <br><span class="boldTxt">You felt that things were going your
+                                way?</span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <mat-radio-group formControlName="question5">
+                            <div class="radioBtn">
+                                <mat-radio-button class="radio" value="4">Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="3">Almost Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="2">Sometimes</mat-radio-button>
+                                <mat-radio-button class="radio" value="1">Fairly Often</mat-radio-button>
+                                <mat-radio-button class="radio" value="0">Very Often</mat-radio-button>
+                            </div>
+                        </mat-radio-group>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <button type="button" class="btn btn-secondary btnBack" (click)="next(4)">Back</button>
+
+                        <button type="button" class="btn btn-secondary btnNext" *ngIf="!fifthFormGroup.valid"
+                            [disabled]="!fifthFormGroup.valid">Next</button>
+                        <button type="button" class="btn btn-secondary btnNext btnNextColored"
+                            *ngIf="fifthFormGroup.valid" [disabled]="!fifthFormGroup.valid"
+                            (click)="next(6)">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div *ngIf="current==6">
+            <form [formGroup]="sixthFormGroup">
+                <div class="row">
+                    <div class="col-md-7" style="margin:auto">
+                        <div class="iterate"><span class="iterateStyle"><span class="numberStyle">06</span>/10</span>
+                        </div>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <h4 class="QuesHead">Question 6</h4>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <p class="QuesContent">In the <span class="boldTxt">Last Month</span>, how often have you
+                            <br>
+                            <span class="boldTxt">Found that you could not cope
+                                with all the things that you had to do?</span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <mat-radio-group formControlName="question6">
+                            <div class="radioBtn">
+                                <mat-radio-button class="radio" value="0">Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="1">Almost Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="2">Sometimes</mat-radio-button>
+                                <mat-radio-button class="radio" value="3">Fairly Often</mat-radio-button>
+                                <mat-radio-button class="radio" value="4">Very Often</mat-radio-button>
+                            </div>
+                        </mat-radio-group>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <button type="button" class="btn btn-secondary btnBack" (click)="next(5)">Back</button>
+
+                        <button type="button" class="btn btn-secondary btnNext" *ngIf="!sixthFormGroup.valid"
+                            [disabled]="!sixthFormGroup.valid">Next</button>
+                        <button type="button" class="btn btn-secondary btnNext btnNextColored"
+                            *ngIf="sixthFormGroup.valid" [disabled]="!sixthFormGroup.valid"
+                            (click)="next(7)">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div *ngIf="current==7">
+            <form [formGroup]="seventhFormGroup">
+                <div class="row">
+                    <div class="col-md-7" style="margin:auto">
+                        <div class="iterate"><span class="iterateStyle"><span class="numberStyle">07</span>/10</span>
+                        </div>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <h4 class="QuesHead">Question 7</h4>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <p class="QuesContent">In the <span class="boldTxt">Last Month</span>, how often have you <br>
+                            <span class="boldTxt">Been able to control irritations
+                                in your life?</span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <mat-radio-group formControlName="question7">
+                            <div class="radioBtn">
+                                <mat-radio-button class="radio" value="4">Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="3">Almost Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="2">Sometimes</mat-radio-button>
+                                <mat-radio-button class="radio" value="1">Fairly Often</mat-radio-button>
+                                <mat-radio-button class="radio" value="0">Very Often</mat-radio-button>
+                            </div>
+                        </mat-radio-group>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <button type="button" class="btn btn-secondary btnBack" (click)="next(6)">Back</button>
+
+                        <button type="button" class="btn btn-secondary btnNext" *ngIf="!seventhFormGroup.valid"
+                            [disabled]="!seventhFormGroup.valid">Next</button>
+                        <button type="button" class="btn btn-secondary btnNext btnNextColored"
+                            *ngIf="seventhFormGroup.valid" [disabled]="!seventhFormGroup.valid"
+                            (click)="next(8)">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div *ngIf="current==8">
+            <form [formGroup]="eighthFormGroup">
+                <div class="row">
+                    <div class="col-md-7" style="margin:auto">
+                        <div class="iterate"><span class="iterateStyle"><span class="numberStyle">08</span>/10</span>
+                        </div>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <h4 class="QuesHead">Question 8</h4>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <p class="QuesContent">In the <span class="boldTxt">Last Month</span>, how often have you
+                            <br>
+                            <span class="boldTxt">Felt that you were on top of
+                                things?</span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <mat-radio-group formControlName="question8">
+                            <div class="radioBtn">
+                                <mat-radio-button class="radio" value="4">Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="3">Almost Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="2">Sometimes</mat-radio-button>
+                                <mat-radio-button class="radio" value="1">Fairly Often</mat-radio-button>
+                                <mat-radio-button class="radio" value="0">Very Often</mat-radio-button>
+                            </div>
+                        </mat-radio-group>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <button type="button" class="btn btn-secondary btnBack" (click)="next(7)">Back</button>
+
+                        <button type="button" class="btn btn-secondary btnNext" *ngIf="!eighthFormGroup.valid"
+                            [disabled]="!eighthFormGroup.valid">Next</button>
+                        <button type="button" class="btn btn-secondary btnNext btnNextColored"
+                            *ngIf="eighthFormGroup.valid" [disabled]="!eighthFormGroup.valid"
+                            (click)="next(9)">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div *ngIf="current==9">
+            <form [formGroup]="ninthFormGroup">
+                <div class="row">
+                    <div class="col-md-7" style="margin:auto">
+                        <div class="iterate"><span class="iterateStyle"><span class="numberStyle">09</span>/10</span>
+                        </div>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <h4 class="QuesHead">Question 9</h4>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <p class="QuesContent">In the <span class="boldTxt">Last Month</span>, how often have you
+                            <br>
+                            <span class="boldTxt">Been angered because of things
+                                that were outside of your control?</span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <mat-radio-group formControlName="question9">
+                            <div class="radioBtn">
+                                <mat-radio-button class="radio" value="0">Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="1">Almost Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="2">Sometimes</mat-radio-button>
+                                <mat-radio-button class="radio" value="3">Fairly Often</mat-radio-button>
+                                <mat-radio-button class="radio" value="4">Very Often</mat-radio-button>
+                            </div>
+                        </mat-radio-group>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <button type="button" class="btn btn-secondary btnBack" (click)="next(8)">Back</button>
+
+                        <button type="button" class="btn btn-secondary btnNext" *ngIf="!ninthFormGroup.valid"
+                            [disabled]="!ninthFormGroup.valid">Next</button>
+                        <button type="button" class="btn btn-secondary btnNext btnNextColored"
+                            *ngIf="ninthFormGroup.valid" [disabled]="!ninthFormGroup.valid"
+                            (click)="next(10)">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div *ngIf="current==10">
+            <form [formGroup]="tenthFormGroup">
+                <div class="row">
+                    <div class="col-md-7" style="margin:auto">
+                        <div class="iterate"><span class="iterateStyle"><span class="numberStyle">10</span>/10</span>
+                        </div>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <h4 class="QuesHead">Question 10</h4>
+                    </div>
+                    <div class="col-md-10" style="margin:auto">
+                        <p class="QuesContent">In the <span class="boldTxt">Last Month</span>, how often have you<br>
+                            <span class="boldTxt">Felt difficulties were piling up
+                                so high that you could not overcome them?</span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <mat-radio-group formControlName="question10">
+                            <div class="radioBtn">
+                                <mat-radio-button class="radio" value="0">Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="1">Almost Never</mat-radio-button>
+                                <mat-radio-button class="radio" value="2">Sometimes</mat-radio-button>
+                                <mat-radio-button class="radio" value="3">Fairly Often</mat-radio-button>
+                                <mat-radio-button class="radio" value="4">Very Often</mat-radio-button>
+                            </div>
+                        </mat-radio-group>
+                    </div>
+
+                    <div class="col-md-10" style="padding-top: 45px; margin:auto">
+                        <button type="button" class="btn btn-secondary btnBack" (click)="next(9)">Back</button>
+
+                        <button type="button" class="btn btn-secondary btnNext" *ngIf="!tenthFormGroup.valid"
+                            [disabled]="!tenthFormGroup.valid">Get Result</button>
+                        <button type="button" class="btn btn-secondary btnNext btnNextColored"
+                            *ngIf="tenthFormGroup.valid" [disabled]="!tenthFormGroup.valid"
+                            (click)="calculateScore()">Get Result</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+</div>

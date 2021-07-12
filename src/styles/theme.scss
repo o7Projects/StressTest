@@ -1,0 +1,144 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$custom-primary-color: (
+    50 : #e3f8f6,
+    100 : #b8ede9,
+    200 : #89e1da,
+    300 : #5ad4cb,
+    400 : #36cbc0,
+    500 : #13c2b5,
+    600 : #11bcae,
+    700 : #0eb4a5,
+    800 : #0bac9d,
+    900 : #069f8d,
+    A100 : #cafff8,
+    A200 : #97fff2,
+    A400 : #64ffeb,
+    A700 : #4bffe8,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+$custom-secondary-color: (
+  50 : #f9eff3,
+  100 : #f0d7e1,
+  200 : #e6bccd,
+  300 : #dba1b8,
+  400 : #d48ca9,
+  500 : #cc789a,
+  600 : #c77092,
+  700 : #c06588,
+  800 : #b95b7e,
+  900 : #ad486c,
+  A100 : #ffffff,
+  A200 : #ffd4e3,
+  A400 : #ffa1c1,
+  A700 : #ff87b1,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #000000,
+      600 : #000000,
+      700 : #000000,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+$custom-tertiary-color: (
+    50 : #e0e0e0,
+    100 : #b3b3b3,
+    200 : #808080,
+    300 : #4d4d4d,
+    400 : #262626,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #a6a6a6,
+    A200 : #8c8c8c,
+    A400 : #737373,
+    A700 : #666666,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+
+$custom-foreground-color: (
+    50 : #ffffff,
+    100 : #ffffff,
+    200 : #ffffff,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$app-primary: mat-palette($custom-primary-color);
+$app-secondary:mat-palette($custom-secondary-color, 500, 900, A100);
+$app-accent: mat-palette($custom-secondary-color);
+$app-warn:    mat-palette($custom-tertiary-color);
+$app-foreground: mat-palette($custom-foreground-color);
+
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+$app-theme-custom: map-merge($app-theme, (foreground: $app-foreground));
+
+@include angular-material-theme($app-theme-custom);

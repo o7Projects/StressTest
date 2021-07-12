@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+    "target":"http://o7gateway.emeint.com/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
