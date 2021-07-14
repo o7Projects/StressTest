@@ -1,7 +1,6 @@
 import { Component, ElementRef, EventEmitter, HostListener, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { throwMatDialogContentAlreadyAttachedError } from '@angular/material';
 import { Router } from '@angular/router';
-import * as htmlToImage from 'html-to-image';
 import { Observable, Subscription } from 'rxjs';
 import { UserInfo } from 'src/app/common/models/userInfo';
 import { StressTestService } from 'src/app/services/stress-test/stress-test.service';
@@ -159,23 +158,8 @@ export class ScoreComponent implements OnInit {
     // this.textToShare = "Just%20took%20the%20O7%20Therapy%20Stress%20Test,%20and%20I'm%20" + this.scoreText.toString() + "%20with%20a%20score%20of%20" + this.score.toString() + "/40.%20Check%20out%20your%20stress%20levels!"
     this.textToShare = "I%20just%20took%20the%20O7%20Therapy%20Stress%20Test,%20and%20I'm%20experiencing%20"+this.scoreText.toString()+"%20with%20a%20score%20of%20"+this.score.toString()+"/40.%20Check%20out%20your%20stress%20levels!";
 
-    var node = document.getElementById('contentShare');
-    var img2 = new Image();
 
-    htmlToImage.toPng(node)
-      .then(function (dataUrl) {
 
-        img2.src = dataUrl;
-
-        // document.body.appendChild(img2);
-
-      })
-      .catch(function (error) {
-        console.error('oops, something went wrong!', error);
-      });
-
-    this.imgCapture = img2;
-    this.displayShareIcons = true;
   }
 
   socialFace() {

@@ -42,6 +42,7 @@ import { NgxCaptureModule } from 'ngx-capture';
 import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AngularResizedEventModule } from 'angular-resize-event';
+import { SummaryComponent } from './summary/summary.component';
 
 @NgModule({
     imports: [
@@ -83,7 +84,8 @@ import { AngularResizedEventModule } from 'angular-resize-event';
         IntroComponent,
         QuestionsComponent,
         ScoreComponent,
-        SurveyComponent
+        SurveyComponent,
+        SummaryComponent
     ],
    
     entryComponents: [HomeComponent],

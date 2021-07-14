@@ -34,13 +34,16 @@
               "src/styles/styles.scss",
               "src/styles/theme.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/animate.css/animate.css"
+              "node_modules/animate.css/animate.css",
+              "node_modules/primeng/resources/themes/nova-light/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css"            
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/sendbird/SendBird.min.js"           
+              "node_modules/sendbird/SendBird.min.js"
             ]
           },
           "configurations": {
@@ -73,7 +76,7 @@
               "ngswConfigPath": "ngsw-config.json"
             }
           }
-          },
+        },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {

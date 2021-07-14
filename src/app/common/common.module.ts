@@ -22,6 +22,7 @@ import {
     MatExpansionModule,
     MatDividerModule
 } from '@angular/material';
+import { CarouselModule } from 'primeng/carousel';
 
 
 @NgModule({
@@ -39,7 +40,7 @@ import {
         MatFormFieldModule,
       
         MatBadgeModule,
-      
+        CarouselModule
       
      
     ],
@@ -69,7 +70,7 @@ import {
         MatInputModule,
         MatSelectModule,
         MatCheckboxModule,
-
+        CarouselModule
     ],
     providers: [
       , 

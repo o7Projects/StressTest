@@ -1,0 +1,128 @@
+<div class="space">
+    <div>
+        <p class="pos">
+            <span class="normal">Get a chance to feel better with O7 Therapy</span>
+            <br />
+            <span class="normal">Use the promo code SUMMER50 to get</span>
+            <br />
+            <span class="colored">50% off </span> <span class="normal">of your first session.</span>
+        </p>
+
+        <button class="btn">Get started</button>
+    </div>
+</div>
+<div class="slider" style="padding-bottom: 50px;">
+    <div class="col-md-12 text-center">
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 style="font-weight: bold;">Samples of our sessions</h1>
+                <p>Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit
+                    consequat ipsutis sem nibh id elit</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1"
+                    [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions"
+                    (onPage)="getPage($event)">
+
+                    <ng-template let-product pTemplate="item">
+                        <div class="product-item">
+                            <div class="product-item-content">
+
+                                <div class="card" style="margin-right: 10px;">
+                                    <img style="width: 100%;" src="../../../../assets/images/slider/{{product.image}}"
+                                        [alt]="product.name" class="product-image" />
+
+                                    <div style="width: 100%; margin-top: -40px;height: 70px;">
+                                        <img style="width: 100px; height: 100px; float: right;"
+                                            src="../../../../assets/images/slider/portraitcamerabackground2.svg">
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h4 class="prodName">{{product.name}}</h4>
+                                        <p class="prodContent">{{product.content}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </p-carousel>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="message">
+
+                <h4 class="head">Ask our therapists</h4>
+                <span class="content">Post a question below and a<br> professional will get back to<br> you within 24
+                    hours.</span>
+            </div>
+
+            <div class="msgImg" data-toggle="modal" data-target="#contactModal"><img
+                    src="../../../../assets/images/slider/conversation.svg" style="width: 50%; margin-top: 10px;"></div>
+
+        </div>
+
+        <div class="contactModal">
+            <!-- Modal -->
+            <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="contactModalLabel">Contact us</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form [formGroup]="form" (ngSubmit)="submit()">
+
+                                <div class="form-group">
+                                    <input formControlName="mailSubject" placeholder="Subject" id="mailSubject"
+                                        type="text" class="form-control">
+
+                                    <!-- <div *ngIf="f.mailSubject.invalid" class="alert alert-danger">
+                                        <div *ngIf="f.mailSubject.errors.required">Subject is required.</div>
+                                    </div> -->
+
+                                </div>
+
+                                <div class="form-group">
+                                    <input formControlName="mailText" placeholder="E-mail" id="mailText" type="text"
+                                        class="form-control">
+
+                                    <!-- <div *ngIf="f.mailText.invalid" class="alert alert-danger">
+                                        <div *ngIf="f.mailText.errors.required">Mail is required.</div>
+                                        <div *ngIf="f.mailText.errors.pattern">Mail not Valid</div>
+                                    </div> -->
+
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Body" formControlName="mailBody" id="mailBody"
+                                        rows="4"></textarea>
+
+                                    <!-- <div *ngIf="f.mailBody.invalid" class="alert alert-danger">
+                                        <div *ngIf="f.mailBody.errors.required">Body is required.</div>
+                                    </div> -->
+
+
+                                </div>
+
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary butonSend">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
