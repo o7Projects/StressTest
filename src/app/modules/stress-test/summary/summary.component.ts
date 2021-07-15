@@ -13,7 +13,7 @@ export class SummaryComponent implements OnInit {
   products: any[];
 
   form: FormGroup;
-
+  displayHint=false;
 
   constructor(private route: Router) {
 
@@ -81,6 +81,12 @@ export class SummaryComponent implements OnInit {
     let pageIndex = event.first / event.rows + 1 // Index of the new page if event.page not defined.
   }
 
+  mouseEnter(){
+    this.displayHint=true;
+  }
+  mouseLeave(){
+    this.displayHint=false;
+  }
 
 
 }
