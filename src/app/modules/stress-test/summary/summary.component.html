@@ -1,18 +1,120 @@
 <div class="space">
     <div>
         <p class="pos">
-            <span class="normal">Get a chance to feel better with O7 Therapy</span>
+            <span class="normal">We want to start off this summer</span>
             <br />
-            <span class="normal">Use the promo code SUMMER50 to get</span>
+            <span>by giving you an opportunity to feel better through therapy!</span>
             <br />
-            <span style="font-weight: bold !important;" class="colored">50% off </span> <span
-                style="font-weight: bold !important;" class="normal">of your first session.</span>
+            <span style="font-weight: bold !important;" class="normal"> Use the promo code SUMMER15x3 to get</span>
+            <br />
+            <span style="font-weight: bold !important;" class="colored">15% off </span> <span
+                style="font-weight: bold !important;" class="normal">of your first 3 sessions.</span>
 
         </p>
 
-        <span style="font-weight: bold !important;" class="colored summer50">SUMMER50</span>
+        <span style="font-weight: bold !important;" class="colored summer50">SUMMER15x3</span>
 
-        <button class="btn">Get started</button>
+        <!-- <button class="btn">Get started</button> -->
+
+
+
+        <div *ngIf="siteWidth>1000;else other_content">
+            <input type="button" (click)="showPopup()" value="Get Started" class="btn">
+
+
+            <!-- START POPUP -->
+            <div id="popup" (click)="hidePopup()"
+                style="visibility:hidden; z-index:10000000;background: #00000075;position: fixed;top:0;left:0;width:100%;height:100%;">
+                <div style="height: 100%;" id="popup-container">
+                    <div
+                        style="background:white;border-radius:10px;position: relative;padding:5em 3em;width:75%; max-width:50em; margin: 5em auto;display: block;">
+
+                        <span (click)="hidePopup()" style="position:absolute; top:20px;right:20px; cursor: pointer;">
+                            Close
+                        </span>
+
+                        <h2 style="text-align: center; font-weight: bold">Choose Therapy Type</h2>
+                        <div
+                            style="display: flex; justify-content: center; max-width: 45em; margin: 30px auto 10px auto;">
+
+                            <span
+                                style="box-shadow: 5px 5px 25px 5px #efefef;    padding: 1em;    border-radius: 35px; margin: 1em auto; width:120px; height: 130px">
+                                <a style="margin: auto;"
+                                    href="https://web.o7therapy.com/#/challenges/matching-tool/adult">
+                                    <img class="alignnone wp-image-47"
+                                        src="../../../../assets/images/slider/AddultType.png" alt=""
+                                        style="width:100%;height: 100%;">
+
+                                </a>
+                            </span>
+                            <span
+                                style="box-shadow: 5px 5px 25px 5px #efefef;    padding: 1em;    border-radius: 35px; margin: 1em auto; width:120px; height: 130px">
+                                <a style="margin: auto;" href="https://web.o7therapy.com/#/therapists/list/couple">
+                                    <img class="alignnone wp-image-47"
+                                        src="../../../../assets/images/slider/CouplesType.png" alt=""
+                                        style="width:100%;height: 100%;">
+
+                                </a>
+                            </span>
+                            <span
+                                style="box-shadow: 5px 5px 25px 5px #efefef;    padding: 1em;    border-radius: 35px; margin: 1em auto; width:120px; height: 130px">
+                                <a style="margin: auto;"
+                                    href="https://web.o7therapy.com/#/challenges/matching-tool/child">
+                                    <img class="alignnone wp-image-47"
+                                        src="../../../../assets/images/slider/ChildType.png" alt=""
+                                        style="width:100%;height: 100%;">
+                                </a>
+                            </span>
+                        </div>
+                        <div
+                            style="display: flex; justify-content: center; max-width: 45em; margin: 0px auto 10px auto;">
+                            <span style="margin: auto;font-weight:bold;padding-left:3em">Adult</span>
+                            <span style="margin: auto;font-weight:bold;padding-left:3em">Couple / Family</span>
+                            <span style="margin: auto;font-weight:bold">Child / Adolescent</span>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- END POPUP -->
+        </div>
+
+        <ng-template #other_content>
+            <div class="adultType">
+                <div class="col-md-12" style="padding-left:0 ;">
+                    <div class="row"></div>
+                    <div style="padding-left:0 ;" class="col-md-4 col-sm-8 col-10">
+                        <form [formGroup]="formType" (ngSubmit)="submitType()"
+                            style="background-color: #e5d1d1;opacity: 0.8; padding: 15px 5px;">
+
+
+                            <div class="form-group">
+
+                                <mat-radio-group formControlName="gender">
+                                    <mat-radio-button value="0" (change)="radioChange($event)">ADULT
+                                    </mat-radio-button>
+
+                                    <mat-radio-button value="1" (change)="radioChange($event)">COUPLE / FAMILY
+                                    </mat-radio-button>
+
+                                    <mat-radio-button value="2" (change)="radioChange($event)">CHILD / ADOLESCENT
+                                    </mat-radio-button>
+                                </mat-radio-group>
+
+
+                            </div>
+                            <input type="button" (click)="GetType()" value="Get Started" class="butn">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </ng-template>
+
+
     </div>
 </div>
 <div class="slider" style="padding-bottom: 50px;">
@@ -20,40 +122,95 @@
 
         <div class="row" style="margin-top: 100px; margin-bottom: 30px;">
             <div class="col-md-6 offset-md-3">
-                <h1 style="font-family: 'Quicksand', sans-serif; font-weight: bold;" class="header">Samples of our sessions</h1>
-                <p style="font-family: 'Quicksand', sans-serif;">Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit
-                    consequat ipsutis sem nibh id elit</p>
+                <h1 style="font-family: 'Quicksand', sans-serif; font-weight: bold;" class="header">Samples of our
+                    sessions</h1>
+                <!-- <p style="font-family: 'Quicksand', sans-serif;">Lorem ipsum gravida nibh vel velit auctor aliquetnean
+                    sollicitudin, lorem quis Bibendum auci elit
+                    consequat ipsutis sem nibh id elit</p> -->
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-10 offset-md-1">
-                <p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1"
-                    [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions"
-                    (onPage)="getPage($event)">
+            <div class="col-md-8 offset-md-2">
 
-                    <ng-template let-product pTemplate="item">
-                        <div class="product-item">
-                            <div class="product-item-content">
+                <div class="text-center">
+                    <div *ngIf="siteWidth>1100;else other_content2">
+                        <p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1"
+                            [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions"
+                            (onPage)="getPage($event)">
 
-                                <div class="card" style="margin-right: 10px;">
-                                    <img style="width: 100%;" src="../../../../assets/images/slider/{{product.image}}"
-                                        [alt]="product.name" class="product-image" />
+                            <ng-template let-product pTemplate="item">
+                                <div class="product-item">
+                                    <div class="product-item-content">
 
-                                    <div style="width: 100%; margin-top: -40px;height: 70px;">
-                                        <img style="width: 100px; height: 100px; float: right;"
-                                            src="../../../../assets/images/slider/portraitcamerabackground2.svg">
+                                        <div class="card" style="margin-right: 10px;">
+                                            <img (click)="open(product.url)"
+                                                style="width: 100%;cursor: pointer;object-fit: cover;"
+                                                src="../../../../assets/images/slider/{{product.image}}"
+                                                [alt]="product.name" class="product-image" />
+
+                                            <div (click)="open(product.url)"
+                                                style="cursor: pointer;width: 100%; margin-top: -40px;height: 70px;">
+                                                <img style="width: 100px; height: 100px; float: right;"
+                                                    src="../../../../assets/images/slider/portraitcamerabackground2.svg">
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h4 class="prodName">{{product.name}}</h4>
+                                                <!-- <p class="prodContent">{{product.content}}</p> -->
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
+                            </ng-template>
+                        </p-carousel>
+                    </div>
 
-                                    <div class="card-body">
-                                        <h4 class="prodName">{{product.name}}</h4>
-                                        <p class="prodContent">{{product.content}}</p>
-                                    </div>
+                    <ng-template #other_content2>
+                        <!-- <div class="col-md-4 offset-md-2 col-sm-5 offset-sm-1 col-6 offset-1"> -->
+                        <div class="text-center">
+                            <div *ngFor="let product of products;" class="card" style="margin-bottom: 20px;">
+                                <img (click)="open(product.url)" style="width: 100%;cursor: pointer;object-fit: cover;"
+                                    src="../../../../assets/images/slider/{{product.image}}" [alt]="product.name"
+                                    class="product-image" />
+
+                                <div (click)="open(product.url)"
+                                    style="cursor: pointer;width: 100%; margin-top: -40px;height: 70px;">
+                                    <img style="width: 100px; height: 100px; float: right;"
+                                        src="../../../../assets/images/slider/portraitcamerabackground2.svg">
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="prodName">{{product.name}}</h4>
                                 </div>
                             </div>
                         </div>
                     </ng-template>
-                </p-carousel>
+
+
+                </div>
+
+
+
+                <!-- <div class="col-md-4 offset-md-2">
+                    <div *ngFor="let product of products;" class="card" style="margin-bottom: 20px; width: 300px;">
+                        <img (click)="open(product.url)" style="width: 100%;cursor: pointer;object-fit: cover;"
+                            src="../../../../assets/images/slider/{{product.image}}" [alt]="product.name"
+                            class="product-image" />
+
+                        <div (click)="open(product.url)"
+                            style="cursor: pointer;width: 100%; margin-top: -40px;height: 70px;">
+                            <img style="width: 100px; height: 100px; float: right;"
+                                src="../../../../assets/images/slider/portraitcamerabackground2.svg">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="prodName">{{product.name}}</h4>
+                        </div>
+                    </div>
+                </div> -->
+
+
             </div>
         </div>
 
@@ -61,7 +218,7 @@
             <div class="message" *ngIf="displayHint">
 
                 <h4 class="head">Ask our therapists</h4>
-                <div style="text-align: left; padding-left: 10px;" >
+                <div style="text-align: left; padding-left: 10px;">
                     <span class="content">
                         Post a question below and a</span><br><span class="content"> professional will get back
                         to</span><br> <span class="content">you within 24
@@ -95,9 +252,9 @@
                                     <input formControlName="mailSubject" placeholder="Subject" id="mailSubject"
                                         type="text" class="form-control">
 
-                                    <!-- <div *ngIf="f.mailSubject.invalid" class="alert alert-danger">
+                                    <div *ngIf="f.mailSubject.invalid && subjectNotValid" class="alert alert-danger">
                                         <div *ngIf="f.mailSubject.errors.required">Subject is required.</div>
-                                    </div> -->
+                                    </div>
 
                                 </div>
 
@@ -105,10 +262,10 @@
                                     <input formControlName="mailText" placeholder="E-mail" id="mailText" type="text"
                                         class="form-control">
 
-                                    <!-- <div *ngIf="f.mailText.invalid" class="alert alert-danger">
+                                    <div *ngIf="f.mailText.invalid && mailNotValid" class="alert alert-danger">
                                         <div *ngIf="f.mailText.errors.required">Mail is required.</div>
                                         <div *ngIf="f.mailText.errors.pattern">Mail not Valid</div>
-                                    </div> -->
+                                    </div>
 
                                 </div>
 
@@ -116,9 +273,9 @@
                                     <textarea class="form-control" placeholder="Body" formControlName="mailBody"
                                         id="mailBody" rows="4"></textarea>
 
-                                    <!-- <div *ngIf="f.mailBody.invalid" class="alert alert-danger">
+                                    <div *ngIf="f.mailBody.invalid && bodyNotValid" class="alert alert-danger">
                                         <div *ngIf="f.mailBody.errors.required">Body is required.</div>
-                                    </div> -->
+                                    </div>
 
 
                                 </div>
@@ -128,7 +285,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary butonSend">Send</button>
+                            <button (click)="submit()" class="btn btn-primary butonSend">Send</button>
                         </div>
                     </div>
                 </div>

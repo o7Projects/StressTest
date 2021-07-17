@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-summary',
@@ -9,19 +10,31 @@ import { Router } from '@angular/router';
 })
 export class SummaryComponent implements OnInit {
 
+
+  adultType=0;
+
+  subjectNotValid = false;
+  mailNotValid = false;
+  bodyNotValid = false;
+
+  mailRegex;
+
+  siteWidth: Number;
+
   responsiveOptions;
   products: any[];
 
   form: FormGroup;
-  displayHint=false;
+  displayHint = false;
 
   constructor(private route: Router) {
 
 
+
     this.form = new FormGroup({
       mailSubject: new FormControl('', [Validators.required]),
-      // mailText: new FormControl('', [Validators.required,Validators.pattern("^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$")]),
-      mailText: new FormControl('', [Validators.required]),
+      mailText: new FormControl('', [Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
+      // mailText: new FormControl('', [Validators.required]),
       mailBody: new FormControl('', [Validators.required]),
     });
 
@@ -47,33 +60,78 @@ export class SummaryComponent implements OnInit {
 
     this.products = [
       {
-        image: "NoPath1.png",
-        name: "Lorem Ipsum is simply dummy text of the printing",
-        content: "Lorem Ipsum"
+        image: "prod1.jpg",
+        name: "What to Expect in Therapy? كيف تبدو جلسات العلاج النفسي؟ - Lydia Gadallah",
+        content: "Lorem Ipsum",
+        url: "https://www.youtube.com/watch?time_continue=1&v=3xOcAS-8pH4&feature=emb_logo"
       },
       {
-        image: "NoPath2.png",
-        name: "Lorem Ipsum is simply dummy text of the printing",
-        content: "Lorem Ipsum"
+        image: "prod3.jpg",
+        name: "Debunking BPD Myths - الخرافات المتعلقة باضطراب الشخصية الحدودية",
+        content: "Lorem Ipsum",
+        url: "https://www.youtube.com/watch?v=Xc4yF6_hrv8&feature=emb_logo"
       },
       {
-        image: "NoPath3.png",
-        name: "Lorem Ipsum is simply dummy text of the printing",
-        content: "Lorem Ipsum"
+        image: "prod2.jpg",
+        name: "The Spectrum of Anxiety & Depression - Dr. Mohamed Salah Specialist Psychiatrist",
+        content: "Lorem Ipsum",
+        url: "https://www.youtube.com/watch?v=wudPHUo90JA&feature=emb_logo"
       },
+      {
+        image: "prod4.jpg",
+        name: "How to tell if I need Therapy",
+        content: "Lorem Ipsum",
+        url: "https://www.youtube.com/watch?v=sQmTvttavJk&feature=emb_logo"
+      }
     ];
   }
 
 
-  ngOnInit(): void {
-  }
 
+  ngOnInit(): void {
+    this.getScreenSize();
+  }
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event?) {
+    this.siteWidth = window.innerWidth;
+  }
 
   get f() {
     return this.form.controls;
   }
 
   submit() {
+    debugger;
+    this.mailRegex = new RegExp("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$");
+    if (this.form.valid) {
+
+      //more code here
+      console.log(this.form.value);
+      this.subjectNotValid = false;
+      this.mailNotValid = false;
+      this.bodyNotValid = false;
+
+    }
+    else {
+      if (this.form.value.mailSubject == "")
+        this.subjectNotValid = true;
+
+      if (this.form.value.mailText == "")
+        this.mailNotValid = true;
+      else{
+        if(!this.mailRegex.test(this.form.value.mailText)){
+        this.mailNotValid = true;
+        }
+      }  
+
+      if (this.form.value.mailBody == "")
+        this.bodyNotValid = true;
+    }
+
+  }
+
+  open(url) {
+    window.open(url, '_blank');
   }
 
   getPage(event) {
@@ -81,12 +139,41 @@ export class SummaryComponent implements OnInit {
     let pageIndex = event.first / event.rows + 1 // Index of the new page if event.page not defined.
   }
 
-  mouseEnter(){
-    this.displayHint=true;
+  mouseEnter() {
+    this.displayHint = true;
   }
-  mouseLeave(){
-    this.displayHint=false;
+  mouseLeave() {
+    this.displayHint = false;
   }
 
+
+
+
+  hidePopup() {
+    document.getElementById("popup").style.visibility = 'hidden';
+  }
+  showPopup() {
+
+    console.log("Getting Started");
+
+    document.getElementById("popup").style.visibility = 'visible';
+
+  }
+
+
+  radioChange(event: any) {
+    // debugger;
+    this.adultType = Number(event.value);
+    
+  }
+  GetType(){
+    if(this.adultType==1){this.open("https://web.o7therapy.com/#/challenges/matching-tool/adult")}
+    if(this.adultType==2){this.open("https://web.o7therapy.com/#/therapists/list/couple")}
+    if(this.adultType==3){this.open("https://web.o7therapy.com/#/challenges/matching-tool/child")}
+  }
+
+  submitType(){
+
+  }
 
 }

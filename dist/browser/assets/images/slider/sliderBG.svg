@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1921.068" height="1069" viewBox="0 0 1921.068 1069">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5195" data-name="Rectangle 5195" width="617" height="539" transform="translate(0 1081)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_5196" data-name="Rectangle 5196" width="751" height="745" transform="translate(1169 1404)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1313" data-name="Group 1313" transform="translate(1.068 -1080)">
+    <rect id="Rectangle_5181" data-name="Rectangle 5181" width="1920" height="1069" transform="translate(-1.068 1080)" fill="rgba(235,242,243,0.5)"/>
+    <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+      <g id="Path_6334" data-name="Path 6334" transform="translate(-462 620)" fill="none" opacity="0.2">
+        <path d="M460.5,0C714.827,0,921,206.173,921,460.5S714.827,921,460.5,921,0,714.827,0,460.5,206.173,0,460.5,0Z" stroke="none"/>
+        <path d="M 460.5 99 C 261.1681518554688 99 99 261.1681518554688 99 460.5 C 99 659.8319091796875 261.1681518554688 822 460.5 822 C 659.8319091796875 822 822 659.8319091796875 822 460.5 C 822 261.1681518554688 659.8319091796875 99 460.5 99 M 460.5 0 C 714.8270874023438 0 921 206.1729125976562 921 460.5 C 921 714.8270874023438 714.8270874023438 921 460.5 921 C 206.1729125976562 921 0 714.8270874023438 0 460.5 C 0 206.1729125976562 206.1729125976562 0 460.5 0 Z" stroke="none" fill="#27c1b5"/>
+      </g>
+    </g>
+    <g id="Mask_Group_2" data-name="Mask Group 2" clip-path="url(#clip-path-2)">
+      <g id="Path_6335" data-name="Path 6335" transform="translate(1299 1544)" fill="none" opacity="0.2">
+        <path d="M619,0c341.864,0,619,277.136,619,619s-277.136,619-619,619S0,960.864,0,619,277.136,0,619,0Z" stroke="none"/>
+        <path d="M 619 99 C 332.27099609375 99 99 332.27099609375 99 619 C 99 905.72900390625 332.27099609375 1139 619 1139 C 905.72900390625 1139 1139 905.72900390625 1139 619 C 1139 332.27099609375 905.72900390625 99 619 99 M 619 0 C 960.8642578125 0 1238 277.1357421875 1238 619 C 1238 960.8642578125 960.8642578125 1238 619 1238 C 277.1357421875 1238 0 960.8642578125 0 619 C 0 277.1357421875 277.1357421875 0 619 0 Z" stroke="none" fill="#27c1b5"/>
+      </g>
+    </g>
+  </g>
+</svg>

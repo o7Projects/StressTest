@@ -32,7 +32,7 @@ export let DependencyModules = {
       
   
           // CORE.FE Managers
-          StorageManager,
+        //   StorageManager,
       
     ]
 };

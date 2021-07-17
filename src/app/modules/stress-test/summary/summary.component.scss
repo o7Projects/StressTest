@@ -1,5 +1,5 @@
 .slider {
-    height             : 800px;
+    // height             : 800px;
     padding-top        : 70px;
     margin-bottom      : 70px;
     background-image   : url(../../../../assets/images/slider/sliderBG.svg);
@@ -38,6 +38,8 @@
     letter-spacing: 0px;
     color         : #2A2A2A;
     opacity       : 1;
+    height        : 100px;
+
 }
 
 .slider .head {
@@ -52,6 +54,7 @@
     color         : #a8a2a2;
     text-align    : left;
     opacity       : 1;
+    height        : 250px;
 }
 
 .slider .contact {
@@ -139,6 +142,8 @@
     position: relative;
 }
 
+
+
 .space .pos .normal {
     font-family   : 'Quicksand', sans-serif;
     font-size     : 20px;
@@ -189,6 +194,90 @@
     padding      : 10px 0;
 
 }
+
+.space .adultType {
+    position: absolute;
+    width   : 85%;
+}
+
+.space .butn {
+    background   : #16C1B5 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity      : 1;
+    color        : black;
+    width        : 100px;
+    padding      : 5px 0;
+    border       : 0;
+    font-size    : 15px;
+    font-weight  : bold;
+}
+
+.space .mat-radio-button {
+    color      : black;
+    display    : block;
+    font-size  : 0.9em;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    font-size  : 10px;
+}
+
+::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color      : #0FBFB3 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow   : none !important;
+    box-shadow        : none !important;
+}
+
+::ng-deep .mat-radio-label {
+    font-weight: 400 !important;
+}
+
+
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle,
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+.mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+    background-color  : #0FBFB3 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow   : none !important;
+    box-shadow        : none !important;
+
+}
+
+
+@media only screen and (max-width: 2300px) and (min-width: 1000px) {
+    .slider {
+        height: 700px;
+    }
+
+}
+
+@media only screen and (max-width: 300px) and (min-width: 0px) {
+
+    .slider .prodName {
+        font-size: 14px;
+        height   : 130px;
+
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+
+    .slider .prodName {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 750px) {
+
+    .slider .prodName {
+        font-size: 12px;
+        height   : 120px;
+
+    }
+}
+
+
 
 @media only screen and (max-width: 3000px) and (min-width: 2300px) {
     .space {
@@ -363,105 +452,170 @@
 
 }
 
-@media only screen and (max-width: 1400px) and (min-width: 1250px) {
+@media only screen and (max-width: 1400px) and (min-width: 1350px) {
     .space {
-        height: 820px;
+        height         : 620px;
+        background-size: contain;
     }
+
+    .space .pos .normal,
+    .space .pos .colored {
+        font-size: 15px !important;
+    }
+
 
     .space .pos {
         position: absolute;
-        top     : 400px;
-        left    : 260px;
+        top     : 300px;
+        left    : 320px;
     }
 
     .space .summer50 {
 
-        position: absolute;
-        top     : 550px;
-        left    : 260px;
+        position : absolute;
+        top      : 420px;
+        left     : 320px;
+        font-size: 15px !important;
 
     }
+
 
     .space .btn {
         position: absolute;
-        top     : 650px;
-        left    : 260px;
+        top     : 480px;
+        left    : 320px;
+        padding : 5px;
+
+    }
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 1250px) {
+    .space {
+        height         : 620px;
+        background-size: contain;
+    }
+
+    .space .pos .normal,
+    .space .pos .colored {
+        font-size: 15px !important;
+    }
+
+
+    .space .pos {
+        position: absolute;
+        top     : 300px;
+        left    : 280px;
+    }
+
+    .space .summer50 {
+
+        position : absolute;
+        top      : 420px;
+        left     : 280px;
+        font-size: 15px !important;
 
     }
 
+
+    .space .btn {
+        position: absolute;
+        top     : 480px;
+        left    : 280px;
+        padding : 5px;
+
+    }
 }
+
 
 @media only screen and (max-width: 1250px) and (min-width: 1100px) {
     .space {
-        height: 820px;
+        height         : 720px;
+        background-size: contain;
     }
+
+    .space .pos .normal,
+    .space .pos .colored {
+        font-size: 15px !important;
+    }
+
 
     .space .pos {
         position: absolute;
-        top     : 400px;
-        left    : 100px;
+        top     : 350px;
+        left    : 200px;
     }
 
     .space .summer50 {
 
         position: absolute;
-        top     : 550px;
-        left    : 100px;
+        top     : 480px;
+        left    : 200px;
 
     }
 
 
     .space .btn {
         position: absolute;
-        top     : 640px;
-        left    : 100px;
+        top     : 550px;
+        left    : 200px;
+        padding : 5px;
 
     }
 
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 900px) {
+@media only screen and (max-width: 1100px) and (min-width: 1000px) {
     .space {
-        height: 820px;
+        height         : 800px;
+        background-size: contain;
+    }
+
+    .space .pos .normal,
+    .space .pos .colored {
+        font-size: 16px !important;
     }
 
     .space .pos {
         position: absolute;
-        top     : 400px;
-        left    : 60px;
+        top     : 380px;
+        left    : 190px;
     }
 
     .space .summer50 {
 
-        position: absolute;
-        top     : 550px;
-        left    : 60px;
+        position : absolute;
+        top      : 500px;
+        left     : 190px;
+        font-size: 16px !important;
 
     }
 
 
     .space .btn {
         position: absolute;
-        top     : 640px;
-        left    : 60px;
+        top     : 560px;
+        left    : 190px;
+        padding : 5px;
 
     }
 
 }
 
-
-@media only screen and (max-width: 900px) and (min-width: 750px) {
+@media only screen and (max-width: 1000px) and (min-width: 850px) {
     .space {
-        height             : 400px;
-        background-image   : none;
+        height             : 1400px;
+        background-image   : url(../../../../assets/images/slider/spaceBackgroundResponsive.svg);
+        background-position: inherit;
+        background-size    : contain;
+
         // background-color: white;
     }
 
 
     .space .pos {
         position           : absolute;
-        top                : 100px;
-        left               : 10px;
+        top                : 250px;
+        left               : 70px;
         // background-color: rgba(31, 27, 27, 0.8);
         border-radius      : 5px;
     }
@@ -469,32 +623,41 @@
     .space .summer50 {
 
         position: absolute;
-        top     : 250px;
-        left    : 10px;
+        top     : 420px;
+        left    : 70px;
 
     }
 
     .space .btn {
         position: absolute;
-        top     : 300px;
-        left    : 10px;
+        top     : 460px;
+        left    : 70px;
 
     }
 
+    .space .adultType {
+        position: absolute;
+        top     : 460px;
+        left    : 70px;
+    }
+
+
+
+
 }
 
-@media only screen and (max-width: 750px) and (min-width: 550px) {
+@media only screen and (max-width: 850px) and (min-width: 750px) {
     .space {
-        height             : 400px;
-        background-image   : none;
+        height             : 1400px;
+        background-image   : url(../../../../assets/images/slider/spaceBackgroundResponsive.svg);
         // background-color: white;
     }
 
 
     .space .pos {
         position           : absolute;
-        top                : 100px;
-        left               : 10px;
+        top                : 220px;
+        left               : 70px;
         // background-color: rgba(31, 27, 27, 0.8);
         border-radius      : 5px;
     }
@@ -502,19 +665,261 @@
     .space .summer50 {
 
         position: absolute;
-        top     : 250px;
-        left    : 10px;
+        top     : 390px;
+        left    : 70px;
 
     }
 
     .space .btn {
         position: absolute;
-        top     : 300px;
-        left    : 10px;
+        top     : 440px;
+        left    : 70px;
 
     }
 
+    .space .adultType {
+        position: absolute;
+        top     : 440px;
+        left    : 70px;
+    }
+
+
 }
+
+
+@media only screen and (max-width: 750px) and (min-width: 600px) {
+    // .slider {
+    //     height: 750px;
+    // }
+
+    .slider .header {
+        font-size: 23px;
+    }
+
+    .space {
+        height             : 1200px;
+        background-image   : url(../../../../assets/images/slider/spaceBackgroundResponsive.svg);
+        background-size    : contain;
+        // background-color: white;
+    }
+
+    .space .pos {
+        position           : absolute;
+        top                : 200px;
+        left               : 50px;
+        // background-color: rgba(31, 27, 27, 0.8);
+        border-radius      : 5px;
+    }
+
+    .space .summer50 {
+
+        position: absolute;
+        top     : 350px;
+        left    : 50px;
+
+    }
+
+    // .space .pos .normal {
+    //     color: white;
+    // }
+    .space .pos .normal,
+    .space .pos .colored {
+        font-size: 18px !important;
+    }
+
+    .space .btn {
+        position: absolute;
+        top     : 400px;
+        left    : 50px;
+
+    }
+
+    .space .adultType {
+        position: absolute;
+        top     : 400px;
+        left    : 50px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) and (min-width: 475px) {
+    .slider {
+        margin-top : 10px;
+        padding-top: 10px;
+    }
+
+    .slider .header {
+        font-size: 20px;
+    }
+
+    .space {
+        height             : 1000px;
+        background-image   : url(../../../../assets/images/slider/spaceBackgroundResponsive.svg);
+        background-size    : contain;
+        // background-color: white;
+    }
+
+    .space .pos {
+        position           : absolute;
+        top                : 210px;
+        left               : 50px;
+        // background-color: rgba(31, 27, 27, 0.8);
+        border-radius      : 5px;
+    }
+
+    .space .summer50 {
+
+        position: absolute;
+        top     : 360px;
+        left    : 50px;
+
+    }
+
+    // .space .pos .normal {
+    //     color: white;
+    // }
+    .space .pos .normal,
+    .space .pos .colored {
+        font-size: 18px !important;
+    }
+
+    .space .btn {
+        position: absolute;
+        top     : 400px;
+        left    : 50px;
+
+    }
+
+    .space .adultType {
+        position: absolute;
+        top     : 400px;
+        left    : 50px;
+    }
+
+}
+
+@media only screen and (max-width: 475px) and (min-width: 300px) {
+    .slider {
+        margin-top : 10px;
+        padding-top: 10px;
+    }
+
+    .slider .header {
+        font-size: 20px;
+    }
+
+    .space {
+        height             : 600px;
+        background-image   : url(../../../../assets/images/slider/spaceBackgroundResponsive.svg);
+        background-position: inherit;
+        background-size    : contain;
+        // background-color: white;
+    }
+
+    .space .pos {
+        position           : absolute;
+        top                : 80px;
+        left               : 30px;
+        // background-color: rgba(31, 27, 27, 0.8);
+        border-radius      : 5px;
+    }
+
+    .space .summer50 {
+
+        position : absolute;
+        top      : 240px;
+        left     : 30px;
+        font-size: 15px !important;
+
+    }
+
+    // .space .pos .normal {
+    //     color: white;
+    // }
+    .space .pos .normal,
+    .space .pos .colored {
+        font-size: 15px !important;
+    }
+
+    .space .btn {
+        position: absolute;
+        top     : 270px;
+        left    : 30px;
+        padding : 5px;
+
+    }
+
+    .space .adultType {
+        position: absolute;
+        top     : 270px;
+        left    : 30px;
+    }
+
+}
+
+
+@media only screen and (max-width: 300px) and (min-width: 0px) {
+    .slider {
+        margin-top : 10px;
+        padding-top: 10px;
+    }
+
+    .slider .header {
+        font-size: 20px;
+    }
+
+    .space {
+        height             : 600px;
+        background-image   : url(../../../../assets/images/slider/spaceBackgroundResponsive.svg);
+        background-position: inherit;
+        background-size    : contain;
+        // background-color: white;
+    }
+
+    .space .pos {
+        position           : absolute;
+        top                : 60px;
+        left               : 30px;
+        // background-color: rgba(31, 27, 27, 0.8);
+        border-radius      : 5px;
+
+    }
+
+    .space .summer50 {
+
+        position : absolute;
+        top      : 240px;
+        left     : 30px;
+        font-size: 12px;
+
+    }
+
+    // .space .pos .normal {
+    //     color: white;
+    // }
+    .space .pos .normal,
+    .space .pos .colored {
+        font-size: 12px !important;
+    }
+
+    .space .btn {
+        position : absolute;
+        top      : 270px;
+        left     : 30px;
+        font-size: 12px;
+        padding  : 5px;
+    }
+
+    .space .adultType {
+        position: absolute;
+        top     : 270px;
+        left    : 30px;
+    }
+
+}
+
+
+
 
 
 @media only screen and (max-width: 700px) and (min-width: 0px) {
@@ -541,55 +946,6 @@
 
 }
 
-
-@media only screen and (max-width: 550px) and (min-width: 0px) {
-    .slider {
-        height: 750px;
-    }
-
-    .slider .header {
-        font-size: 23px;
-    }
-
-    .space {
-        height             : 400px;
-        background-image   : none;
-        // background-color: white;
-    }
-
-    .space .pos {
-        position           : absolute;
-        top                : 100px;
-        left               : 10px;
-        // background-color: rgba(31, 27, 27, 0.8);
-        border-radius      : 5px;
-    }
-
-    .space .summer50 {
-
-        position: absolute;
-        top     : 250px;
-        left    : 10px;
-
-    }
-
-    // .space .pos .normal {
-    //     color: white;
-    // }
-    .space .pos .normal,
-    .space .pos .colored {
-        font-size: 18px !important;
-    }
-
-    .space .btn {
-        position: absolute;
-        top     : 300px;
-        left    : 10px;
-
-    }
-
-}
-
 @media only screen and (max-width: 990px) and (min-width: 550px) {
     .slider .header {
         font-size: 26px;
@@ -598,17 +954,7 @@
 }
 
 
-.rotated-half-circle {
-    /* Create the circle */
-    width              : 400px;
-    height             : 400px;
-    border             : 30px solid #0FBFB3;
-    border-radius      : 50%;
-    opacity            : 0.5;
-    left               : -80px;
-    position           : absolute;
-    /* Halve the circle */
-    border-bottom-color: transparent;
-    border-left-color  : transparent;
-    transform          : rotate(100deg);
+.modal.show .modal-dialog {
+    transform : none;
+    margin-top: 8%;
 }

@@ -1,0 +1,69 @@
+{
+    "data": [
+        {
+            "display_name": "Depression",
+            "keyword": "Depression",
+            "image": {
+                "url": "/assets/images/adult-challenges/Depression.png",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Anxiety",
+            "keyword": "Anxiety",
+            "image": {
+                "url": "/assets/images/adult-challenges/Anxiety-Disorder.png",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Stress",
+            "keyword": "Stress",
+            "image": {
+                "url": "/assets/images/adult-challenges/Stress.png",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Personality Development",
+            "keyword": "Personality Development",
+            "image": {
+                "url": "/assets/images/adult-challenges/Personality-Development.png",
+                "code": ""
+                   }
+        },
+        {
+            "display_name": "Geriatric (Seniors)",
+            "keyword": "Geriatric",
+            "image": {
+                "url": "/assets/images/adult-challenges/Geriatric.png",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Sex Challenges",
+            "keyword": "Sex",
+            "image": {
+                "url": "/assets/images/adult-challenges/Sex-Therapy.png",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Addiction",
+            "keyword": "Addiction",
+            "image": {
+                "url": "/assets/images/adult-challenges/Addiction.png",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Sleep Challenges",
+            "keyword": "Sleep",
+            "image": {
+                "url": "/assets/images/adult-challenges/Sleep-Therpay.png",
+                "code": ""
+            }
+        }
+        
+    ]  
+}

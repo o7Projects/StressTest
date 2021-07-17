@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "display_name": "Counseling",
+            "keyword": "Counseling",
+            "image": {
+                "url": "",
+                "code": ""
+            }
+        },
+        {
+            "display_name": "Sex therapy",
+            "keyword": "Sex",
+            "image": {
+                "url": "/assets/images/adult-challenges/Sex-Therapy.png",
+                "code": ""
+            }
+        }
+    ]
+}
