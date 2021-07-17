@@ -86,20 +86,20 @@
                 <div class="col-md-12" style="padding-left:0 ;">
                     <div class="row"></div>
                     <div style="padding-left:0 ;" class="col-md-4 col-sm-8 col-10">
-                        <form [formGroup]="formType" (ngSubmit)="submitType()"
-                            style="background-color: #e6dcdc;opacity: 0.8; padding: 15px 5px;">
+                        <form [formGroup]="formType"
+                            style="background-color: #e6dcdc;opacity: 0.8; padding: 15px 5px; padding-bottom: 5px; border-radius: 10px;">
 
 
                             <div class="form-group">
 
                                 <mat-radio-group formControlName="gender">
-                                    <mat-radio-button value="0" (change)="radioChange($event)">ADULT
+                                    <mat-radio-button value="1" (change)="radioChange($event)">ADULT
                                     </mat-radio-button>
 
-                                    <mat-radio-button value="1" (change)="radioChange($event)">COUPLE / FAMILY
+                                    <mat-radio-button value="2" (change)="radioChange($event)">COUPLE / FAMILY
                                     </mat-radio-button>
 
-                                    <mat-radio-button value="2" (change)="radioChange($event)">CHILD / ADOLESCENT
+                                    <mat-radio-button value="3" (change)="radioChange($event)">CHILD / ADOLESCENT
                                     </mat-radio-button>
                                 </mat-radio-group>
 

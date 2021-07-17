@@ -18,7 +18,7 @@ export class SummaryComponent implements OnInit {
   bodyNotValid = false;
 
   mailRegex;
-
+  mailPattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$";
   siteWidth: Number;
 
   responsiveOptions;
@@ -33,7 +33,7 @@ export class SummaryComponent implements OnInit {
 
     this.form = new FormGroup({
       mailSubject: new FormControl('', [Validators.required]),
-      mailText: new FormControl('', [Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
+      mailText: new FormControl('', [Validators.required,Validators.pattern(this.mailPattern)]),
       // mailText: new FormControl('', [Validators.required]),
       mailBody: new FormControl('', [Validators.required]),
     });
@@ -102,7 +102,7 @@ export class SummaryComponent implements OnInit {
 
   submit() {
     debugger;
-    this.mailRegex = new RegExp("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$");
+    this.mailRegex = new RegExp(this.mailPattern);
     if (this.form.valid) {
 
       //more code here
