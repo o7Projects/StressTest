@@ -19,9 +19,11 @@ import { ITherapists } from '../_Models/ITherapists';
         style({ transform: 'translateX(50%)' }),
         animate('1000ms ease-in', style({ transform: 'translateX(-10%)' }))
       ]),
-
     ])
   ]
+
+
+
 
 })
 export class ElnadaComponent implements OnInit {
@@ -29,7 +31,7 @@ export class ElnadaComponent implements OnInit {
   animation = 0;
   showText = false;
   showSmallText = true;
-  mouseAboveAnimated=false;
+  mouseAboveAnimated = false;
 
 
   // Declare height and width variables
@@ -53,7 +55,7 @@ export class ElnadaComponent implements OnInit {
         available: "Available 25 August 11:00 am",
         btnText: "Book",
         isAvailable: true,
-        experience:21
+        experience: 21
       },
       {
         image: "https://web.o7therapy.com:443/api/identity/imgapi/IMG_2021-01-03-13_15724.jpg",
@@ -64,7 +66,7 @@ export class ElnadaComponent implements OnInit {
         available: "No Available Slots",
         btnText: "Book",
         isAvailable: false,
-        experience:7
+        experience: 7
       },
       {
         image: "https://web.o7therapy.com:443/api/identity/imgapi/IMG_2021-01-03-13_31185.jpg",
@@ -75,7 +77,7 @@ export class ElnadaComponent implements OnInit {
         available: "No Available Slots",
         btnText: "Book",
         isAvailable: false,
-        experience:22
+        experience: 22
       },
       {
         image: "https://web.o7therapy.com:443/api/identity/imgapi/IMG_2020-03-15-10_30570.jpg",
@@ -86,7 +88,7 @@ export class ElnadaComponent implements OnInit {
         available: "No Available Slots",
         btnText: "Book",
         isAvailable: false,
-        experience:11
+        experience: 11
       },
     ];
 
@@ -99,15 +101,20 @@ export class ElnadaComponent implements OnInit {
     this.screenHeight = window.innerHeight;
 
 
-    if(this.screenWidth>1050){
-    let elemSec1Big: HTMLElement = document.getElementById('sec1Big');
-    elemSec1Big.setAttribute("style", "overflow-x:hidden");
+    if (this.screenWidth > 1050) {
+      let elemSec1Big: HTMLElement = document.getElementById('sec1Big');
+      elemSec1Big.setAttribute("style", "overflow-x:hidden");
 
     }
 
     if (this.screenWidth <= 1050) {
-      let elem: HTMLElement = document.getElementById('MyPage');
-      elem.setAttribute("style", "background:#3C4342; opacity: 0.5;");
+      let elemSec1Big: HTMLElement = document.getElementById('MyPage');
+      elemSec1Big.setAttribute("style", "background:#5a6967;opacity:0.8");
+
+      let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
+      elemSec2Text.setAttribute("style", "color:#3C4342;");
+
+      
     }
 
   }
@@ -123,16 +130,25 @@ export class ElnadaComponent implements OnInit {
     }
 
     if (this.screenWidth <= 1050) {
-      if(this.showSmallItem)
-      {
-        this.renderer.setStyle(this.allPage.nativeElement, 'background', '#5a6967');
-        this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '0.5');
-    
+
+      if (this.showSmallText) {
+        let elemSec1Big: HTMLElement = document.getElementById('MyPage');
+        elemSec1Big.setAttribute("style", "background:#5a6967;opacity:0.8");
+
+        let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
+        elemSec2Text.setAttribute("style", "color:#3C4342;");
+
+
       }
-      else{
-        this.renderer.setStyle(this.allPage.nativeElement, 'background', 'none');
-        this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '1');
-    
+      else {
+        let elemSec1Big: HTMLElement = document.getElementById('MyPage');
+        elemSec1Big.setAttribute("style", "background:none;opacity:1");
+
+        let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
+        elemSec2Text.setAttribute("style", "color:#9c9e9d;");
+
+
+
       }
 
     }
@@ -142,29 +158,49 @@ export class ElnadaComponent implements OnInit {
     this.showText = true;
     // el.setAttribute('style', 'color: white; background: red');
 
-    this.renderer.setStyle(this.allPage.nativeElement, 'background', '#3C4342');
-    this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '0.5');
-    // this.renderer.setStyle(this.hiddenSmall.nativeElement, 'background', '#F1F1F1');
-    // this.renderer.setStyle(this.hiddenSmall.nativeElement, 'box-shadow', '0px 3px 6px #5A858333');
-    // this.renderer.setStyle(this.hiddenSmall.nativeElement, 'opacity', '0.95');
+    // this.renderer.setStyle(this.allPage.nativeElement, 'background', '#3C4342');
+    // this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '0.5');
+
+    let elemSec1Big: HTMLElement = document.getElementById('MyPage');
+    elemSec1Big.setAttribute("style", "background:#3C4342;opacity:0.8");
+
   }
   hideItem() {
     this.showText = false;
-    this.renderer.setStyle(this.allPage.nativeElement, 'background', 'none');
-    this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '1');
+    // this.renderer.setStyle(this.allPage.nativeElement, 'background', 'none');
+    // this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '1');
+
+    let elemSec1Big: HTMLElement = document.getElementById('MyPage');
+    elemSec1Big.setAttribute("style", "background:none;opacity:1");
+
   }
 
   showSmallItem() {
     this.showSmallText = true;
 
-    this.renderer.setStyle(this.allPage.nativeElement, 'background', '#5a6967');
-    this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '0.5');
+    // this.renderer.setStyle(this.allPage.nativeElement, 'background', '#5a6967');
+    // this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '0.5');
+
+    let elemSec1Big: HTMLElement = document.getElementById('MyPage');
+    elemSec1Big.setAttribute("style", "background:#5a6967;opacity:0.8");
+
+    let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
+    elemSec2Text.setAttribute("style", "color:#3C4342;");
+
+
   }
   hideSmallItem() {
     this.showSmallText = false;
 
-    this.renderer.setStyle(this.allPage.nativeElement, 'background', 'none');
-    this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '1');
+    // this.renderer.setStyle(this.allPage.nativeElement, 'background', 'none');
+    // this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '1');
+
+    let elemSec1Big: HTMLElement = document.getElementById('MyPage');
+    elemSec1Big.setAttribute("style", "background:none;opacity:1");
+
+    let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
+    elemSec2Text.setAttribute("style", "color:#9c9e9d;");
+
   }
 
   tooggleSmallItem() {

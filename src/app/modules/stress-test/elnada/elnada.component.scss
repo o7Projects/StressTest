@@ -1,4 +1,5 @@
-$font-name : 'ITC Avant Garde Gothic Std Demi',sans-serif;
+$font-name : 'ITC Avant Garde Gothic Std Demi',
+sans-serif;
 
 
 .sec1 .sec1Img {
@@ -19,6 +20,7 @@ $font-name : 'ITC Avant Garde Gothic Std Demi',sans-serif;
     right        : 40px;
     height       : 93%;
 }
+
 
 .sec1 .hidden .head {
     color      : #3C4342;
@@ -49,6 +51,16 @@ $font-name : 'ITC Avant Garde Gothic Std Demi',sans-serif;
     opacity    : 0.8;
 
 }
+
+
+.sec1 .hidden {
+    transition: transform .5s ease-in-out;
+  }
+  
+  /* The Transformation */
+  .sec1 .hidden img {
+    transform: scale(2) rotate(25deg);
+  }
 
 @media only screen and (max-width:1700px) and (min-width: 1500px) {
     .sec1 .hidden {
@@ -131,6 +143,14 @@ $font-name : 'ITC Avant Garde Gothic Std Demi',sans-serif;
 
 
 
+@media only screen and (max-width:1050px) and (min-width: 0px) {
+    .sec1 .textBold {
+        font-size  : 24px;
+    }
+    .sec1 .textNormal{
+        font-size: 18px;
+    }
+}
 
 
 
@@ -247,7 +267,7 @@ $font-name : 'ITC Avant Garde Gothic Std Demi',sans-serif;
 .sec2 .carousel .carousel-inner .carousel-item img {
     padding-top: 27px;
     width      : 70%;
-    height     : 270px;
+    height     : 260px;
     margin-left: 15%;
 }
 
