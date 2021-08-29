@@ -32,7 +32,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"space\">\n    <div>\n        <p class=\"pos\">\n            <span class=\"normal\">We want to start off this summer by giving you </span>\n            <br />\n            <span>an opportunity to feel better through therapy!</span>\n            <br />\n            <span style=\"font-weight: bold !important;\" class=\"normal\"> Use the promo code SUMMER15x3 to get</span>\n            <br />\n            <span style=\"font-weight: bold !important;\" class=\"colored\">15% off </span> <span\n                style=\"font-weight: bold !important;\" class=\"normal\">of your first 3 sessions.</span>\n\n        </p>\n\n        <span style=\"font-weight: bold !important;\" class=\"colored summer50\">SUMMER15x3</span>\n\n        <!-- <button class=\"btn\">Get started</button> -->\n\n\n\n        <div *ngIf=\"siteWidth>1000;else other_content\">\n            <input type=\"button\" (click)=\"showPopup()\" value=\"Get Started\" class=\"btn\">\n\n\n            <!-- START POPUP -->\n            <div id=\"popup\" (click)=\"hidePopup()\"\n                style=\"visibility:hidden; z-index:10000000;background: #00000075;position: fixed;top:0;left:0;width:100%;height:100%;\">\n                <div style=\"height: 100%;\" id=\"popup-container\">\n                    <div\n                        style=\"background:white;border-radius:10px;position: relative;padding:5em 3em;width:75%; max-width:50em; margin: 5em auto;display: block;\">\n\n                        <span (click)=\"hidePopup()\" style=\"position:absolute; top:20px;right:20px; cursor: pointer;\">\n                            Close\n                        </span>\n\n                        <h2 style=\"text-align: center; font-weight: bold\">Choose Therapy Type</h2>\n                        <div\n                            style=\"display: flex; justify-content: center; max-width: 45em; margin: 30px auto 10px auto;\">\n\n                            <span\n                                style=\"box-shadow: 5px 5px 25px 5px #efefef;    padding: 1em;    border-radius: 35px; margin: 1em auto; width:120px; height: 130px\">\n                                <a style=\"margin: auto;\"\n                                    href=\"https://web.o7therapy.com/#/challenges/matching-tool/adult\">\n                                    <img class=\"alignnone wp-image-47\"\n                                        src=\"../../../../assets/images/slider/AddultType.png\" alt=\"\"\n                                        style=\"width:100%;height: 100%;\">\n\n                                </a>\n                            </span>\n                            <span\n                                style=\"box-shadow: 5px 5px 25px 5px #efefef;    padding: 1em;    border-radius: 35px; margin: 1em auto; width:120px; height: 130px\">\n                                <a style=\"margin: auto;\" href=\"https://web.o7therapy.com/#/therapists/list/couple\">\n                                    <img class=\"alignnone wp-image-47\"\n                                        src=\"../../../../assets/images/slider/CouplesType.png\" alt=\"\"\n                                        style=\"width:100%;height: 100%;\">\n\n                                </a>\n                            </span>\n                            <span\n                                style=\"box-shadow: 5px 5px 25px 5px #efefef;    padding: 1em;    border-radius: 35px; margin: 1em auto; width:120px; height: 130px\">\n                                <a style=\"margin: auto;\"\n                                    href=\"https://web.o7therapy.com/#/challenges/matching-tool/child\">\n                                    <img class=\"alignnone wp-image-47\"\n                                        src=\"../../../../assets/images/slider/ChildType.png\" alt=\"\"\n                                        style=\"width:100%;height: 100%;\">\n                                </a>\n                            </span>\n                        </div>\n                        <div\n                            style=\"display: flex; justify-content: center; max-width: 45em; margin: 0px auto 10px auto;\">\n                            <span style=\"margin: auto;font-weight:bold;padding-left:3em\">Adult</span>\n                            <span style=\"margin: auto;font-weight:bold;padding-left:3em\">Couple / Family</span>\n                            <span style=\"margin: auto;font-weight:bold\">Child / Adolescent</span>\n                        </div>\n\n\n                    </div>\n                </div>\n\n            </div>\n            <!-- END POPUP -->\n        </div>\n\n        <ng-template #other_content>\n            <div class=\"adultType\">\n                <div class=\"col-md-12\" style=\"padding-left:0 ;\">\n                    <div class=\"row\"></div>\n                    <div style=\"padding-left:0 ;\" class=\"col-md-4 col-sm-8 col-10\">\n                        <form [formGroup]=\"formType\" (ngSubmit)=\"submitType()\"\n                            style=\"background-color: #e6dcdc;opacity: 0.8; padding: 15px 5px;\">\n\n\n                            <div class=\"form-group\">\n\n                                <mat-radio-group formControlName=\"gender\">\n                                    <mat-radio-button value=\"0\" (change)=\"radioChange($event)\">ADULT\n                                    </mat-radio-button>\n\n                                    <mat-radio-button value=\"1\" (change)=\"radioChange($event)\">COUPLE / FAMILY\n                                    </mat-radio-button>\n\n                                    <mat-radio-button value=\"2\" (change)=\"radioChange($event)\">CHILD / ADOLESCENT\n                                    </mat-radio-button>\n                                </mat-radio-group>\n\n                                <input type=\"button\" (click)=\"GetType()\" value=\"Get Started\" class=\"butn\">\n\n                            </div>\n                        </form>\n                    </div>\n\n                </div>\n\n            </div>\n        </ng-template>\n\n\n    </div>\n</div>\n<div class=\"slider\" style=\"padding-bottom: 50px;\">\n    <div class=\"col-md-12 text-center\">\n\n        <div class=\"row\" style=\"margin-top: 100px; margin-bottom: 30px;\">\n            <div class=\"col-md-6 offset-md-3\">\n                <h1 style=\"font-family: 'Quicksand', sans-serif; font-weight: bold;\" class=\"header\">Samples of our\n                    sessions</h1>\n                <!-- <p style=\"font-family: 'Quicksand', sans-serif;\">Lorem ipsum gravida nibh vel velit auctor aliquetnean\n                    sollicitudin, lorem quis Bibendum auci elit\n                    consequat ipsutis sem nibh id elit</p> -->\n            </div>\n        </div>\n\n        <div class=\"row\">\n            <div class=\"col-md-8 offset-md-2\">\n\n                <div class=\"text-center\">\n                    <div *ngIf=\"siteWidth>1100;else other_content2\">\n                        <p-carousel [value]=\"products\" styleClass=\"custom-carousel\" [numVisible]=\"3\" [numScroll]=\"1\"\n                            [circular]=\"true\" [autoplayInterval]=\"3000\" [responsiveOptions]=\"responsiveOptions\"\n                            (onPage)=\"getPage($event)\">\n\n                            <ng-template let-product pTemplate=\"item\">\n                                <div class=\"product-item\">\n                                    <div class=\"product-item-content\">\n\n                                        <div class=\"card\" style=\"margin-right: 10px;\">\n                                            <img (click)=\"open(product.url)\"\n                                                style=\"width: 100%;cursor: pointer;object-fit: cover;\"\n                                                src=\"../../../../assets/images/slider/{{product.image}}\"\n                                                [alt]=\"product.name\" class=\"product-image\" />\n\n                                            <div (click)=\"open(product.url)\"\n                                                style=\"cursor: pointer;width: 100%; margin-top: -40px;height: 70px;\">\n                                                <img style=\"width: 100px; height: 100px; float: right;\"\n                                                    src=\"../../../../assets/images/slider/portraitcamerabackground2.svg\">\n                                            </div>\n\n                                            <div class=\"card-body\">\n                                                <h4 class=\"prodName\">{{product.name}}</h4>\n                                                <!-- <p class=\"prodContent\">{{product.content}}</p> -->\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </ng-template>\n                        </p-carousel>\n                    </div>\n\n                    <ng-template #other_content2>\n                        <!-- <div class=\"col-md-4 offset-md-2 col-sm-5 offset-sm-1 col-6 offset-1\"> -->\n                        <div class=\"text-center\">\n                            <div *ngFor=\"let product of products;\" class=\"card\" style=\"margin-bottom: 20px;\">\n                                <img (click)=\"open(product.url)\" style=\"width: 100%;cursor: pointer;object-fit: cover;\"\n                                    src=\"../../../../assets/images/slider/{{product.image}}\" [alt]=\"product.name\"\n                                    class=\"product-image\" />\n\n                                <div (click)=\"open(product.url)\"\n                                    style=\"cursor: pointer;width: 100%; margin-top: -40px;height: 70px;\">\n                                    <img style=\"width: 100px; height: 100px; float: right;\"\n                                        src=\"../../../../assets/images/slider/portraitcamerabackground2.svg\">\n                                </div>\n\n                                <div class=\"card-body\">\n                                    <h4 class=\"prodName\">{{product.name}}</h4>\n                                </div>\n                            </div>\n                        </div>\n                    </ng-template>\n\n\n                </div>\n\n\n\n                <!-- <div class=\"col-md-4 offset-md-2\">\n                    <div *ngFor=\"let product of products;\" class=\"card\" style=\"margin-bottom: 20px; width: 300px;\">\n                        <img (click)=\"open(product.url)\" style=\"width: 100%;cursor: pointer;object-fit: cover;\"\n                            src=\"../../../../assets/images/slider/{{product.image}}\" [alt]=\"product.name\"\n                            class=\"product-image\" />\n\n                        <div (click)=\"open(product.url)\"\n                            style=\"cursor: pointer;width: 100%; margin-top: -40px;height: 70px;\">\n                            <img style=\"width: 100px; height: 100px; float: right;\"\n                                src=\"../../../../assets/images/slider/portraitcamerabackground2.svg\">\n                        </div>\n\n                        <div class=\"card-body\">\n                            <h4 class=\"prodName\">{{product.name}}</h4>\n                        </div>\n                    </div>\n                </div> -->\n\n\n            </div>\n        </div>\n\n        <div class=\"contact\">\n            <div class=\"message\" *ngIf=\"displayHint\">\n\n                <h4 class=\"head\">Ask our therapists</h4>\n                <div style=\"text-align: left; padding-left: 10px;\">\n                    <span class=\"content\">\n                        Post a question below and a</span><br><span class=\"content\"> professional will get back\n                        to</span><br> <span class=\"content\">you within 24\n                        hours.</span>\n\n                </div>\n            </div>\n\n            <div class=\"msgImg\" (mouseenter)=\"mouseEnter()\" (mouseleave)=\"mouseLeave()\" data-toggle=\"modal\"\n                data-target=\"#contactModal\"><img src=\"../../../../assets/images/slider/conversation.svg\"\n                    style=\"width: 50%; margin-top: 10px;\"></div>\n\n        </div>\n\n        <div class=\"contactModal\">\n            <!-- Modal -->\n            <div class=\"modal fade\" id=\"contactModal\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\n                <div class=\"modal-dialog\" role=\"document\">\n                    <div class=\"modal-content\">\n                        <div class=\"modal-header\">\n                            <h5 class=\"modal-title\" id=\"contactModalLabel\">Contact us</h5>\n                            <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                                <span aria-hidden=\"true\">&times;</span>\n                            </button>\n                        </div>\n                        <div class=\"modal-body\">\n\n                            <form [formGroup]=\"form\" (ngSubmit)=\"submit()\">\n\n                                <div class=\"form-group\">\n                                    <input formControlName=\"mailSubject\" placeholder=\"Subject\" id=\"mailSubject\"\n                                        type=\"text\" class=\"form-control\">\n\n                                    <div *ngIf=\"f.mailSubject.invalid && subjectNotValid\" class=\"alert alert-danger\">\n                                        <div *ngIf=\"f.mailSubject.errors.required\">Subject is required.</div>\n                                    </div>\n\n                                </div>\n\n                                <div class=\"form-group\">\n                                    <input formControlName=\"mailText\" placeholder=\"E-mail\" id=\"mailText\" type=\"text\"\n                                        class=\"form-control\">\n\n                                    <div *ngIf=\"f.mailText.invalid && mailNotValid\" class=\"alert alert-danger\">\n                                        <div *ngIf=\"f.mailText.errors.required\">Mail is required.</div>\n                                        <div *ngIf=\"f.mailText.errors.pattern\">Mail not Valid</div>\n                                    </div>\n\n                                </div>\n\n                                <div class=\"form-group\">\n                                    <textarea class=\"form-control\" placeholder=\"Body\" formControlName=\"mailBody\"\n                                        id=\"mailBody\" rows=\"4\"></textarea>\n\n                                    <div *ngIf=\"f.mailBody.invalid && bodyNotValid\" class=\"alert alert-danger\">\n                                        <div *ngIf=\"f.mailBody.errors.required\">Body is required.</div>\n                                    </div>\n\n\n                                </div>\n\n                            </form>\n\n                        </div>\n                        <div class=\"modal-footer\">\n                            <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\n                            <button (click)=\"submit()\" class=\"btn btn-primary butonSend\">Send</button>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"space\">\n    <div>\n        <p class=\"pos\">\n            <span class=\"normal\">We want to start off this summer by giving you </span>\n            <br />\n            <span>an opportunity to feel better through therapy!</span>\n            <br />\n            <span style=\"font-weight: bold !important;\" class=\"normal\"> Use the promo code SUMMER15x3 to get</span>\n            <br />\n            <span style=\"font-weight: bold !important;\" class=\"colored\">15% off </span> <span\n                style=\"font-weight: bold !important;\" class=\"normal\">of your first 3 sessions.</span>\n\n        </p>\n\n        <span style=\"font-weight: bold !important;\" class=\"colored summer50\">SUMMER15x3</span>\n\n        <!-- <button class=\"btn\">Get started</button> -->\n\n\n\n        <div *ngIf=\"siteWidth>1000;else other_content\">\n            <input type=\"button\" (click)=\"showPopup()\" value=\"Get Started\" class=\"btn\">\n\n\n            <!-- START POPUP -->\n            <div id=\"popup\" (click)=\"hidePopup()\"\n                style=\"visibility:hidden; z-index:10000000;background: #00000075;position: fixed;top:0;left:0;width:100%;height:100%;\">\n                <div style=\"height: 100%;\" id=\"popup-container\">\n                    <div\n                        style=\"background:white;border-radius:10px;position: relative;padding:5em 3em;width:75%; max-width:50em; margin: 5em auto;display: block;\">\n\n                        <span (click)=\"hidePopup()\" style=\"position:absolute; top:20px;right:20px; cursor: pointer;\">\n                            Close\n                        </span>\n\n                        <h2 style=\"text-align: center; font-weight: bold\">Choose Therapy Type</h2>\n                        <div\n                            style=\"display: flex; justify-content: center; max-width: 45em; margin: 30px auto 10px auto;\">\n\n                            <span\n                                style=\"box-shadow: 5px 5px 25px 5px #efefef;    padding: 1em;    border-radius: 35px; margin: 1em auto; width:120px; height: 130px\">\n                                <a style=\"margin: auto;\"\n                                    href=\"https://web.o7therapy.com/#/challenges/matching-tool/adult\">\n                                    <img class=\"alignnone wp-image-47\"\n                                        src=\"../../../../assets/images/slider/AddultType.png\" alt=\"\"\n                                        style=\"width:100%;height: 100%;\">\n\n                                </a>\n                            </span>\n                            <span\n                                style=\"box-shadow: 5px 5px 25px 5px #efefef;    padding: 1em;    border-radius: 35px; margin: 1em auto; width:120px; height: 130px\">\n                                <a style=\"margin: auto;\" href=\"https://web.o7therapy.com/#/therapists/list/couple\">\n                                    <img class=\"alignnone wp-image-47\"\n                                        src=\"../../../../assets/images/slider/CouplesType.png\" alt=\"\"\n                                        style=\"width:100%;height: 100%;\">\n\n                                </a>\n                            </span>\n                            <span\n                                style=\"box-shadow: 5px 5px 25px 5px #efefef;    padding: 1em;    border-radius: 35px; margin: 1em auto; width:120px; height: 130px\">\n                                <a style=\"margin: auto;\"\n                                    href=\"https://web.o7therapy.com/#/challenges/matching-tool/child\">\n                                    <img class=\"alignnone wp-image-47\"\n                                        src=\"../../../../assets/images/slider/ChildType.png\" alt=\"\"\n                                        style=\"width:100%;height: 100%;\">\n                                </a>\n                            </span>\n                        </div>\n                        <div\n                            style=\"display: flex; justify-content: center; max-width: 45em; margin: 0px auto 10px auto;\">\n                            <span style=\"margin: auto;font-weight:bold;padding-left:3em\">Adult</span>\n                            <span style=\"margin: auto;font-weight:bold;padding-left:3em\">Couple / Family</span>\n                            <span style=\"margin: auto;font-weight:bold\">Child / Adolescent</span>\n                        </div>\n\n\n                    </div>\n                </div>\n\n            </div>\n            <!-- END POPUP -->\n        </div>\n\n        <ng-template #other_content>\n            <div class=\"adultType\">\n                <div class=\"col-md-12\" style=\"padding-left:0 ;\">\n                    <div class=\"row\"></div>\n                    <div style=\"padding-left:0 ;\" class=\"col-md-4 col-sm-8 col-10\">\n                        <form [formGroup]=\"formType\"\n                            style=\"background-color: #e6dcdc;opacity: 0.8; padding: 15px 5px; padding-bottom: 5px; border-radius: 10px;\">\n\n\n                            <div class=\"form-group\">\n\n                                <mat-radio-group formControlName=\"gender\">\n                                    <mat-radio-button value=\"1\" (change)=\"radioChange($event)\">ADULT\n                                    </mat-radio-button>\n\n                                    <mat-radio-button value=\"2\" (change)=\"radioChange($event)\">COUPLE / FAMILY\n                                    </mat-radio-button>\n\n                                    <mat-radio-button value=\"3\" (change)=\"radioChange($event)\">CHILD / ADOLESCENT\n                                    </mat-radio-button>\n                                </mat-radio-group>\n\n                                <input type=\"button\" (click)=\"GetType()\" value=\"Get Started\" class=\"butn\">\n\n                            </div>\n                        </form>\n                    </div>\n\n                </div>\n\n            </div>\n        </ng-template>\n\n\n    </div>\n</div>\n<div class=\"slider\" style=\"padding-bottom: 50px;\">\n    <div class=\"col-md-12 text-center\">\n\n        <div class=\"row\" style=\"margin-top: 100px; margin-bottom: 30px;\">\n            <div class=\"col-md-6 offset-md-3\">\n                <h1 style=\"font-family: 'Quicksand', sans-serif; font-weight: bold;\" class=\"header\">Samples of our\n                    sessions</h1>\n                <!-- <p style=\"font-family: 'Quicksand', sans-serif;\">Lorem ipsum gravida nibh vel velit auctor aliquetnean\n                    sollicitudin, lorem quis Bibendum auci elit\n                    consequat ipsutis sem nibh id elit</p> -->\n            </div>\n        </div>\n\n        <div class=\"row\">\n            <div class=\"col-md-8 offset-md-2\">\n\n                <div class=\"text-center\">\n                    <div *ngIf=\"siteWidth>1100;else other_content2\">\n                        <p-carousel [value]=\"products\" styleClass=\"custom-carousel\" [numVisible]=\"3\" [numScroll]=\"1\"\n                            [circular]=\"true\" [autoplayInterval]=\"3000\" [responsiveOptions]=\"responsiveOptions\"\n                            (onPage)=\"getPage($event)\">\n\n                            <ng-template let-product pTemplate=\"item\">\n                                <div class=\"product-item\">\n                                    <div class=\"product-item-content\">\n\n                                        <div class=\"card\" style=\"margin-right: 10px;\">\n                                            <img (click)=\"open(product.url)\"\n                                                style=\"width: 100%;cursor: pointer;object-fit: cover;\"\n                                                src=\"../../../../assets/images/slider/{{product.image}}\"\n                                                [alt]=\"product.name\" class=\"product-image\" />\n\n                                            <div (click)=\"open(product.url)\"\n                                                style=\"cursor: pointer;width: 100%; margin-top: -40px;height: 70px;\">\n                                                <img style=\"width: 100px; height: 100px; float: right;\"\n                                                    src=\"../../../../assets/images/slider/portraitcamerabackground2.svg\">\n                                            </div>\n\n                                            <div class=\"card-body\">\n                                                <h4 class=\"prodName\">{{product.name}}</h4>\n                                                <!-- <p class=\"prodContent\">{{product.content}}</p> -->\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </ng-template>\n                        </p-carousel>\n                    </div>\n\n                    <ng-template #other_content2>\n                        <!-- <div class=\"col-md-4 offset-md-2 col-sm-5 offset-sm-1 col-6 offset-1\"> -->\n                        <div class=\"text-center\">\n                            <div *ngFor=\"let product of products;\" class=\"card\" style=\"margin-bottom: 20px;\">\n                                <img (click)=\"open(product.url)\" style=\"width: 100%;cursor: pointer;object-fit: cover;\"\n                                    src=\"../../../../assets/images/slider/{{product.image}}\" [alt]=\"product.name\"\n                                    class=\"product-image\" />\n\n                                <div (click)=\"open(product.url)\"\n                                    style=\"cursor: pointer;width: 100%; margin-top: -40px;height: 70px;\">\n                                    <img style=\"width: 100px; height: 100px; float: right;\"\n                                        src=\"../../../../assets/images/slider/portraitcamerabackground2.svg\">\n                                </div>\n\n                                <div class=\"card-body\">\n                                    <h4 class=\"prodName\">{{product.name}}</h4>\n                                </div>\n                            </div>\n                        </div>\n                    </ng-template>\n\n\n                </div>\n\n\n\n                <!-- <div class=\"col-md-4 offset-md-2\">\n                    <div *ngFor=\"let product of products;\" class=\"card\" style=\"margin-bottom: 20px; width: 300px;\">\n                        <img (click)=\"open(product.url)\" style=\"width: 100%;cursor: pointer;object-fit: cover;\"\n                            src=\"../../../../assets/images/slider/{{product.image}}\" [alt]=\"product.name\"\n                            class=\"product-image\" />\n\n                        <div (click)=\"open(product.url)\"\n                            style=\"cursor: pointer;width: 100%; margin-top: -40px;height: 70px;\">\n                            <img style=\"width: 100px; height: 100px; float: right;\"\n                                src=\"../../../../assets/images/slider/portraitcamerabackground2.svg\">\n                        </div>\n\n                        <div class=\"card-body\">\n                            <h4 class=\"prodName\">{{product.name}}</h4>\n                        </div>\n                    </div>\n                </div> -->\n\n\n            </div>\n        </div>\n\n        <div class=\"contact\">\n            <div class=\"message\" *ngIf=\"displayHint\">\n\n                <h4 class=\"head\">Ask our therapists</h4>\n                <div style=\"text-align: left; padding-left: 10px;\">\n                    <span class=\"content\">\n                        Post a question below and a</span><br><span class=\"content\"> professional will get back\n                        to</span><br> <span class=\"content\">you within 24\n                        hours.</span>\n\n                </div>\n            </div>\n\n            <div class=\"msgImg\" (mouseenter)=\"mouseEnter()\" (mouseleave)=\"mouseLeave()\" data-toggle=\"modal\"\n                data-target=\"#contactModal\"><img src=\"../../../../assets/images/slider/conversation.svg\"\n                    style=\"width: 50%; margin-top: 10px;\"></div>\n\n        </div>\n\n        <div class=\"contactModal\">\n            <!-- Modal -->\n            <div class=\"modal fade\" id=\"contactModal\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\n                <div class=\"modal-dialog\" role=\"document\">\n                    <div class=\"modal-content\">\n                        <div class=\"modal-header\">\n                            <h5 class=\"modal-title\" id=\"contactModalLabel\">Contact us</h5>\n                            <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                                <span aria-hidden=\"true\">&times;</span>\n                            </button>\n                        </div>\n                        <div class=\"modal-body\">\n\n                            <form [formGroup]=\"form\" (ngSubmit)=\"submit()\">\n\n                                <div class=\"form-group\">\n                                    <input formControlName=\"mailSubject\" placeholder=\"Subject\" id=\"mailSubject\"\n                                        type=\"text\" class=\"form-control\">\n\n                                    <div *ngIf=\"f.mailSubject.invalid && subjectNotValid\" class=\"alert alert-danger\">\n                                        <div *ngIf=\"f.mailSubject.errors.required\">Subject is required.</div>\n                                    </div>\n\n                                </div>\n\n                                <div class=\"form-group\">\n                                    <input formControlName=\"mailText\" placeholder=\"E-mail\" id=\"mailText\" type=\"text\"\n                                        class=\"form-control\">\n\n                                    <div *ngIf=\"f.mailText.invalid && mailNotValid\" class=\"alert alert-danger\">\n                                        <div *ngIf=\"f.mailText.errors.required\">Mail is required.</div>\n                                        <div *ngIf=\"f.mailText.errors.pattern\">Mail not Valid</div>\n                                    </div>\n\n                                </div>\n\n                                <div class=\"form-group\">\n                                    <textarea class=\"form-control\" placeholder=\"Body\" formControlName=\"mailBody\"\n                                        id=\"mailBody\" rows=\"4\"></textarea>\n\n                                    <div *ngIf=\"f.mailBody.invalid && bodyNotValid\" class=\"alert alert-danger\">\n                                        <div *ngIf=\"f.mailBody.errors.required\">Body is required.</div>\n                                    </div>\n\n\n                                </div>\n\n                            </form>\n\n                        </div>\n                        <div class=\"modal-footer\">\n                            <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\n                            <button (click)=\"submit()\" class=\"btn btn-primary butonSend\">Send</button>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -420,6 +420,15 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "PYup":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"MyPage\" #allPage>\n    <section class=\"sec1\">\n\n        <div id=\"sec1Big\" *ngIf=\"screenWidth>1050\" class=\"col-sm-12\">\n            <div class=\"row\">\n                <div class=\"col-md-10 offset-md-1\">\n                    <img (mouseenter)=\"yesAnimate()\" (mouseleave)=\"noAnimate()\" class=\"sec1Img img-responsive\"\n                        src=\"../../../../assets/images/elnada/MaskGroup.svg\" />\n\n\n                    <div [@slideInRight] class=\"hidden\" *ngIf=\"showText\">\n                        <h3 class=\"head\">Our Partnership</h3>\n                        <p class=\"content\">\n                            <span class=\"boldText\">El Nada Hospital</span> and <span class=\"boldText\">O7 Therapy</span>\n                            have\n                            come together to form a partnership that cares for the overall health of mothers.\n                            <br /><span class=\"boldText\">El Nada Hospital</span>, as the largest birthing center in\n                            Cairo\n                            and the leading maternity hospital in Egypt, is dedicated to the safety, wellbeing, and\n                            healthcare of women and children.\n                            <br /><br /><span class=\"boldText\">O7 Therapy</span> provides accessible mental healthcare\n                            for\n                            people of all life stages and experiences, through the O7 mobile app. O7 has a selection of\n                            professionals specialized in women’s mental health and wellness, including one-on-one care\n                            for\n                            mothers throughout all perinatal phases, from pregnancy to post-birth, and parenting.\n                            Together,\n                            El Nada and O7 complete the circle of care of mothers and families.\n                        </p>\n                    </div>\n\n                </div>\n            </div>\n\n        </div>\n\n        <div *ngIf=\"screenWidth<=1050\" class=\"col-sm-12\">\n            <div class=\"row\">\n                <div class=\"col-md-10 offset-md-1\"><span class=\"textBold\">Maternal <br /> Mental Health</span> </div>\n                <div class=\"col-md-10 offset-md-1\"><span>Supporting mothers and caregivers through every\n                        chapter.</span>\n                </div>\n\n                <div class=\"col-md-10 offset-md-1\" style=\"margin-top: 20px;\">\n                    <img (click)=\"showSmallItem()\" class=\"sec1Img img-responsive\"\n                        src=\"../../../../assets/images/elnada/ElNadaLandingPageMobileAndDesktop01.svg\" />\n\n                    <div #hiddenSmall class=\"hiddenSmall\" *ngIf=\"showSmallText\">\n                        <h3 style=\"display: inline-block;\" class=\"head\">Our Partnership</h3> <span\n                            (click)=\"hideSmallItem()\" style=\"float: right;\" class=\"fa fa-times\"></span>\n                        <p class=\"content\">\n                            <span class=\"boldText\">El Nada Hospital</span> and <span class=\"boldText\">O7 Therapy</span>\n                            have\n                            come together to form a partnership that cares for the overall health of mothers.\n                            <br /><span class=\"boldText\">El Nada Hospital</span>, as the largest birthing center in\n                            Cairo\n                            and the leading maternity hospital in Egypt, is dedicated to the safety, wellbeing, and\n                            healthcare of women and children.\n                            <br /><br /><span class=\"boldText\">O7 Therapy</span> provides accessible mental healthcare\n                            for\n                            people of all life stages and experiences, through the O7 mobile app. O7 has a selection of\n                            professionals specialized in women’s mental health and wellness, including one-on-one care\n                            for\n                            mothers throughout all perinatal phases, from pregnancy to post-birth, and parenting.\n                            Together,\n                            El Nada and O7 complete the circle of care of mothers and families.\n                        </p>\n                    </div>\n                </div>\n\n\n\n\n            </div>\n        </div>\n\n    </section>\n\n    <section class=\"sec2\">\n\n        <div class=\"col-sm-12\">\n            <div class=\"row\">\n                <div class=\"col-md-1\"></div>\n                <div class=\"col-md-5 cardContent\" style=\"margin-bottom: 30px; margin-right: 15px; margin-left: 15px;\">\n                    Pregnancy, childbirth, and becoming a mom, brings tremendous change to a woman’s life. These changes\n                    influence your identity and sense of self, your relationship with your body and your emotions, and\n                    in\n                    your connection with others.\n                    <br /> <br /> Stages of motherhood come in waves of different feelings and experiences; some of them\n                    joyous and fulfilling, while others waves, overwhelming. These waves can be challenging and\n                    conflicting\n                    to feel, and particularly difficult to share. Often the expectation that you have to be ready to be\n                    a\n                    mom, with all the skills and capacity required, can stop someone from seeking help when it is truly\n                    needed.\n                </div>\n                <div class=\"col-md-5\" style=\"margin-bottom: 30px;\">\n                    <div id=\"demo\" class=\"carousel slide\" data-ride=\"carousel\">\n                        <ul class=\"carousel-indicators\">\n                            <li data-target=\"#demo\" data-slide-to=\"0\" class=\"active\"></li>\n                            <li data-target=\"#demo\" data-slide-to=\"1\"></li>\n                            <li data-target=\"#demo\" data-slide-to=\"2\"></li>\n                            <li data-target=\"#demo\" data-slide-to=\"3\"></li>\n                        </ul>\n                        <div class=\"carousel-inner\">\n                            <div class=\"carousel-item active\">\n                                <img src=\"../../../../assets/images/elnada/slider/Nada/Group 136@2x.png\">\n                                <div class=\"carousel-caption\">\n                                    <!-- <p class=\"text\"><span class=\"spanBold\">Depression and anxiety</span> are the two most</p> -->\n                                </div>\n                            </div>\n                            <div class=\"carousel-item\">\n                                <img src=\"../../../../assets/images/elnada/slider/Nada/Group 137@2x.png\">\n                                <div class=\"carousel-caption\">\n                                    <!-- <p class=\"text\"><span class=\"spanBold\">Depression and anxiety</span> are the two most</p> -->\n                                </div>\n                            </div>\n                            <div class=\"carousel-item\">\n                                <img src=\"../../../../assets/images/elnada/slider/Nada/Group 138@2x.png\">\n                                <div class=\"carousel-caption\">\n                                    <!-- <p class=\"text\"><span class=\"spanBold\">Depression and anxiety</span> are the two most</p> -->\n                                </div>\n                            </div>\n                            <div class=\"carousel-item\">\n                                <img src=\"../../../../assets/images/elnada/slider/Nada/Group 139@2x.png\">\n                                <div class=\"carousel-caption\">\n                                    <!-- <p class=\"text\"><span class=\"spanBold\">Depression and anxiety</span> are the two most</p> -->\n                                </div>\n                            </div>\n\n                        </div>\n                        <a class=\"carousel-control-prev\" href=\"#demo\" data-slide=\"prev\">\n                            <span class=\"carousel-control-prev-icon\"></span>\n                        </a>\n                        <a class=\"carousel-control-next\" href=\"#demo\" data-slide=\"next\">\n                            <span class=\"carousel-control-next-icon\"></span>\n                        </a>\n                    </div>\n\n                </div>\n\n            </div>\n\n        </div>\n    </section>\n\n\n    <section class=\"sec3\">\n        <div class=\"col-10 offset-1\">\n            <div class=\"row\">\n                <div class=\"col-md-8 offset-md-2\">\n                    <h1 class=\"text-center head\">Meet our therapists</h1>\n                    <p class=\"content\">You don’t need to experience this on your own. Talk to a professional who\n                        understands what you’re going through today</p>\n                </div>\n            </div>\n        </div>\n\n        <div *ngIf=\"screenWidth>800\">\n            <div style=\"margin-bottom: 20px;\" class=\"col-md-12\" *ngFor=\"let item of therapists; let i = index\">\n                <div class=\"col-md-8 offset-md-2 cart\" style=\"padding: 15px;\">\n                    <div class=\"row\">\n                        <div class=\"col-md-7\">\n                            <div class=\"row\">\n                                <div class=\"col-sm-4\"><img class=\"imgPerson\"\n                                        src=\"{{item.image}}\">\n                                    <img class=\"imgVideo\"\n                                        src=\"../../../../assets/images/elnada/ic-play-video.png\">\n                                </div>\n                                <div class=\"col-sm-8\">\n                                    <h6\n                                        style=\"font-size: 18px; font-weight: bold; font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;\">\n                                        {{item.name}}</h6>\n                                    <p style=\"font-size: 12px; color: #9fa2aa; font-weight: 700;\">{{item.content}}</p>\n                                    <p style=\"font-size: 12px; color: #cc789a; font-weight: 700;\">{{item.experience}} years experience\n                                    </p>\n                                    <p style=\"font-size: 15px; color: #6c707d;\">{{item.specialist}}</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-md-5\">\n                            <div style=\"float: right;\">\n                                <h3 style=\"font-weight: bold; text-align: right;\">{{item.salary}} EGP</h3>\n                                <p style=\"text-align: right; font-size: 12px;\">/ session</p>\n                                <div *ngIf=\"item.isAvailable\"\n                                    style=\"color: #cc789a; text-align: right; font-size: 12px; font-weight: bold;\">\n                                    {{item.available}}\n                                    <button\n                                        style=\"background: #13CEC4 0% 0% no-repeat padding-box;\n                                        box-shadow: 0px 3px 6px #5A858333;\n                                        border-radius: 10px;\n                                        opacity: 1; border: none;color: white; padding: 5px 15px;\">{{item.btnText}}</button>\n                                </div>\n\n                                <div *ngIf=\"!item.isAvailable\"\n                                    style=\"color: #9fa2aa; text-align: right; font-size: 12px;font-weight: bold;\">\n                                    {{item.available}}\n                                    <button\n                                        style=\"background: #13CEC4 0% 0% no-repeat padding-box;\n                                            box-shadow: 0px 3px 6px #5A858333;\n                                            border-radius: 10px;\n                                            opacity: 1; border: none;color: white; padding: 5px 15px;\">{{item.btnText}}</button>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n\n\n        <div *ngIf=\"screenWidth<=800\">\n            <div style=\"margin-bottom: 20px;\" class=\"col-md-12\" *ngFor=\"let item of therapists; let i = index\">\n                <div class=\"col-md-12 cart\" style=\"padding: 15px;\">\n                    <div class=\"row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"row\">\n                                <div class=\"col-3\"><img class=\"text-center imgPerson\"\n                                         src=\"{{item.image}}\">\n                                    <img class=\"imgVideo\"\n                                        src=\"../../../../assets/images/elnada/ic-play-video.png\">\n\n                                </div>\n                                <div class=\"col-6\">\n                                    <h6 style=\"font-size: 12px;\">{{item.name}}</h6>\n                                    <p style=\"font-size: 12px; color: #9fa2aa; font-weight: 700;\">{{item.content}}</p>\n                                    <p style=\"font-size: 12px; color: #cc789a; font-weight: 700;\">{{item.experience}} years experience\n                                    </p>\n                                    <h6 style=\"font-size: 15px; color: #6c707d;\">{{item.specialist}}</h6>\n\n                                </div>\n\n                                <div class=\"col-3\">\n                                    <h6 style=\"font-weight: bold; text-align: right;\">{{item.salary}} EGP\n                                    </h6>\n                                    <p style=\"text-align: right; font-size: 12px;\">/ session</p>\n                                </div>\n\n                            </div>\n                        </div>\n\n                        <div class=\"col-md-12\">\n                            <div class=\"row\">\n\n                                <div class=\"col-9 offset-3\">\n                                    <p *ngIf=\"item.isAvailable\"\n                                        style=\"color: #cc789a; font-size: 12px; font-weight: bold; display: inline-block;\">\n                                        {{item.available}}</p>\n                                    <p *ngIf=\"!item.isAvailable\"\n                                        style=\"color: #9fa2aa; font-size: 12px; font-weight: bold; display: inline-block;\">\n                                        {{item.available}}</p>\n\n                                    <button\n                                        style=\"background: #13CEC4 0% 0% no-repeat padding-box;\n                                box-shadow: 0px 3px 6px #5A858333;\n                                border-radius: 10px;\n                                opacity: 1; border: none;color: white; padding: 5px 15px; float:right;\">{{item.btnText}}</button>\n                                </div>\n\n                            </div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n        </div>\n\n\n        <div>\n            <p class=\"text-center viewMore\" style=\"color: #13CEC4; opacity: 0.8; font-weight: bold; cursor: pointer;\"\n                (click)=\"ViewMore()\">View More</p>\n\n        </div>\n\n\n    </section>\n\n\n\n</div>");
+
+/***/ }),
+
 /***/ "TMsN":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -795,6 +804,167 @@ score_component_ScoreComponent = tslib_es6["__decorate"]([
 ], score_component_ScoreComponent);
 
 
+// EXTERNAL MODULE: ./node_modules/@angular/animations/fesm2015/animations.js
+var animations = __webpack_require__("GS7A");
+
+// CONCATENATED MODULE: ./src/app/modules/stress-test/elnada/elnada.component.ts
+
+
+
+
+let ElnadaComponent = class ElnadaComponent {
+    constructor(renderer) {
+        this.renderer = renderer;
+        this.animation = 0;
+        this.showText = false;
+        this.showSmallText = true;
+        this.therapists = [
+            {
+                image: "https://web.o7therapy.com:443/api/identity/imgapi/IMG_2021-01-03-13_62529.jpg",
+                name: "Dina Zaklama",
+                content: "Clinical Psychologist",
+                specialist: " A clinical psychologist with experience in marital counseling, depression, anxiety and OCD.",
+                salary: 950,
+                available: "Available 25 August 11:00 am",
+                btnText: "Book",
+                isAvailable: true,
+                experience: 21
+            },
+            {
+                image: "https://web.o7therapy.com:443/api/identity/imgapi/IMG_2021-01-03-13_15724.jpg",
+                name: "Eman Abdalraheem",
+                content: "Assistant Lecturer of Psychiatry",
+                specialist: " Assistant Lecturer of Psychiatry at Kasr Alainy, Cairo University.",
+                salary: 500,
+                available: "No Available Slots",
+                btnText: "Book",
+                isAvailable: false,
+                experience: 7
+            },
+            {
+                image: "https://web.o7therapy.com:443/api/identity/imgapi/IMG_2021-01-03-13_31185.jpg",
+                name: "Dalia Enaba",
+                content: "Professor of Psychiatry",
+                specialist: " A Consultant Psychiatrist and Professor in the Psychiatric Department, Cairo University. Working with Adult and Adolescent males and females.",
+                salary: 600,
+                available: "No Available Slots",
+                btnText: "Book",
+                isAvailable: false,
+                experience: 22
+            },
+            {
+                image: "https://web.o7therapy.com:443/api/identity/imgapi/IMG_2020-03-15-10_30570.jpg",
+                name: "Eman Samir",
+                content: "Specialist Psychiatrist",
+                specialist: " Specialist Psychiatrist with interest in women's rights, refugees rights, and children living in street situations.",
+                salary: 750,
+                available: "No Available Slots",
+                btnText: "Book",
+                isAvailable: false,
+                experience: 11
+            },
+        ];
+    }
+    ngOnInit() {
+        this.screenWidth = window.innerWidth;
+        this.screenHeight = window.innerHeight;
+        if (this.screenWidth > 1050) {
+            let elemSec1Big = document.getElementById('sec1Big');
+            elemSec1Big.setAttribute("style", "overflow-x:hidden");
+        }
+        if (this.screenWidth <= 1050) {
+            let elem = document.getElementById('MyPage');
+            elem.setAttribute("style", "background:#3C4342; opacity: 0.5;");
+        }
+    }
+    onResize(event) {
+        this.screenWidth = window.innerWidth;
+        this.screenHeight = window.innerHeight;
+        if (this.screenWidth > 1050) {
+            this.hideItem();
+        }
+    }
+    showItem() {
+        this.showText = true;
+        // el.setAttribute('style', 'color: white; background: red');
+        this.renderer.setStyle(this.allPage.nativeElement, 'background', '#3C4342');
+        this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '0.5');
+        // this.renderer.setStyle(this.hiddenSmall.nativeElement, 'background', '#F1F1F1');
+        // this.renderer.setStyle(this.hiddenSmall.nativeElement, 'box-shadow', '0px 3px 6px #5A858333');
+        // this.renderer.setStyle(this.hiddenSmall.nativeElement, 'opacity', '0.95');
+    }
+    hideItem() {
+        this.showText = false;
+        this.renderer.setStyle(this.allPage.nativeElement, 'background', 'none');
+        this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '1');
+    }
+    showSmallItem() {
+        this.showSmallText = true;
+        this.renderer.setStyle(this.allPage.nativeElement, 'background', '#5a6967');
+        this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '0.5');
+    }
+    hideSmallItem() {
+        this.showSmallText = false;
+        this.renderer.setStyle(this.allPage.nativeElement, 'background', 'none');
+        this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '1');
+    }
+    tooggleSmallItem() {
+        this.showSmallText = !this.showSmallText;
+        if (this.showSmallText) {
+            this.renderer.setStyle(this.allPage.nativeElement, 'background', '#3C4342');
+            this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '0.5');
+        }
+        else {
+            this.renderer.setStyle(this.allPage.nativeElement, 'background', 'none');
+            this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '1');
+        }
+    }
+    ViewMore() {
+        window.open('https://web.o7therapy.com/#/therapists/list/Maternal%20Mental%20Health', '_blank' // <- This is what makes it open in a new window.
+        );
+    }
+    yesAnimate() {
+        this.showText = true;
+        this.animation += 1;
+        let elemSec1Big = document.getElementById('sec1Big');
+        elemSec1Big.setAttribute("style", "overflow-x:hidden");
+    }
+    noAnimate() {
+        this.showText = false;
+        this.animation = 0;
+        let elemSec1Big = document.getElementById('sec1Big');
+        elemSec1Big.setAttribute("style", "overflow-x:hidden");
+    }
+};
+ElnadaComponent.ctorParameters = () => [
+    { type: core["Renderer2"] }
+];
+tslib_es6["__decorate"]([
+    Object(core["ViewChild"])('allPage', { static: false })
+], ElnadaComponent.prototype, "allPage", void 0);
+tslib_es6["__decorate"]([
+    Object(core["ViewChild"])('hiddenSmall', { static: false })
+], ElnadaComponent.prototype, "hiddenSmall", void 0);
+tslib_es6["__decorate"]([
+    Object(core["HostListener"])('window:resize', ['$event'])
+], ElnadaComponent.prototype, "onResize", null);
+ElnadaComponent = tslib_es6["__decorate"]([
+    Object(core["Component"])({
+        selector: 'app-elnada',
+        template: tslib_es6["__importDefault"](__webpack_require__("PYup")).default,
+        animations: [
+            Object(animations["n" /* trigger */])('slideInRight', [
+                Object(animations["m" /* transition */])(':enter', [
+                    Object(animations["l" /* style */])({ transform: 'translateX(50%)' }),
+                    Object(animations["e" /* animate */])('1000ms ease-in', Object(animations["l" /* style */])({ transform: 'translateX(-10%)' }))
+                ]),
+            ])
+        ],
+        styles: [tslib_es6["__importDefault"](__webpack_require__("nqmr")).default]
+    })
+], ElnadaComponent);
+
+
 // CONCATENATED MODULE: ./src/app/modules/stress-test/summary/summary.component.ts
 
 
@@ -807,10 +977,11 @@ let summary_component_SummaryComponent = class SummaryComponent {
         this.subjectNotValid = false;
         this.mailNotValid = false;
         this.bodyNotValid = false;
+        this.mailPattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$";
         this.displayHint = false;
         this.form = new fesm2015_forms["d" /* FormGroup */]({
             mailSubject: new fesm2015_forms["c" /* FormControl */]('', [fesm2015_forms["l" /* Validators */].required]),
-            mailText: new fesm2015_forms["c" /* FormControl */]('', [fesm2015_forms["l" /* Validators */].required, fesm2015_forms["l" /* Validators */].pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
+            mailText: new fesm2015_forms["c" /* FormControl */]('', [fesm2015_forms["l" /* Validators */].required, fesm2015_forms["l" /* Validators */].pattern(this.mailPattern)]),
             // mailText: new FormControl('', [Validators.required]),
             mailBody: new fesm2015_forms["c" /* FormControl */]('', [fesm2015_forms["l" /* Validators */].required]),
         });
@@ -869,7 +1040,7 @@ let summary_component_SummaryComponent = class SummaryComponent {
     }
     submit() {
         debugger;
-        this.mailRegex = new RegExp("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$");
+        this.mailRegex = new RegExp(this.mailPattern);
         if (this.form.valid) {
             //more code here
             console.log(this.form.value);
@@ -951,11 +1122,13 @@ summary_component_SummaryComponent = tslib_es6["__decorate"]([
 
 
 
+
 const routes = [
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
     { path: 'intro', component: QuestionsComponent },
-    { path: 'about', component: summary_component_SummaryComponent }
+    { path: 'about', component: summary_component_SummaryComponent },
+    { path: 'elnada', component: ElnadaComponent }
 ];
 let StressTestRouting = class StressTestRouting {
 };
@@ -1171,7 +1344,7 @@ var common_module = __webpack_require__("a6Df");
 var expansion = __webpack_require__("c9fC");
 
 // EXTERNAL MODULE: ./node_modules/@angular/platform-browser/fesm2015/animations.js + 1 modules
-var animations = __webpack_require__("omvX");
+var fesm2015_animations = __webpack_require__("omvX");
 
 // EXTERNAL MODULE: ./node_modules/@angular/material/esm2015/core.js + 1 modules
 var esm2015_core = __webpack_require__("Xd0L");
@@ -1376,7 +1549,7 @@ MatCard.decorators = [
 ];
 /** @nocollapse */
 MatCard.ctorParameters = () => [
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 /**
  * Component intended to be used within the `<mat-card>` component. It adds styles for a
@@ -2394,7 +2567,7 @@ slider_MatSlider.ctorParameters = () => [
     { type: core["ChangeDetectorRef"] },
     { type: bidi["b" /* Directionality */], decorators: [{ type: core["Optional"] }] },
     { type: String, decorators: [{ type: core["Attribute"], args: ['tabindex',] }] },
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 slider_MatSlider.propDecorators = {
     invert: [{ type: core["Input"] }],
@@ -2457,9 +2630,6 @@ var of = __webpack_require__("LRne");
 
 // EXTERNAL MODULE: ./node_modules/rxjs/_esm2015/internal/observable/timer.js
 var timer = __webpack_require__("PqYM");
-
-// EXTERNAL MODULE: ./node_modules/@angular/animations/fesm2015/animations.js
-var fesm2015_animations = __webpack_require__("GS7A");
 
 // EXTERNAL MODULE: ./node_modules/rxjs/_esm2015/internal/operators/startWith.js
 var startWith = __webpack_require__("JX91");
@@ -2615,7 +2785,7 @@ MatInkBar.ctorParameters = () => [
     { type: core["ElementRef"] },
     { type: core["NgZone"] },
     { type: undefined, decorators: [{ type: core["Inject"], args: [_MAT_INK_BAR_POSITIONER,] }] },
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 
 /**
@@ -2766,23 +2936,23 @@ const matTabsAnimations = {
     /**
      * Animation translates a tab along the X axis.
      */
-    translateTab: Object(fesm2015_animations["n" /* trigger */])('translateTab', [
+    translateTab: Object(animations["n" /* trigger */])('translateTab', [
         // Note: transitions to `none` instead of 0, because some browsers might blur the content.
-        Object(fesm2015_animations["k" /* state */])('center, void, left-origin-center, right-origin-center', Object(fesm2015_animations["l" /* style */])({ transform: 'none' })),
+        Object(animations["k" /* state */])('center, void, left-origin-center, right-origin-center', Object(animations["l" /* style */])({ transform: 'none' })),
         // If the tab is either on the left or right, we additionally add a `min-height` of 1px
         // in order to ensure that the element has a height before its state changes. This is
         // necessary because Chrome does seem to skip the transition in RTL mode if the element does
         // not have a static height and is not rendered. See related issue: #9465
-        Object(fesm2015_animations["k" /* state */])('left', Object(fesm2015_animations["l" /* style */])({ transform: 'translate3d(-100%, 0, 0)', minHeight: '1px' })),
-        Object(fesm2015_animations["k" /* state */])('right', Object(fesm2015_animations["l" /* style */])({ transform: 'translate3d(100%, 0, 0)', minHeight: '1px' })),
-        Object(fesm2015_animations["m" /* transition */])('* => left, * => right, left => center, right => center', Object(fesm2015_animations["e" /* animate */])('{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)')),
-        Object(fesm2015_animations["m" /* transition */])('void => left-origin-center', [
-            Object(fesm2015_animations["l" /* style */])({ transform: 'translate3d(-100%, 0, 0)' }),
-            Object(fesm2015_animations["e" /* animate */])('{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)')
+        Object(animations["k" /* state */])('left', Object(animations["l" /* style */])({ transform: 'translate3d(-100%, 0, 0)', minHeight: '1px' })),
+        Object(animations["k" /* state */])('right', Object(animations["l" /* style */])({ transform: 'translate3d(100%, 0, 0)', minHeight: '1px' })),
+        Object(animations["m" /* transition */])('* => left, * => right, left => center, right => center', Object(animations["e" /* animate */])('{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)')),
+        Object(animations["m" /* transition */])('void => left-origin-center', [
+            Object(animations["l" /* style */])({ transform: 'translate3d(-100%, 0, 0)' }),
+            Object(animations["e" /* animate */])('{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)')
         ]),
-        Object(fesm2015_animations["m" /* transition */])('void => right-origin-center', [
-            Object(fesm2015_animations["l" /* style */])({ transform: 'translate3d(100%, 0, 0)' }),
-            Object(fesm2015_animations["e" /* animate */])('{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)')
+        Object(animations["m" /* transition */])('void => right-origin-center', [
+            Object(animations["l" /* style */])({ transform: 'translate3d(100%, 0, 0)' }),
+            Object(animations["e" /* animate */])('{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)')
         ])
     ])
 };
@@ -3469,7 +3639,7 @@ tabs_MatTabGroupBase.ctorParameters = () => [
     { type: core["ElementRef"] },
     { type: core["ChangeDetectorRef"] },
     { type: undefined, decorators: [{ type: core["Inject"], args: [MAT_TABS_CONFIG,] }, { type: core["Optional"] }] },
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 tabs_MatTabGroupBase.propDecorators = {
     dynamicHeight: [{ type: core["Input"] }],
@@ -3518,7 +3688,7 @@ MatTabGroup.ctorParameters = () => [
     { type: core["ElementRef"] },
     { type: core["ChangeDetectorRef"] },
     { type: undefined, decorators: [{ type: core["Inject"], args: [MAT_TABS_CONFIG,] }, { type: core["Optional"] }] },
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 MatTabGroup.propDecorators = {
     _tabs: [{ type: core["ContentChildren"], args: [tabs_MatTab,] }],
@@ -4177,7 +4347,7 @@ tabs_MatPaginatedTabHeader.ctorParameters = () => [
     { type: bidi["b" /* Directionality */], decorators: [{ type: core["Optional"] }] },
     { type: core["NgZone"] },
     { type: esm2015_platform["a" /* Platform */] },
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 
 /**
@@ -4239,7 +4409,7 @@ tabs_MatTabHeaderBase.ctorParameters = () => [
     { type: bidi["b" /* Directionality */], decorators: [{ type: core["Optional"] }] },
     { type: core["NgZone"] },
     { type: esm2015_platform["a" /* Platform */] },
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 tabs_MatTabHeaderBase.propDecorators = {
     disableRipple: [{ type: core["Input"] }]
@@ -4290,7 +4460,7 @@ MatTabHeader.ctorParameters = () => [
     { type: bidi["b" /* Directionality */], decorators: [{ type: core["Optional"] }] },
     { type: core["NgZone"] },
     { type: esm2015_platform["a" /* Platform */] },
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 MatTabHeader.propDecorators = {
     _items: [{ type: core["ContentChildren"], args: [MatTabLabelWrapper,] }],
@@ -4420,7 +4590,7 @@ tabs_MatTabNavBase.ctorParameters = () => [
     { type: core["ChangeDetectorRef"] },
     { type: scrolling["d" /* ViewportRuler */] },
     { type: esm2015_platform["a" /* Platform */], decorators: [{ type: core["Optional"] }] },
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 tabs_MatTabNavBase.propDecorators = {
     backgroundColor: [{ type: core["Input"] }],
@@ -4475,7 +4645,7 @@ MatTabNav.ctorParameters = () => [
     { type: core["ChangeDetectorRef"] },
     { type: scrolling["d" /* ViewportRuler */] },
     { type: esm2015_platform["a" /* Platform */], decorators: [{ type: core["Optional"] }] },
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 MatTabNav.propDecorators = {
     _items: [{ type: core["ContentChildren"], args: [Object(core["forwardRef"])((/**
@@ -4572,7 +4742,7 @@ _MatTabLinkBase.ctorParameters = () => [
     { type: undefined, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [esm2015_core["i" /* MAT_RIPPLE_GLOBAL_OPTIONS */],] }] },
     { type: String, decorators: [{ type: core["Attribute"], args: ['tabindex',] }] },
     { type: a11y["e" /* FocusMonitor */] },
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 _MatTabLinkBase.propDecorators = {
     active: [{ type: core["Input"] }]
@@ -4628,7 +4798,7 @@ tabs_MatTabLink.ctorParameters = () => [
     { type: undefined, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [esm2015_core["i" /* MAT_RIPPLE_GLOBAL_OPTIONS */],] }] },
     { type: String, decorators: [{ type: core["Attribute"], args: ['tabindex',] }] },
     { type: a11y["e" /* FocusMonitor */] },
-    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
+    { type: String, decorators: [{ type: core["Optional"] }, { type: core["Inject"], args: [fesm2015_animations["a" /* ANIMATION_MODULE_TYPE */],] }] }
 ];
 
 /**
@@ -5676,20 +5846,20 @@ const matStepperAnimations = {
     /**
      * Animation that transitions the step along the X axis in a horizontal stepper.
      */
-    horizontalStepTransition: Object(fesm2015_animations["n" /* trigger */])('stepTransition', [
-        Object(fesm2015_animations["k" /* state */])('previous', Object(fesm2015_animations["l" /* style */])({ transform: 'translate3d(-100%, 0, 0)', visibility: 'hidden' })),
-        Object(fesm2015_animations["k" /* state */])('current', Object(fesm2015_animations["l" /* style */])({ transform: 'none', visibility: 'visible' })),
-        Object(fesm2015_animations["k" /* state */])('next', Object(fesm2015_animations["l" /* style */])({ transform: 'translate3d(100%, 0, 0)', visibility: 'hidden' })),
-        Object(fesm2015_animations["m" /* transition */])('* => *', Object(fesm2015_animations["e" /* animate */])('500ms cubic-bezier(0.35, 0, 0.25, 1)'))
+    horizontalStepTransition: Object(animations["n" /* trigger */])('stepTransition', [
+        Object(animations["k" /* state */])('previous', Object(animations["l" /* style */])({ transform: 'translate3d(-100%, 0, 0)', visibility: 'hidden' })),
+        Object(animations["k" /* state */])('current', Object(animations["l" /* style */])({ transform: 'none', visibility: 'visible' })),
+        Object(animations["k" /* state */])('next', Object(animations["l" /* style */])({ transform: 'translate3d(100%, 0, 0)', visibility: 'hidden' })),
+        Object(animations["m" /* transition */])('* => *', Object(animations["e" /* animate */])('500ms cubic-bezier(0.35, 0, 0.25, 1)'))
     ]),
     /**
      * Animation that transitions the step along the Y axis in a vertical stepper.
      */
-    verticalStepTransition: Object(fesm2015_animations["n" /* trigger */])('stepTransition', [
-        Object(fesm2015_animations["k" /* state */])('previous', Object(fesm2015_animations["l" /* style */])({ height: '0px', visibility: 'hidden' })),
-        Object(fesm2015_animations["k" /* state */])('next', Object(fesm2015_animations["l" /* style */])({ height: '0px', visibility: 'hidden' })),
-        Object(fesm2015_animations["k" /* state */])('current', Object(fesm2015_animations["l" /* style */])({ height: '*', visibility: 'visible' })),
-        Object(fesm2015_animations["m" /* transition */])('* <=> current', Object(fesm2015_animations["e" /* animate */])('225ms cubic-bezier(0.4, 0.0, 0.2, 1)'))
+    verticalStepTransition: Object(animations["n" /* trigger */])('stepTransition', [
+        Object(animations["k" /* state */])('previous', Object(animations["l" /* style */])({ height: '0px', visibility: 'hidden' })),
+        Object(animations["k" /* state */])('next', Object(animations["l" /* style */])({ height: '0px', visibility: 'hidden' })),
+        Object(animations["k" /* state */])('current', Object(animations["l" /* style */])({ height: '*', visibility: 'visible' })),
+        Object(animations["m" /* transition */])('* <=> current', Object(animations["e" /* animate */])('225ms cubic-bezier(0.4, 0.0, 0.2, 1)'))
     ])
 };
 
@@ -7785,26 +7955,26 @@ const matDatepickerAnimations = {
     /**
      * Transforms the height of the datepicker's calendar.
      */
-    transformPanel: Object(fesm2015_animations["n" /* trigger */])('transformPanel', [
-        Object(fesm2015_animations["k" /* state */])('void', Object(fesm2015_animations["l" /* style */])({
+    transformPanel: Object(animations["n" /* trigger */])('transformPanel', [
+        Object(animations["k" /* state */])('void', Object(animations["l" /* style */])({
             opacity: 0,
             transform: 'scale(1, 0.8)'
         })),
-        Object(fesm2015_animations["m" /* transition */])('void => enter', Object(fesm2015_animations["e" /* animate */])('120ms cubic-bezier(0, 0, 0.2, 1)', Object(fesm2015_animations["l" /* style */])({
+        Object(animations["m" /* transition */])('void => enter', Object(animations["e" /* animate */])('120ms cubic-bezier(0, 0, 0.2, 1)', Object(animations["l" /* style */])({
             opacity: 1,
             transform: 'scale(1, 1)'
         }))),
-        Object(fesm2015_animations["m" /* transition */])('* => void', Object(fesm2015_animations["e" /* animate */])('100ms linear', Object(fesm2015_animations["l" /* style */])({ opacity: 0 })))
+        Object(animations["m" /* transition */])('* => void', Object(animations["e" /* animate */])('100ms linear', Object(animations["l" /* style */])({ opacity: 0 })))
     ]),
     /**
      * Fades in the content of the calendar.
      */
-    fadeInCalendar: Object(fesm2015_animations["n" /* trigger */])('fadeInCalendar', [
-        Object(fesm2015_animations["k" /* state */])('void', Object(fesm2015_animations["l" /* style */])({ opacity: 0 })),
-        Object(fesm2015_animations["k" /* state */])('enter', Object(fesm2015_animations["l" /* style */])({ opacity: 1 })),
+    fadeInCalendar: Object(animations["n" /* trigger */])('fadeInCalendar', [
+        Object(animations["k" /* state */])('void', Object(animations["l" /* style */])({ opacity: 0 })),
+        Object(animations["k" /* state */])('enter', Object(animations["l" /* style */])({ opacity: 1 })),
         // TODO(crisbeto): this animation should be removed since it isn't quite on spec, but we
         // need to keep it until #12440 gets in, otherwise the exit animation will look glitchy.
-        Object(fesm2015_animations["m" /* transition */])('void => *', Object(fesm2015_animations["e" /* animate */])('120ms 100ms cubic-bezier(0.55, 0, 0.55, 0.2)'))
+        Object(animations["m" /* transition */])('void => *', Object(animations["e" /* animate */])('120ms 100ms cubic-bezier(0.55, 0, 0.55, 0.2)'))
     ])
 };
 
@@ -9096,30 +9266,30 @@ const matMenuAnimations = {
      * When the menu panel is removed from the DOM, it simply fades out after a brief
      * delay to display the ripple.
      */
-    transformMenu: Object(fesm2015_animations["n" /* trigger */])('transformMenu', [
-        Object(fesm2015_animations["k" /* state */])('void', Object(fesm2015_animations["l" /* style */])({
+    transformMenu: Object(animations["n" /* trigger */])('transformMenu', [
+        Object(animations["k" /* state */])('void', Object(animations["l" /* style */])({
             opacity: 0,
             transform: 'scale(0.8)'
         })),
-        Object(fesm2015_animations["m" /* transition */])('void => enter', Object(fesm2015_animations["g" /* group */])([
-            Object(fesm2015_animations["i" /* query */])('.mat-menu-content, .mat-mdc-menu-content', Object(fesm2015_animations["e" /* animate */])('100ms linear', Object(fesm2015_animations["l" /* style */])({
+        Object(animations["m" /* transition */])('void => enter', Object(animations["g" /* group */])([
+            Object(animations["i" /* query */])('.mat-menu-content, .mat-mdc-menu-content', Object(animations["e" /* animate */])('100ms linear', Object(animations["l" /* style */])({
                 opacity: 1
             }))),
-            Object(fesm2015_animations["e" /* animate */])('120ms cubic-bezier(0, 0, 0.2, 1)', Object(fesm2015_animations["l" /* style */])({ transform: 'scale(1)' })),
+            Object(animations["e" /* animate */])('120ms cubic-bezier(0, 0, 0.2, 1)', Object(animations["l" /* style */])({ transform: 'scale(1)' })),
         ])),
-        Object(fesm2015_animations["m" /* transition */])('* => void', Object(fesm2015_animations["e" /* animate */])('100ms 25ms linear', Object(fesm2015_animations["l" /* style */])({ opacity: 0 })))
+        Object(animations["m" /* transition */])('* => void', Object(animations["e" /* animate */])('100ms 25ms linear', Object(animations["l" /* style */])({ opacity: 0 })))
     ]),
     /**
      * This animation fades in the background color and content of the menu panel
      * after its containing element is scaled in.
      */
-    fadeInItems: Object(fesm2015_animations["n" /* trigger */])('fadeInItems', [
+    fadeInItems: Object(animations["n" /* trigger */])('fadeInItems', [
         // TODO(crisbeto): this is inside the `transformMenu`
         // now. Remove next time we do breaking changes.
-        Object(fesm2015_animations["k" /* state */])('showing', Object(fesm2015_animations["l" /* style */])({ opacity: 1 })),
-        Object(fesm2015_animations["m" /* transition */])('void => *', [
-            Object(fesm2015_animations["l" /* style */])({ opacity: 0 }),
-            Object(fesm2015_animations["e" /* animate */])('400ms 100ms cubic-bezier(0.55, 0, 0.55, 0.2)')
+        Object(animations["k" /* state */])('showing', Object(animations["l" /* style */])({ opacity: 1 })),
+        Object(animations["m" /* transition */])('void => *', [
+            Object(animations["l" /* style */])({ opacity: 0 }),
+            Object(animations["e" /* animate */])('400ms 100ms cubic-bezier(0.55, 0, 0.55, 0.2)')
         ])
     ])
 };
@@ -10717,15 +10887,15 @@ const matTooltipAnimations = {
     /**
      * Animation that transitions a tooltip in and out.
      */
-    tooltipState: Object(fesm2015_animations["n" /* trigger */])('state', [
-        Object(fesm2015_animations["k" /* state */])('initial, void, hidden', Object(fesm2015_animations["l" /* style */])({ opacity: 0, transform: 'scale(0)' })),
-        Object(fesm2015_animations["k" /* state */])('visible', Object(fesm2015_animations["l" /* style */])({ transform: 'scale(1)' })),
-        Object(fesm2015_animations["m" /* transition */])('* => visible', Object(fesm2015_animations["e" /* animate */])('200ms cubic-bezier(0, 0, 0.2, 1)', Object(fesm2015_animations["h" /* keyframes */])([
-            Object(fesm2015_animations["l" /* style */])({ opacity: 0, transform: 'scale(0)', offset: 0 }),
-            Object(fesm2015_animations["l" /* style */])({ opacity: 0.5, transform: 'scale(0.99)', offset: 0.5 }),
-            Object(fesm2015_animations["l" /* style */])({ opacity: 1, transform: 'scale(1)', offset: 1 })
+    tooltipState: Object(animations["n" /* trigger */])('state', [
+        Object(animations["k" /* state */])('initial, void, hidden', Object(animations["l" /* style */])({ opacity: 0, transform: 'scale(0)' })),
+        Object(animations["k" /* state */])('visible', Object(animations["l" /* style */])({ transform: 'scale(1)' })),
+        Object(animations["m" /* transition */])('* => visible', Object(animations["e" /* animate */])('200ms cubic-bezier(0, 0, 0.2, 1)', Object(animations["h" /* keyframes */])([
+            Object(animations["l" /* style */])({ opacity: 0, transform: 'scale(0)', offset: 0 }),
+            Object(animations["l" /* style */])({ opacity: 0.5, transform: 'scale(0.99)', offset: 0.5 }),
+            Object(animations["l" /* style */])({ opacity: 1, transform: 'scale(1)', offset: 1 })
         ]))),
-        Object(fesm2015_animations["m" /* transition */])('* => hidden', Object(fesm2015_animations["e" /* animate */])('100ms cubic-bezier(0, 0, 0.2, 1)', Object(fesm2015_animations["l" /* style */])({ opacity: 0 }))),
+        Object(animations["m" /* transition */])('* => hidden', Object(animations["e" /* animate */])('100ms cubic-bezier(0, 0, 0.2, 1)', Object(animations["l" /* style */])({ opacity: 0 }))),
     ])
 };
 
@@ -14030,38 +14200,38 @@ const matSortAnimations = {
     /**
      * Animation that moves the sort indicator.
      */
-    indicator: Object(fesm2015_animations["n" /* trigger */])('indicator', [
-        Object(fesm2015_animations["k" /* state */])('active-asc, asc', Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(0px)' })),
+    indicator: Object(animations["n" /* trigger */])('indicator', [
+        Object(animations["k" /* state */])('active-asc, asc', Object(animations["l" /* style */])({ transform: 'translateY(0px)' })),
         // 10px is the height of the sort indicator, minus the width of the pointers
-        Object(fesm2015_animations["k" /* state */])('active-desc, desc', Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(10px)' })),
-        Object(fesm2015_animations["m" /* transition */])('active-asc <=> active-desc', Object(fesm2015_animations["e" /* animate */])(SORT_ANIMATION_TRANSITION))
+        Object(animations["k" /* state */])('active-desc, desc', Object(animations["l" /* style */])({ transform: 'translateY(10px)' })),
+        Object(animations["m" /* transition */])('active-asc <=> active-desc', Object(animations["e" /* animate */])(SORT_ANIMATION_TRANSITION))
     ]),
     /**
      * Animation that rotates the left pointer of the indicator based on the sorting direction.
      */
-    leftPointer: Object(fesm2015_animations["n" /* trigger */])('leftPointer', [
-        Object(fesm2015_animations["k" /* state */])('active-asc, asc', Object(fesm2015_animations["l" /* style */])({ transform: 'rotate(-45deg)' })),
-        Object(fesm2015_animations["k" /* state */])('active-desc, desc', Object(fesm2015_animations["l" /* style */])({ transform: 'rotate(45deg)' })),
-        Object(fesm2015_animations["m" /* transition */])('active-asc <=> active-desc', Object(fesm2015_animations["e" /* animate */])(SORT_ANIMATION_TRANSITION))
+    leftPointer: Object(animations["n" /* trigger */])('leftPointer', [
+        Object(animations["k" /* state */])('active-asc, asc', Object(animations["l" /* style */])({ transform: 'rotate(-45deg)' })),
+        Object(animations["k" /* state */])('active-desc, desc', Object(animations["l" /* style */])({ transform: 'rotate(45deg)' })),
+        Object(animations["m" /* transition */])('active-asc <=> active-desc', Object(animations["e" /* animate */])(SORT_ANIMATION_TRANSITION))
     ]),
     /**
      * Animation that rotates the right pointer of the indicator based on the sorting direction.
      */
-    rightPointer: Object(fesm2015_animations["n" /* trigger */])('rightPointer', [
-        Object(fesm2015_animations["k" /* state */])('active-asc, asc', Object(fesm2015_animations["l" /* style */])({ transform: 'rotate(45deg)' })),
-        Object(fesm2015_animations["k" /* state */])('active-desc, desc', Object(fesm2015_animations["l" /* style */])({ transform: 'rotate(-45deg)' })),
-        Object(fesm2015_animations["m" /* transition */])('active-asc <=> active-desc', Object(fesm2015_animations["e" /* animate */])(SORT_ANIMATION_TRANSITION))
+    rightPointer: Object(animations["n" /* trigger */])('rightPointer', [
+        Object(animations["k" /* state */])('active-asc, asc', Object(animations["l" /* style */])({ transform: 'rotate(45deg)' })),
+        Object(animations["k" /* state */])('active-desc, desc', Object(animations["l" /* style */])({ transform: 'rotate(-45deg)' })),
+        Object(animations["m" /* transition */])('active-asc <=> active-desc', Object(animations["e" /* animate */])(SORT_ANIMATION_TRANSITION))
     ]),
     /**
      * Animation that controls the arrow opacity.
      */
-    arrowOpacity: Object(fesm2015_animations["n" /* trigger */])('arrowOpacity', [
-        Object(fesm2015_animations["k" /* state */])('desc-to-active, asc-to-active, active', Object(fesm2015_animations["l" /* style */])({ opacity: 1 })),
-        Object(fesm2015_animations["k" /* state */])('desc-to-hint, asc-to-hint, hint', Object(fesm2015_animations["l" /* style */])({ opacity: .54 })),
-        Object(fesm2015_animations["k" /* state */])('hint-to-desc, active-to-desc, desc, hint-to-asc, active-to-asc, asc, void', Object(fesm2015_animations["l" /* style */])({ opacity: 0 })),
+    arrowOpacity: Object(animations["n" /* trigger */])('arrowOpacity', [
+        Object(animations["k" /* state */])('desc-to-active, asc-to-active, active', Object(animations["l" /* style */])({ opacity: 1 })),
+        Object(animations["k" /* state */])('desc-to-hint, asc-to-hint, hint', Object(animations["l" /* style */])({ opacity: .54 })),
+        Object(animations["k" /* state */])('hint-to-desc, active-to-desc, desc, hint-to-asc, active-to-asc, asc, void', Object(animations["l" /* style */])({ opacity: 0 })),
         // Transition between all states except for immediate transitions
-        Object(fesm2015_animations["m" /* transition */])('* => asc, * => desc, * => active, * => hint, * => void', Object(fesm2015_animations["e" /* animate */])('0ms')),
-        Object(fesm2015_animations["m" /* transition */])('* <=> *', Object(fesm2015_animations["e" /* animate */])(SORT_ANIMATION_TRANSITION)),
+        Object(animations["m" /* transition */])('* => asc, * => desc, * => active, * => hint, * => void', Object(animations["e" /* animate */])('0ms')),
+        Object(animations["m" /* transition */])('* <=> *', Object(animations["e" /* animate */])(SORT_ANIMATION_TRANSITION)),
     ]),
     /**
      * Animation for the translation of the arrow as a whole. States are separated into two
@@ -14070,37 +14240,37 @@ const matSortAnimations = {
      * and are determined as a function of their prev user-perceived state and what the next state
      * should be.
      */
-    arrowPosition: Object(fesm2015_animations["n" /* trigger */])('arrowPosition', [
+    arrowPosition: Object(animations["n" /* trigger */])('arrowPosition', [
         // Hidden Above => Hint Center
-        Object(fesm2015_animations["m" /* transition */])('* => desc-to-hint, * => desc-to-active', Object(fesm2015_animations["e" /* animate */])(SORT_ANIMATION_TRANSITION, Object(fesm2015_animations["h" /* keyframes */])([
-            Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(-25%)' }),
-            Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(0)' })
+        Object(animations["m" /* transition */])('* => desc-to-hint, * => desc-to-active', Object(animations["e" /* animate */])(SORT_ANIMATION_TRANSITION, Object(animations["h" /* keyframes */])([
+            Object(animations["l" /* style */])({ transform: 'translateY(-25%)' }),
+            Object(animations["l" /* style */])({ transform: 'translateY(0)' })
         ]))),
         // Hint Center => Hidden Below
-        Object(fesm2015_animations["m" /* transition */])('* => hint-to-desc, * => active-to-desc', Object(fesm2015_animations["e" /* animate */])(SORT_ANIMATION_TRANSITION, Object(fesm2015_animations["h" /* keyframes */])([
-            Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(0)' }),
-            Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(25%)' })
+        Object(animations["m" /* transition */])('* => hint-to-desc, * => active-to-desc', Object(animations["e" /* animate */])(SORT_ANIMATION_TRANSITION, Object(animations["h" /* keyframes */])([
+            Object(animations["l" /* style */])({ transform: 'translateY(0)' }),
+            Object(animations["l" /* style */])({ transform: 'translateY(25%)' })
         ]))),
         // Hidden Below => Hint Center
-        Object(fesm2015_animations["m" /* transition */])('* => asc-to-hint, * => asc-to-active', Object(fesm2015_animations["e" /* animate */])(SORT_ANIMATION_TRANSITION, Object(fesm2015_animations["h" /* keyframes */])([
-            Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(25%)' }),
-            Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(0)' })
+        Object(animations["m" /* transition */])('* => asc-to-hint, * => asc-to-active', Object(animations["e" /* animate */])(SORT_ANIMATION_TRANSITION, Object(animations["h" /* keyframes */])([
+            Object(animations["l" /* style */])({ transform: 'translateY(25%)' }),
+            Object(animations["l" /* style */])({ transform: 'translateY(0)' })
         ]))),
         // Hint Center => Hidden Above
-        Object(fesm2015_animations["m" /* transition */])('* => hint-to-asc, * => active-to-asc', Object(fesm2015_animations["e" /* animate */])(SORT_ANIMATION_TRANSITION, Object(fesm2015_animations["h" /* keyframes */])([
-            Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(0)' }),
-            Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(-25%)' })
+        Object(animations["m" /* transition */])('* => hint-to-asc, * => active-to-asc', Object(animations["e" /* animate */])(SORT_ANIMATION_TRANSITION, Object(animations["h" /* keyframes */])([
+            Object(animations["l" /* style */])({ transform: 'translateY(0)' }),
+            Object(animations["l" /* style */])({ transform: 'translateY(-25%)' })
         ]))),
-        Object(fesm2015_animations["k" /* state */])('desc-to-hint, asc-to-hint, hint, desc-to-active, asc-to-active, active', Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(0)' })),
-        Object(fesm2015_animations["k" /* state */])('hint-to-desc, active-to-desc, desc', Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(-25%)' })),
-        Object(fesm2015_animations["k" /* state */])('hint-to-asc, active-to-asc, asc', Object(fesm2015_animations["l" /* style */])({ transform: 'translateY(25%)' })),
+        Object(animations["k" /* state */])('desc-to-hint, asc-to-hint, hint, desc-to-active, asc-to-active, active', Object(animations["l" /* style */])({ transform: 'translateY(0)' })),
+        Object(animations["k" /* state */])('hint-to-desc, active-to-desc, desc', Object(animations["l" /* style */])({ transform: 'translateY(-25%)' })),
+        Object(animations["k" /* state */])('hint-to-asc, active-to-asc, asc', Object(animations["l" /* style */])({ transform: 'translateY(25%)' })),
     ]),
     /**
      * Necessary trigger that calls animate on children animations.
      */
-    allowChildren: Object(fesm2015_animations["n" /* trigger */])('allowChildren', [
-        Object(fesm2015_animations["m" /* transition */])('* <=> *', [
-            Object(fesm2015_animations["i" /* query */])('@*', Object(fesm2015_animations["f" /* animateChild */])(), { optional: true })
+    allowChildren: Object(animations["n" /* trigger */])('allowChildren', [
+        Object(animations["m" /* transition */])('* <=> *', [
+            Object(animations["i" /* query */])('@*', Object(animations["f" /* animateChild */])(), { optional: true })
         ])
     ]),
 };
@@ -19216,6 +19386,7 @@ AngularResizedEventModule.decorators = [
 
 
 
+
 let StressTestModule = class StressTestModule {
     constructor() {
     }
@@ -19261,7 +19432,8 @@ StressTestModule = tslib_es6["__decorate"]([
             QuestionsComponent,
             score_component_ScoreComponent,
             survey_component_SurveyComponent,
-            summary_component_SummaryComponent
+            summary_component_SummaryComponent,
+            ElnadaComponent
         ],
         entryComponents: [HomeComponent],
     })
@@ -19279,6 +19451,15 @@ module.exports = {
     ElementQueries: __webpack_require__("rnKy")
 };
 
+
+/***/ }),
+
+/***/ "nqmr":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".sec1 .sec1Img {\n  border-radius: 10px;\n  width: 100%;\n  font-family: \"ITC Avant Garde Gothic Std Demi\", sans-serif;\n}\n\n.sec1 .hidden {\n  background: #F1F1F1 0% 0% no-repeat padding-box;\n  box-shadow: 0px 3px 6px #5A858333;\n  border-radius: 20px;\n  opacity: 0.85;\n  padding: 35px;\n  width: 40%;\n  position: absolute;\n  top: 15px;\n  right: 40px;\n  height: 93%;\n}\n\n.sec1 .hidden .head {\n  color: #3C4342;\n  opacity: 0.8;\n  font-size: 22px;\n  font-family: \"ITC Avant Garde Gothic Std Demi\", sans-serif;\n}\n\n.sec1 .hidden .content .boldText {\n  font-weight: bold;\n  font-family: \"ITC Avant Garde Gothic Std Demi\", sans-serif;\n}\n\n.sec1 .hidden .content {\n  font-size: 14px;\n  font-family: \"ITC Avant Garde Gothic Std Book\", sans-serif;\n  color: #3C4342;\n}\n\n.sec1 .textBold {\n  font-weight: bold;\n  font-size: 14px;\n  font-family: \"ITC Avant Garde Gothic Std Demi\", sans-serif;\n}\n\n@media only screen and (max-width: 1700px) and (min-width: 1500px) {\n  .sec1 .hidden {\n    padding: 10px;\n    width: 30%;\n    position: absolute;\n    top: 15px;\n    right: 30px;\n  }\n\n  .sec1 .hidden .head {\n    font-size: 24px;\n  }\n\n  .sec1 .hidden .content {\n    font-size: 15px;\n  }\n}\n\n@media only screen and (max-width: 1500px) and (min-width: 1350px) {\n  .sec1 .hidden {\n    padding: 10px;\n    width: 35%;\n    position: absolute;\n    top: 15px;\n    right: 30px;\n  }\n\n  .sec1 .hidden .head {\n    font-size: 24px;\n  }\n\n  .sec1 .hidden .content {\n    font-size: 15px;\n  }\n}\n\n@media only screen and (max-width: 1350px) and (min-width: 1250px) {\n  .sec1 .hidden {\n    padding: 10px;\n    width: 42%;\n    position: absolute;\n    top: 15px;\n    right: 30px;\n  }\n\n  .sec1 .hidden .head {\n    font-size: 24px;\n  }\n\n  .sec1 .hidden .content {\n    font-size: 15px;\n  }\n}\n\n@media only screen and (max-width: 1250px) and (min-width: 1150px) {\n  .sec1 .hidden {\n    padding: 10px;\n    width: 48%;\n    position: absolute;\n    top: 15px;\n    right: 30px;\n  }\n}\n\n@media only screen and (max-width: 1150px) and (min-width: 1050px) {\n  .sec1 .hidden {\n    padding: 10px;\n    width: 58%;\n    position: absolute;\n    top: 15px;\n    right: 30px;\n  }\n}\n\n.sec1 .hiddenSmall {\n  background: #F1F1F1 0% 0% no-repeat padding-box;\n  box-shadow: 0px 3px 6px #5A858333;\n  border-radius: 5px;\n  padding: 20px;\n  width: 94%;\n  position: absolute;\n  top: 0px;\n  left: 3%;\n  z-index: 999;\n  border: 1px solid #5c5656;\n}\n\n.sec1 .hiddenSmall .head {\n  color: #000000;\n  font-size: 13px;\n  font-family: \"ITC Avant Garde Gothic Std Demi\", sans-serif;\n}\n\n.sec1 .hiddenSmall .content {\n  color: #000000;\n  font-size: 11px;\n  font-family: \"ITC Avant Garde Gothic Std Book\", sans-serif;\n}\n\n.sec1 .hiddenSmall .content .boldText {\n  font-weight: bold;\n  font-family: \"ITC Avant Garde Gothic Std Demi\", sans-serif;\n}\n\n@media only screen and (max-width: 1050px) and (min-width: 980px) {\n  .sec1 .hiddenSmall {\n    background: #F1F1F1 0% 0% no-repeat padding-box;\n    box-shadow: 0px 3px 6px #5A858333;\n    border-radius: 5px;\n    padding: 20px;\n    width: 60%;\n    position: absolute;\n    top: 0px;\n    left: 20%;\n    z-index: 999;\n  }\n\n  .sec1 .hiddenSmall .head {\n    font-size: 18px;\n  }\n\n  .sec1 .hiddenSmall .content {\n    font-size: 15px;\n  }\n}\n\n@media only screen and (max-width: 980px) and (min-width: 650px) {\n  .sec1 .hiddenSmall {\n    background: #F1F1F1 0% 0% no-repeat padding-box;\n    box-shadow: 0px 3px 6px #5A858333;\n    border-radius: 5px;\n    padding: 20px;\n    width: 70%;\n    position: absolute;\n    top: 0px;\n    left: 15%;\n    z-index: 999;\n  }\n\n  .sec1 .hiddenSmall .head {\n    font-size: 15px;\n  }\n\n  .sec1 .hiddenSmall .content {\n    font-size: 12px;\n  }\n}\n\n.sec2 {\n  padding: 55px 0;\n  padding-bottom: 0;\n}\n\n.sec2 .cardContent {\n  box-shadow: 0px 3px 6px #5A858333;\n  border-radius: 20px;\n  opacity: 1;\n  padding: 25px;\n  font-size: 16px;\n  color: #9c9e9d;\n  font-family: \"ITC Avant Garde Gothic Std Book\", sans-serif;\n}\n\n.sec2 .carousel .carousel-indicators {\n  bottom: -60px !important;\n}\n\n.sec2 .carousel .carousel-indicators li {\n  width: 15px;\n  height: 15px;\n  border-radius: 50%;\n  background-color: #b4c0ca;\n}\n\n.sec2 .carousel .carousel-inner .carousel-item .text {\n  font-family: \"ITC Avant Garde Gothic Std Demi\", sans-serif;\n  color: black;\n}\n\n.sec2 .carousel .carousel-inner .carousel-item img {\n  width: 70%;\n  height: 350px;\n  margin-left: 15%;\n}\n\n.sec2 .carousel .carousel-inner .carousel-item .text .spanBold {\n  color: black;\n  font-weight: bold;\n}\n\n.sec2 .carousel .carousel-indicators .active {\n  background-color: #13CEC4;\n}\n\n.sec2 .carousel .carousel-control-prev-icon {\n  background-image: url('SliderPrevIcon.6d5f185e35d0082a6bc5.svg');\n}\n\n.sec2 .carousel .carousel-control-next-icon {\n  background-image: url('SliderNextIcon.42db5e9267a9291c15ce.svg');\n}\n\n@media only screen and (max-width: 700px) and (min-width: 400px) {\n  .sec2 .carousel .carousel-indicators {\n    bottom: -45px !important;\n  }\n\n  .sec2 .carousel .carousel-indicators li {\n    width: 10px;\n    height: 10px;\n  }\n}\n\n@media only screen and (max-width: 400px) and (min-width: 0px) {\n  .sec2 .carousel .carousel-indicators li {\n    width: 8px;\n    height: 8px;\n  }\n}\n\n@media only screen and (max-width: 600px) and (min-width: 300px) {\n  .sec2 .carousel .carousel-inner .carousel-item img {\n    width: 70%;\n    height: 200px;\n    margin-left: 15%;\n  }\n\n  .sec2 .carousel .carousel-indicators {\n    bottom: -50px !important;\n  }\n}\n\n@media only screen and (max-width: 300px) and (min-width: 0px) {\n  .sec2 .carousel .carousel-inner .carousel-item img {\n    width: 70%;\n    height: 150px;\n    margin-left: 15%;\n  }\n\n  .sec2 .carousel .carousel-indicators {\n    bottom: -50px !important;\n  }\n}\n\n.sec3 {\n  padding: 35px 0;\n}\n\n.sec3 .content {\n  color: #3C4342;\n  opacity: 0.8;\n  font-family: \"ITC Avant Garde Gothic Std Book\", sans-serif;\n}\n\n.sec3 .head {\n  color: #3C4342;\n  opacity: 0.8;\n  font-family: \"ITC Avant Garde Gothic Std Book\", sans-serif;\n}\n\n.sec3 .cart {\n  background: #FFFFFF 0% 0% no-repeat padding-box;\n  box-shadow: 0px 3px 6px #5A858333;\n  border-radius: 10px;\n  font-family: \"ITC Avant Garde Gothic Std Book\", sans-serif;\n}\n\n.sec3 .viewMore {\n  font-family: \"ITC Avant Garde Gothic Std Book\", sans-serif;\n}\n\n.sec3 .imgVideo {\n  position: absolute;\n  left: 80px;\n  top: 55px;\n  cursor: pointer;\n}\n\n.sec3 .imgPerson {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n}\n\n@media only screen and (max-width: 800px) and (min-width: 500px) {\n  .sec3 .content {\n    font-size: 14px;\n  }\n\n  .sec3 .head {\n    font-size: 18px;\n    font-weight: bold;\n  }\n}\n\n@media only screen and (max-width: 500px) and (min-width: 335px) {\n  .sec3 .imgVideo {\n    position: absolute;\n    left: 60px;\n    top: 40px;\n    width: 30px;\n    cursor: pointer;\n  }\n\n  .sec3 .imgPerson {\n    width: 70px;\n    height: 70px;\n    border-radius: 50%;\n  }\n\n  .sec3 .content {\n    text-align: center;\n    font-size: 14px;\n  }\n\n  .sec3 .head {\n    font-size: 18px;\n    font-weight: bold;\n  }\n}\n\n@media only screen and (max-width: 335px) and (min-width: 250px) {\n  .sec3 .imgVideo {\n    position: absolute;\n    left: 50px;\n    top: 30px;\n    width: 20px;\n    cursor: pointer;\n  }\n\n  .sec3 .imgPerson {\n    width: 50px;\n    height: 50px;\n    border-radius: 50%;\n  }\n\n  .sec3 .content {\n    text-align: center;\n    font-size: 14px;\n  }\n\n  .sec3 .head {\n    font-size: 18px;\n    font-weight: bold;\n  }\n}");
 
 /***/ }),
 

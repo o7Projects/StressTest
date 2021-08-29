@@ -1,0 +1,435 @@
+$font-name : 'ITC Avant Garde Gothic Std Demi',sans-serif;
+
+
+.sec1 .sec1Img {
+    border-radius: 10px;
+    width        : 100%;
+    font-family  : 'ITC Avant Garde Gothic Std Demi', sans-serif;
+}
+
+.sec1 .hidden {
+    background   : #F1F1F1 0% 0% no-repeat padding-box;
+    box-shadow   : 0px 3px 6px #5A858333;
+    border-radius: 20px;
+    opacity      : 0.85;
+    padding      : 35px;
+    width        : 40%;
+    position     : absolute;
+    top          : 15px;
+    right        : 40px;
+    height       : 93%;
+}
+
+.sec1 .hidden .head {
+    color      : #3C4342;
+    opacity    : 0.8;
+    font-size  : 22px;
+    font-family: 'ITC Avant Garde Gothic Std Demi', sans-serif;
+}
+
+.sec1 .hidden .content .boldText {
+    font-weight: bold;
+    font-family: 'ITC Avant Garde Gothic Std Demi', sans-serif;
+    color      : #3C4342;
+    opacity    : 0.8;
+}
+
+.sec1 .hidden .content {
+    font-size  : 14px;
+    font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+    color      : #3C4342;
+    opacity    : 0.8;
+}
+
+.sec1 .textBold {
+    font-weight: bold;
+    color      : #3C4342;
+    font-size  : 14px;
+    font-family: 'ITC Avant Garde Gothic Std Demi', sans-serif;
+    opacity    : 0.8;
+
+}
+
+@media only screen and (max-width:1700px) and (min-width: 1500px) {
+    .sec1 .hidden {
+        padding : 10px;
+        width   : 30%;
+        position: absolute;
+        top     : 15px;
+        right   : 30px;
+    }
+
+    .sec1 .hidden .head {
+        font-size: 24px;
+    }
+
+
+    .sec1 .hidden .content {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:1500px) and (min-width: 1350px) {
+    .sec1 .hidden {
+        padding : 10px;
+        width   : 35%;
+        position: absolute;
+        top     : 15px;
+        right   : 30px;
+    }
+
+    .sec1 .hidden .head {
+        font-size: 24px;
+    }
+
+
+    .sec1 .hidden .content {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:1350px) and (min-width: 1250px) {
+    .sec1 .hidden {
+        padding : 10px;
+        width   : 45%;
+        position: absolute;
+        top     : 15px;
+        right   : 30px;
+    }
+
+    .sec1 .hidden .head {
+        font-size: 24px;
+    }
+
+
+    .sec1 .hidden .content {
+        font-size: 15px;
+
+    }
+}
+
+@media only screen and (max-width:1250px) and (min-width: 1150px) {
+    .sec1 .hidden {
+        padding : 10px;
+        width   : 48%;
+        position: absolute;
+        top     : 15px;
+        right   : 30px;
+    }
+}
+
+
+@media only screen and (max-width: 1150px) and (min-width: 1050px) {
+    .sec1 .hidden {
+        padding : 10px;
+        width   : 58%;
+        position: absolute;
+        top     : 15px;
+        right   : 30px;
+    }
+}
+
+
+
+
+
+
+.sec1 .hiddenSmall {
+    background   : #F1F1F1 0% 0% no-repeat padding-box;
+    box-shadow   : 0px 3px 6px #5A858333;
+    border-radius: 5px;
+    padding      : 20px;
+    width        : 94%;
+    position     : absolute;
+    top          : 0px;
+    left         : 3%;
+    z-index      : 999;
+    border       : 1px solid #5c5656;
+}
+
+.sec1 .hiddenSmall .head {
+    color      : #000000;
+    font-size  : 13px;
+    font-family: 'ITC Avant Garde Gothic Std Demi', sans-serif;
+}
+
+.sec1 .hiddenSmall .content {
+    color      : #000000;
+    font-size  : 11px;
+    font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+}
+
+.sec1 .hiddenSmall .content .boldText {
+    font-weight: bold;
+    font-family: 'ITC Avant Garde Gothic Std Demi', sans-serif;
+}
+
+
+@media only screen and (max-width: 1050px) and (min-width: 980px) {
+    .sec1 .hiddenSmall {
+        background   : #F1F1F1 0% 0% no-repeat padding-box;
+        box-shadow   : 0px 3px 6px #5A858333;
+        border-radius: 5px;
+        padding      : 20px;
+        width        : 60%;
+        position     : absolute;
+        top          : 0px;
+        left         : 20%;
+        z-index      : 999;
+    }
+
+    .sec1 .hiddenSmall .head {
+        font-size: 18px;
+    }
+
+    .sec1 .hiddenSmall .content {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 980px) and (min-width: 650px) {
+    .sec1 .hiddenSmall {
+        background   : #F1F1F1 0% 0% no-repeat padding-box;
+        box-shadow   : 0px 3px 6px #5A858333;
+        border-radius: 5px;
+        padding      : 20px;
+        width        : 70%;
+        position     : absolute;
+        top          : 0px;
+        left         : 15%;
+        z-index      : 999;
+    }
+
+    .sec1 .hiddenSmall .head {
+        font-size: 15px;
+    }
+
+    .sec1 .hiddenSmall .content {
+        font-size: 12px;
+    }
+
+}
+
+.sec2 {
+    padding            : 55px 0;
+    padding-bottom     : 0;
+    // background-color: white;
+}
+
+.sec2 .cardContent {
+    box-shadow      : 0px 3px 6px #5A858333;
+    border-radius   : 20px;
+    opacity         : 1;
+    padding         : 25px;
+    // color        : #3C4342;
+    font-size       : 15px;
+    color           : #9c9e9d;
+    font-family     : 'ITC Avant Garde Gothic Std Book', sans-serif;
+}
+
+.sec2 .carousel .carousel-indicators {
+    bottom: -60px !important;
+}
+
+.sec2 .carousel .carousel-indicators li {
+    width           : 15px;
+    height          : 15px;
+    border-radius   : 50%;
+    background-color: #b4c0ca;
+}
+
+.sec2 .carousel .carousel-inner .carousel-item .text {
+    font-family: $font-name;
+    color      : black;
+}
+
+.sec2 .carousel .carousel-inner .carousel-item img {
+    padding-top: 27px;
+    width      : 70%;
+    height     : 270px;
+    margin-left: 15%;
+}
+
+.sec2 .carousel .carousel-inner .carousel-item .text .spanBold {
+    color      : black;
+    font-weight: bold;
+}
+
+.sec2 .carousel .carousel-indicators .active {
+    background-color: #13CEC4;
+}
+
+.sec2 .carousel .carousel-control-prev-icon {
+    background-image: url(../../../../assets/images/elnada/SliderPrevIcon.svg);
+}
+
+.sec2 .carousel .carousel-control-next-icon {
+    background-image: url(../../../../assets/images/elnada/SliderNextIcon.svg);
+}
+
+@media only screen and (max-width: 700px) and (min-width: 400px) {
+    .sec2 .carousel .carousel-indicators {
+        bottom: -45px !important;
+    }
+
+    .sec2 .carousel .carousel-indicators li {
+        width : 10px;
+        height: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 0px) {
+
+
+    .sec2 .carousel .carousel-indicators li {
+        width : 8px;
+        height: 8px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+
+    .sec2 .carousel .carousel-inner .carousel-item img {
+        width      : 70%;
+        height     : 200px;
+        margin-left: 15%;
+    }
+
+    .sec2 .carousel .carousel-indicators {
+        bottom: -50px !important;
+    }
+
+}
+
+@media only screen and (max-width: 300px) and (min-width: 0px) {
+
+    .sec2 .carousel .carousel-inner .carousel-item img {
+        width      : 70%;
+        height     : 150px;
+        margin-left: 15%;
+    }
+
+    .sec2 .carousel .carousel-indicators {
+        bottom: -50px !important;
+    }
+
+}
+
+
+
+
+.sec3 {
+    padding            : 35px 0;
+    // background-color: white;
+
+}
+
+.sec3 .content {
+    color        : #3C4342;
+    opacity      : 0.8;
+    font-family  : 'ITC Avant Garde Gothic Std Book', sans-serif;
+    text-align   : center;
+    margin-bottom: 30px;
+
+}
+
+.sec3 .head {
+    color      : #3C4342;
+    opacity    : 0.8;
+    font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+}
+
+.sec3 .cart {
+
+    background   : #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow   : 0px 3px 6px #5A858333;
+    border-radius: 10px;
+    font-family  : 'ITC Avant Garde Gothic Std Book', sans-serif;
+
+}
+
+.sec3 .viewMore {
+    font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+}
+
+.sec3 .imgVideo {
+    position: absolute;
+    left    : 80px;
+    top     : 55px;
+    cursor  : pointer;
+}
+
+.sec3 .imgPerson {
+    width        : 100px;
+    height       : 100px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+
+    .sec3 .content {
+        font-size: 14px;
+    }
+
+    .sec3 .head {
+        font-size  : 18px;
+        font-weight: bold;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) and (min-width: 335px) {
+    .sec3 .imgVideo {
+        position: absolute;
+        left    : 60px;
+        top     : 40px;
+        width   : 30px;
+        cursor  : pointer;
+    }
+
+    .sec3 .imgPerson {
+        width        : 70px;
+        height       : 70px;
+        border-radius: 50%;
+    }
+
+    .sec3 .content {
+        text-align: center;
+        font-size : 11px;
+    }
+
+    .sec3 .head {
+        font-size  : 18px;
+        font-weight: bold;
+    }
+
+}
+
+@media only screen and (max-width: 335px) and (min-width: 250px) {
+    .sec3 .imgVideo {
+        position: absolute;
+        left    : 50px;
+        top     : 30px;
+        width   : 20px;
+        cursor  : pointer;
+    }
+
+    .sec3 .imgPerson {
+        width        : 50px;
+        height       : 50px;
+        border-radius: 50%;
+    }
+
+    .sec3 .content {
+        text-align: center;
+        font-size : 14px;
+    }
+
+    .sec3 .head {
+        font-size  : 18px;
+        font-weight: bold;
+    }
+}

@@ -43,6 +43,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AngularResizedEventModule } from 'angular-resize-event';
 import { SummaryComponent } from './summary/summary.component';
+import { ElnadaComponent } from './elnada/elnada.component';
 
 @NgModule({
     imports: [
@@ -85,7 +86,8 @@ import { SummaryComponent } from './summary/summary.component';
         QuestionsComponent,
         ScoreComponent,
         SurveyComponent,
-        SummaryComponent
+        SummaryComponent,
+        ElnadaComponent
     ],
    
     entryComponents: [HomeComponent],

@@ -1,0 +1,284 @@
+<div id="MyPage" #allPage>
+
+
+
+    <section class="sec1">
+
+        <div id="sec1Big" *ngIf="screenWidth>1050" class="col-sm-12">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <img (mouseenter)="yesAnimate()" (mouseleave)="noAnimate()" class="sec1Img img-responsive"
+                        src="../../../../assets/images/elnada/MaskGroup.svg" />
+
+
+                    <div [@slideInRight] class="hidden" *ngIf="showText" >
+                        <h3 class="head">Our Partnership</h3>
+                        <p class="content">
+                            <span class="boldText">El Nada Hospital</span> and <span class="boldText">O7 Therapy</span>
+                            have
+                            come together to form a partnership that cares for the overall health of mothers.
+                            <br /><span class="boldText">El Nada Hospital</span>, as the largest birthing center in
+                            Cairo
+                            and the leading maternity hospital in Egypt, is dedicated to the safety, wellbeing, and
+                            healthcare of women and children.
+                            <br /><br /><span class="boldText">O7 Therapy</span> provides accessible mental healthcare
+                            for
+                            people of all life stages and experiences, through the O7 mobile app. O7 has a selection of
+                            professionals specialized in women’s mental health and wellness, including one-on-one care
+                            for
+                            mothers throughout all perinatal phases, from pregnancy to post-birth, and parenting.
+                            Together,
+                            El Nada and O7 complete the circle of care of mothers and families.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div *ngIf="screenWidth<=1050" class="col-sm-12">
+            <div class="row">
+                <div class="col-md-10 offset-md-1"><span class="textBold">Maternal <br /> Mental Health</span> </div>
+                <div class="col-md-10 offset-md-1"><span>Supporting mothers and caregivers through every
+                        chapter.</span>
+                </div>
+
+                <div class="col-md-10 offset-md-1" style="margin-top: 20px;">
+                    <img (click)="showSmallItem()" class="sec1Img img-responsive"
+                        src="../../../../assets/images/elnada/ElNadaLandingPageMobileAndDesktop01.svg" />
+
+                    <div #hiddenSmall class="hiddenSmall" *ngIf="showSmallText">
+                        <h3 style="display: inline-block;" class="head">Our Partnership</h3> <span
+                            (click)="hideSmallItem()" style="float: right;" class="fa fa-times"></span>
+                        <p class="content">
+                            <span class="boldText">El Nada Hospital</span> and <span class="boldText">O7 Therapy</span>
+                            have
+                            come together to form a partnership that cares for the overall health of mothers.
+                            <br /><span class="boldText">El Nada Hospital</span>, as the largest birthing center in
+                            Cairo
+                            and the leading maternity hospital in Egypt, is dedicated to the safety, wellbeing, and
+                            healthcare of women and children.
+                            <br /><br /><span class="boldText">O7 Therapy</span> provides accessible mental healthcare
+                            for
+                            people of all life stages and experiences, through the O7 mobile app. O7 has a selection of
+                            professionals specialized in women’s mental health and wellness, including one-on-one care
+                            for
+                            mothers throughout all perinatal phases, from pregnancy to post-birth, and parenting.
+                            Together,
+                            El Nada and O7 complete the circle of care of mothers and families.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sec2">
+
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 cardContent" style="margin-bottom: 30px; margin-right: 15px; margin-left: 15px;">
+                    Pregnancy, childbirth, and becoming a mom, brings tremendous change to a woman’s life. These changes
+                    influence your identity and sense of self, your relationship with your body and your emotions, and
+                    in
+                    your connection with others.
+                    <br /> <br /> Stages of motherhood come in waves of different feelings and experiences; some of them
+                    joyous and fulfilling, while others waves, overwhelming. These waves can be challenging and
+                    conflicting
+                    to feel, and particularly difficult to share. Often the expectation that you have to be ready to be
+                    a
+                    mom, with all the skills and capacity required, can stop someone from seeking help when it is truly
+                    needed.
+                </div>
+                <div class="col-md-5" style="margin-bottom: 30px;">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="3"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../../../assets/images/elnada/slider/Nada/Group 136@2x.png">
+                                <div class="carousel-caption">
+                                    <!-- <p class="text"><span class="spanBold">Depression and anxiety</span> are the two most</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../../../assets/images/elnada/slider/Nada/Group 137@2x.png">
+                                <div class="carousel-caption">
+                                    <!-- <p class="text"><span class="spanBold">Depression and anxiety</span> are the two most</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../../../assets/images/elnada/slider/Nada/Group 138@2x.png">
+                                <div class="carousel-caption">
+                                    <!-- <p class="text"><span class="spanBold">Depression and anxiety</span> are the two most</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../../../assets/images/elnada/slider/Nada/Group 139@2x.png">
+                                <div class="carousel-caption">
+                                    <!-- <p class="text"><span class="spanBold">Depression and anxiety</span> are the two most</p> -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="sec3">
+        <div class="col-10 offset-1">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <h1 class="text-center head">Meet our therapists</h1>
+                    <p class="content">You don’t need to experience this on your own.<br /> Talk to a professional who
+                        understands what you’re going through today</p>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="screenWidth>800">
+            <div style="margin-bottom: 20px;" class="col-md-12" *ngFor="let item of therapists; let i = index">
+                <div class="col-md-8 offset-md-2 cart" style="padding: 15px;">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-sm-4"><img class="imgPerson" src="{{item.image}}">
+                                    <img class="imgVideo" src="../../../../assets/images/elnada/ic-play-video.png">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h6
+                                        style="font-size: 18px; font-weight: bold; font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;">
+                                        {{item.name}}</h6>
+                                    <p style="font-size: 12px; color: #9fa2aa; font-weight: 700;">{{item.content}}</p>
+                                    <p style="font-size: 12px; color: #cc789a; font-weight: 700;">{{item.experience}}
+                                        years experience
+                                    </p>
+                                    <p style="font-size: 15px; color: #6c707d;">{{item.specialist}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div style="float: right;">
+                                <h3 style="font-weight: bold; text-align: right;">{{item.salary}} EGP</h3>
+                                <p style="text-align: right; font-size: 12px;">/ session</p>
+                                <div *ngIf="item.isAvailable"
+                                    style="color: #cc789a; text-align: right; font-size: 12px; font-weight: bold;">
+                                    {{item.available}}
+                                    <button
+                                        style="background: #13CEC4 0% 0% no-repeat padding-box;
+                                        box-shadow: 0px 3px 6px #5A858333;
+                                        border-radius: 10px;
+                                        opacity: 1; border: none;color: white; padding: 5px 15px;">{{item.btnText}}</button>
+                                </div>
+
+                                <div *ngIf="!item.isAvailable"
+                                    style="color: #9fa2aa; text-align: right; font-size: 12px;font-weight: bold;">
+                                    {{item.available}}
+                                    <button
+                                        style="background: #13CEC4 0% 0% no-repeat padding-box;
+                                            box-shadow: 0px 3px 6px #5A858333;
+                                            border-radius: 10px;
+                                            opacity: 1; border: none;color: white; padding: 5px 15px;">{{item.btnText}}</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div *ngIf="screenWidth<=800">
+            <div style="margin-bottom: 20px;" class="col-md-12" *ngFor="let item of therapists; let i = index">
+                <div class="col-md-12 cart" style="padding: 15px;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-3"><img class="text-center imgPerson" src="{{item.image}}">
+                                    <img class="imgVideo" src="../../../../assets/images/elnada/ic-play-video.png">
+
+                                </div>
+                                <div class="col-6">
+                                    <h6 style="font-size: 12px;">{{item.name}}</h6>
+                                    <p style="font-size: 12px; color: #9fa2aa; font-weight: 700;">{{item.content}}</p>
+                                    <p style="font-size: 12px; color: #cc789a; font-weight: 700;">{{item.experience}}
+                                        years experience
+                                    </p>
+                                    <h6 style="font-size: 15px; color: #6c707d;">{{item.specialist}}</h6>
+
+                                </div>
+
+                                <div class="col-3">
+                                    <h6 style="font-weight: bold; text-align: right;">{{item.salary}} EGP
+                                    </h6>
+                                    <p style="text-align: right; font-size: 12px;">/ session</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="row">
+
+                                <div class="col-9 offset-3">
+                                    <p *ngIf="item.isAvailable"
+                                        style="color: #cc789a; font-size: 12px; font-weight: bold; display: inline-block;">
+                                        {{item.available}}</p>
+                                    <p *ngIf="!item.isAvailable"
+                                        style="color: #9fa2aa; font-size: 12px; font-weight: bold; display: inline-block;">
+                                        {{item.available}}</p>
+
+                                    <button
+                                        style="background: #13CEC4 0% 0% no-repeat padding-box;
+                                box-shadow: 0px 3px 6px #5A858333;
+                                border-radius: 10px;
+                                opacity: 1; border: none;color: white; padding: 5px 15px; float:right;">{{item.btnText}}</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <p class="text-center viewMore" style="color: #13CEC4; opacity: 0.8; font-weight: bold; cursor: pointer;"
+                (click)="ViewMore()">View More</p>
+
+        </div>
+
+
+    </section>
+
+
+
+</div>
