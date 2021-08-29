@@ -228,7 +228,6 @@ export class ElnadaComponent implements OnInit {
 
   yesAnimate() {
     this.showText = true;
-    this.animation += 1;
 
     let elemSec1Big: HTMLElement = document.getElementById('sec1Big');
     elemSec1Big.setAttribute("style", "overflow-x:hidden");

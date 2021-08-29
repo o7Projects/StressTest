@@ -53,15 +53,6 @@ sans-serif;
 }
 
 
-.sec1 .hidden {
-    transition: transform .5s ease-in-out;
-  }
-  
-  /* The Transformation */
-  .sec1 .hidden img {
-    transform: scale(2) rotate(25deg);
-  }
-
 @media only screen and (max-width:1700px) and (min-width: 1500px) {
     .sec1 .hidden {
         padding : 10px;
