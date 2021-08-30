@@ -13,12 +13,21 @@ import { ITherapists } from '../_Models/ITherapists';
   selector: 'app-elnada',
   templateUrl: './elnada.component.html',
   styleUrls: ['./elnada.component.scss'],
+  // animations: [
+  //   trigger('slideInRight', [
+  //     transition(':enter', [
+  //       style({ transform: 'translateX(50%)' }),
+  //       animate('1000ms ease-in', style({ transform: 'translateX(-10%)' }))
+  //     ]),
+  //   ])
+  // ]
+
   animations: [
-    trigger('slideInRight', [
-      transition(':enter', [
-        style({ transform: 'translateX(50%)' }),
-        animate('1000ms ease-in', style({ transform: 'translateX(-10%)' }))
-      ]),
+    trigger('fade', [ 
+      transition('void => *', [
+        style({ opacity: 0 }), 
+        animate(2000, style({opacity: 0.8}))
+      ]) 
     ])
   ]
 
