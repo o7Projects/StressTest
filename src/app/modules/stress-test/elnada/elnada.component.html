@@ -2,12 +2,12 @@
 
 
 
-    <section class="sec1">
+    <section class="sec1" (mouseleave)="noAnimate()">
 
         <div id="sec1Big" *ngIf="screenWidth>1050" class="col-sm-12">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
-                    <img (mouseenter)="yesAnimate()" (mouseleave)="noAnimate()" class="sec1Img img-responsive"
+                    <img (mouseenter)="yesAnimate()" class="sec1Img img-responsive"
                         src="../../../../assets/images/elnada/MaskGroup.svg" />
 
 
@@ -39,8 +39,8 @@
 
         <div *ngIf="screenWidth<=1050" class="col-sm-12">
             <div class="row">
-                <div class="col-md-10 offset-md-1"><span class="textBold">Maternal <br /> Mental Health</span> </div>
-                <div class="col-md-10 offset-md-1"><span class="textNormal">Supporting mothers and caregivers through every
+                <div class="col-md-10 offset-md-1"><span class="textBold" id="section1Head">Maternal <br /> Mental Health</span> </div>
+                <div class="col-md-10 offset-md-1"><span class="textNormal" id="section1Title">Supporting mothers and caregivers through every
                         chapter.</span>
                 </div>
 
@@ -84,7 +84,7 @@
         <div class="col-sm-12">
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-md-5 cardContent" id="sec2Text" style="margin-bottom: 30px; margin-right: 15px; margin-left: 15px;">
+                <div class="col-md-5 cardContent" id="sec2Text" style="margin-bottom: 30px; margin-right: 10px; margin-left: 15px;">
                     Pregnancy, childbirth, and becoming a mom, brings tremendous change to a woman’s life. These changes
                     influence your identity and sense of self, your relationship with your body and your emotions, and
                     in

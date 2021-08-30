@@ -19,6 +19,7 @@ sans-serif;
     top          : 15px;
     right        : 40px;
     height       : 93%;
+    
 }
 
 
@@ -44,12 +45,18 @@ sans-serif;
 }
 
 .sec1 .textBold {
-    font-weight: bold;
-    color      : #3C4342;
-    font-size  : 14px;
-    font-family: 'ITC Avant Garde Gothic Std Demi', sans-serif;
-    opacity    : 0.8;
+    font-weight   : bold;
+    // color      : #3C4342;
+    color         : #000000;
+    font-size     : 14px;
+    font-family   : 'ITC Avant Garde Gothic Std Demi', sans-serif;
+    opacity       : 0.8;
 
+}
+
+.sec1 .textNormal {
+    color      : #000000;
+    font-weight: bold;
 }
 
 
@@ -136,9 +143,10 @@ sans-serif;
 
 @media only screen and (max-width:1050px) and (min-width: 0px) {
     .sec1 .textBold {
-        font-size  : 24px;
+        font-size: 24px;
     }
-    .sec1 .textNormal{
+
+    .sec1 .textNormal {
         font-size: 18px;
     }
 }

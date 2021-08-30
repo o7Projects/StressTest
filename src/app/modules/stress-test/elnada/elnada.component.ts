@@ -23,11 +23,11 @@ import { ITherapists } from '../_Models/ITherapists';
   // ]
 
   animations: [
-    trigger('fade', [ 
+    trigger('fade', [
       transition('void => *', [
-        style({ opacity: 0 }), 
-        animate(2000, style({opacity: 0.8}))
-      ]) 
+        style({ opacity: 0 }),
+        animate(1000, style({ opacity: 0.8 }))
+      ])
     ])
   ]
 
@@ -111,19 +111,19 @@ export class ElnadaComponent implements OnInit {
 
 
     if (this.screenWidth > 1050) {
-      let elemSec1Big: HTMLElement = document.getElementById('sec1Big');
-      elemSec1Big.setAttribute("style", "overflow-x:hidden");
+      let elem: HTMLElement = document.getElementById('sec1Big');
+      elem.setAttribute("style", "overflow-x:hidden");
 
     }
 
     if (this.screenWidth <= 1050) {
-      let elemSec1Big: HTMLElement = document.getElementById('MyPage');
-      elemSec1Big.setAttribute("style", "background:#5a6967;opacity:0.8");
-
+      let elem: HTMLElement = document.getElementById('MyPage');
+      elem.setAttribute("style", "background:#3C4342;opacity:0.6");
+  
       let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
-      elemSec2Text.setAttribute("style", "color:#3C4342;");
+      elemSec2Text.setAttribute("style", "color:#000000;font-weight: bold");
+  
 
-      
     }
 
   }
@@ -134,95 +134,94 @@ export class ElnadaComponent implements OnInit {
     this.screenWidth = window.innerWidth;
     this.screenHeight = window.innerHeight;
 
+    let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
+    elemSec2Text.setAttribute("style", "color:#9c9e9d;font-weight: normal;margin-bottom: 30px; margin-right: 15px; margin-left: 15px;");
+
     if (this.screenWidth > 1050) {
+      let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
+      elemSec2Text.setAttribute("style", "color:#9c9e9d;font-weight: normal;margin-bottom: 30px; margin-right: 15px; margin-left: 15px;");
+  
       this.hideItem();
     }
 
     if (this.screenWidth <= 1050) {
 
       if (this.showSmallText) {
-        let elemSec1Big: HTMLElement = document.getElementById('MyPage');
-        elemSec1Big.setAttribute("style", "background:#5a6967;opacity:0.8");
-
-        let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
-        elemSec2Text.setAttribute("style", "color:#3C4342;");
-
+        this.showSmallItem();
 
       }
       else {
-        let elemSec1Big: HTMLElement = document.getElementById('MyPage');
-        elemSec1Big.setAttribute("style", "background:none;opacity:1");
-
-        let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
-        elemSec2Text.setAttribute("style", "color:#9c9e9d;");
-
-
-
+        this.hideSmallItem();
       }
 
     }
   }
 
+
+  @HostListener('window:scroll', ['$event']) // for window scroll events
+  onScroll(event) {
+    this.hideSmallItem();
+  }
+
   showItem() {
     this.showText = true;
-    // el.setAttribute('style', 'color: white; background: red');
-
     // this.renderer.setStyle(this.allPage.nativeElement, 'background', '#3C4342');
-    // this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '0.5');
+    let elem: HTMLElement = document.getElementById('MyPage');
+    elem.setAttribute("style", "background:#3C4342;opacity:0.8");
 
-    let elemSec1Big: HTMLElement = document.getElementById('MyPage');
-    elemSec1Big.setAttribute("style", "background:#3C4342;opacity:0.8");
+    
+    let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
+    elemSec2Text.setAttribute("style", "color:#9c9e9d;font-weight: normal;margin-bottom: 30px; margin-right: 15px; margin-left: 15px;");
+
+
 
   }
   hideItem() {
     this.showText = false;
-    // this.renderer.setStyle(this.allPage.nativeElement, 'background', 'none');
-    // this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '1');
 
-    let elemSec1Big: HTMLElement = document.getElementById('MyPage');
-    elemSec1Big.setAttribute("style", "background:none;opacity:1");
+    let elem: HTMLElement = document.getElementById('MyPage');
+    elem.setAttribute("style", "background:none;opacity:1");
+
+    let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
+    elemSec2Text.setAttribute("style", "color:#9c9e9d;font-weight: normal;margin-bottom: 30px; margin-right: 15px; margin-left: 15px;");
 
   }
 
   showSmallItem() {
     this.showSmallText = true;
 
-    // this.renderer.setStyle(this.allPage.nativeElement, 'background', '#5a6967');
-    // this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '0.5');
-
-    let elemSec1Big: HTMLElement = document.getElementById('MyPage');
-    elemSec1Big.setAttribute("style", "background:#5a6967;opacity:0.8");
+    let elem: HTMLElement = document.getElementById('MyPage');
+    elem.setAttribute("style", "background:#3C4342;opacity:0.6");
 
     let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
-    elemSec2Text.setAttribute("style", "color:#3C4342;");
+    elemSec2Text.setAttribute("style", "color:#000000;font-weight: bold;margin-bottom: 30px; margin-right: 15px; margin-left: 15px;");
+
+    let elemSec1Head: HTMLElement = document.getElementById('section1Head');
+    elemSec1Head.setAttribute("style", "color:#000000;");
+
+    let elemSec1Title: HTMLElement = document.getElementById('section1Title');
+    elemSec1Title.setAttribute("style", "color:#000000;font-weight: bold");
+
 
 
   }
   hideSmallItem() {
     this.showSmallText = false;
 
-    // this.renderer.setStyle(this.allPage.nativeElement, 'background', 'none');
-    // this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '1');
-
-    let elemSec1Big: HTMLElement = document.getElementById('MyPage');
-    elemSec1Big.setAttribute("style", "background:none;opacity:1");
+    let elem: HTMLElement = document.getElementById('MyPage');
+    elem.setAttribute("style", "background:none;opacity:1");
 
     let elemSec2Text: HTMLElement = document.getElementById('sec2Text');
-    elemSec2Text.setAttribute("style", "color:#9c9e9d;");
+    elemSec2Text.setAttribute("style", "color:#9c9e9d;font-weight: normal;margin-bottom: 30px; margin-right: 15px; margin-left: 15px;");
 
-  }
+    let elemSec1Head: HTMLElement = document.getElementById('section1Head');
+    elemSec1Head.setAttribute("style", "color:#3C4342;");
 
-  tooggleSmallItem() {
-    this.showSmallText = !this.showSmallText;
 
-    if (this.showSmallText) {
-      this.renderer.setStyle(this.allPage.nativeElement, 'background', '#3C4342');
-      this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '0.5');
-    }
-    else {
-      this.renderer.setStyle(this.allPage.nativeElement, 'background', 'none');
-      this.renderer.setStyle(this.allPage.nativeElement, 'opacity', '1');
-    }
+    let elemSec1Title: HTMLElement = document.getElementById('section1Title');
+    elemSec1Title.setAttribute("style", "color:#3C4342;font-weight: normal");
+
+
   }
 
 
@@ -238,16 +237,16 @@ export class ElnadaComponent implements OnInit {
   yesAnimate() {
     this.showText = true;
 
-    let elemSec1Big: HTMLElement = document.getElementById('sec1Big');
-    elemSec1Big.setAttribute("style", "overflow-x:hidden");
+    // let elem: HTMLElement = document.getElementById('sec1Big');
+    // elem.setAttribute("style", "overflow-x:hidden");
 
   }
   noAnimate() {
     this.showText = false;
     this.animation = 0;
 
-    let elemSec1Big: HTMLElement = document.getElementById('sec1Big');
-    elemSec1Big.setAttribute("style", "overflow-x:hidden");
+    // let elem: HTMLElement = document.getElementById('sec1Big');
+    // elem.setAttribute("style", "overflow-x:hidden");
 
   }
 
