@@ -42,7 +42,7 @@
     "@gorniv/ngx-transfer-http": "2.2.9",
     "@material-extended/mde": "2.3.1",
     "@microsoft/applicationinsights-web": "^2.5.11",
-    "@ng-bootstrap/ng-bootstrap": "5.2.1",
+    "@ng-bootstrap/ng-bootstrap": "^6.1.0",
     "@nguniversal/common": "8.1.1",
     "@nguniversal/express-engine": "8.1.1",
     "@nguniversal/module-map-ngfactory-loader": "8.1.1",

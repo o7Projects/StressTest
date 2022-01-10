@@ -1,0 +1,589 @@
+<div class="body" (window:resize)="onResize($event)">
+    <div class="col-md-12 firstSec text-center">
+        <h3 class="interestedLbl">Interested in</h3>
+        <h1 class="sportsLbl">Sports Psychology?</h1>
+        <h4 *ngIf="currentWidth>=720" class="remainLbl">We are offering the first and only comprehensive program<br />
+            designed by a former professional athlete and coach, who<br /> also has a clinical educational background.
+            Thereby,<br /> combining experience with evidence-based treatments.</h4>
+        <h4 *ngIf="currentWidth<720" class="remainLbl">We are offering the first and only comprehensive<br /> program
+            designed by a former professional<br /> athlete and coach, who also has a clinical<br /> educational
+            background. Thereby, combining<br /> experience with evidence-based treatments.</h4>
+
+        <div class="arrow">
+            <!-- <i class="fa fa-arrow-down"></i> -->
+            <img (click)="toFormReg($event)" src="../../../../assets/images/Sports/arrowDown.svg"
+                style="height: 48px; width: 20px;" />
+        </div>
+    </div>
+
+    <div class="col-md-12 secondSec">
+        <h2 class="performLbl text-center"> Sports and Performance Enhancement</h2>
+        <h1 class="eliteLbl text-center">Elite Training Program</h1>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Do you have a passion for sports and would like to know how you can help
+                                        athletes maximize their potential? My name is <span class="boldTxt">Dr. Sherif
+                                            Zaher</span> , I’m the director
+                                        for the <span class="boldTxt">Sports and Performance Enhancement Program</span>
+                                        .
+                                        <br /><br />
+                                        For the past 20yrs, I have been helping some of the best athletes from all over
+                                        the world compete at the highest level, on the biggest stages, and have provided
+                                        my services to sports clubs, schools, and universities alike. Through this
+                                        experience, and my own personal history as a professional athlete, I have come
+                                        to realize that there is one critical component which separates champions from
+                                        everyone else, and that is…. their <span class="boldTxt">MINDSET</span>!
+                                        <br /><br />
+                                        Which brings me to the purpose of this message, and that is my excitement to
+                                        join <span class="boldTxt">O7 Therapy</span> in being the first organization to
+                                        create an elite training
+                                        program where we will train and certify qualified therapists to deliver
+                                        performance enhancement services with the mission of producing high caliber
+                                        athletes. Our therapists will be trained in assessing athletes’ needs, designing
+                                        a treatment plan, and providing mental tools that result in peak performance.
+                                        <br /><br />
+                                        If you are interested in joining our great team of clinicians and would like to
+                                        build yourself an exciting career, contact us for more details regarding program
+                                        requirements.
+                                    </p>
+
+                                    <img class="signature" src="../../../../assets/images/Sports/SZ signature 1.svg" />
+                                    <div class="text-center">
+                                        <a (click)="toFormReg($event)" class="btn btn-primary joinusBtn">Join Us Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="vedioImg" src="../../../../assets/images/Sports/vedioImg.PNG" />
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 thirdSec">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-11 offset-md-1">
+                            <div class="row">
+                                <div class="col-6 headLbls">
+                                    <h2 class="meetLbl"> Meet Dr. </h2>
+                                    <h1 class="drNameLbl">Sherif Zaher</h1>
+
+                                    <div *ngIf="currentWidth>720" class="row" style="margin-top: 10px;">
+                                        <div class="col-md-12">
+                                            <p class="drDescLbl card-text">Dr. Zaher has a doctorate in clinical
+                                                psychology, a
+                                                masters
+                                                in Kinesiology (sports
+                                                performance) and a bachelor's in psychology. He’s also a licensed
+                                                clinical
+                                                psychologist
+                                                in the state of CA., and continues to offer his clinical and sport
+                                                psychology
+                                                services
+                                                to clients via telehealth.
+                                            </p>
+                                            <!-- Button trigger modal -->
+                                            <div class="readMore">
+                                                <span class="readMoreLbl">Read More</span>
+                                                <img class="readMoreArrowImg" src="../../../../assets/images/Sports/arrowWithRec.svg" (click)="open(mymodal)" />
+
+                                                <!-- <span class="readMoreArrow" (click)="open(mymodal)">
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-4 text-center">
+                                    <img class="drImg" src="../../../../assets/images/Sports/Mask Group.png" />
+                                </div>
+                            </div>
+                            <div *ngIf="currentWidth<=720" class="row" style="margin-top: 25px;">
+                                <div class="col-md-6">
+                                    <p class="drDescLbl card-text">Dr. Zaher has a doctorate in clinical psychology, a
+                                        masters
+                                        in Kinesiology (sports
+                                        performance) and a bachelor's in psychology. He’s also a licensed clinical
+                                        psychologist
+                                        in the state of CA., and continues to offer his clinical and sport psychology
+                                        services
+                                        to clients via telehealth.
+                                    </p>
+                                    <!-- Button trigger modal -->
+                                    <div class="readMore">
+                                        <span class="readMoreLbl">Read More</span>
+                                        <img class="readMoreArrowImg" src="../../../../assets/images/Sports/arrowWithRec.svg" (click)="open(mymodal)" />
+                                        <!-- <span class="readMoreArrow" (click)="open(mymodal)">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </span> -->
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <ng-template #mymodal let-modal>
+                                <div class="modal-header">
+                                    <button type="button" class="close" aria-label="Close"
+                                        (click)="modal.dismiss('Cross click')">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h2 style="font-size: 20px;"> Meet Dr. </h2>
+                                                <h1 style="font-weight: bold; font-size: 25px;">Sherif
+                                                    Zaher</h1>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <img class="modalDrImg"
+                                                    src="../../../../assets/images/Sports/Mask Group.png" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <p class="card-text" style="margin-top: 25px;">Dr. Zaher has
+                                                a doctorate in
+                                                clinical psychology, a masters in Kinesiology (sports
+                                                performance) and a bachelor's in psychology. He’s also a
+                                                licensed clinical psychologist in the state of CA., and
+                                                continues to offer his clinical and sport psychology
+                                                services to clients via telehealth.
+
+                                                Dr. Zaher’s clinical background includes but is not
+                                                limited to the following positions: junior specialist
+                                                with UC Davis Children's Hospital, mental health
+                                                rehabilitation specialist at a crisis residential
+                                                center, and a psychological assistant at an outpatient
+                                                mental health clinic. He considers his involvement in a
+                                                patient's recovery process a great honor, and focuses on
+                                                adopting an eclectic approach that would provide each
+                                                client with the necessary treatment that would help in
+                                                overcoming the presenting symptoms experienced. He has a
+                                                special interest in assisting patients struggling with
+                                                depression and anxiety related disorders. Dr. Zaher’s
+                                                area of expertise is sport psychology, where he has been
+                                                working with high level athletes for 20+ years.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </ng-template>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 fourthSec">
+        <h2 class="trainLbl text-center"> This Elite Training Program</h2>
+        <h1 class="clientLbl text-center">will prepare you to help your clients:</h1>
+
+        <div class="col-sm-12">
+            <div class="row ">
+                <div class="col-md-6 mrgnbtm">
+                    <div class="row">
+                        <div class="col-md-7 offset-md-4">
+                            <div class="card crdBox">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Develop mental plans for training and competition.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center mrgnbtm">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="card crdBox">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Understand the factors associated with peak
+                                        performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="col-md-6 mrgnbtm">
+                    <div class="row">
+                        <div class="col-md-7 offset-md-4">
+                            <div class="card crdBox">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Self-regulate and successfully perform in stressful
+                                        or anxiety provoking situations.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center mrgnbtm">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="card crdBox">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Apply the science behind performing “in the zone”.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="col-md-6 mrgnbtm">
+                    <div class="row">
+                        <div class="col-md-7 offset-md-4">
+                            <div class="card crdBox">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Increase self-awareness of triggers and barriers
+                                        resulting in sub-par performance.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center mrgnbtm">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="card crdBox">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Enhance team cohesion and creating a positive
+                                        mastery focused team environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="col-md-6 mrgnbtm">
+                    <div class="row">
+                        <div class="col-md-7 offset-md-4">
+                            <div class="card crdBox">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Improve skills associated with positive
+                                        performance: confidence, motivation, resilience, self-talk, and concentration.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center mrgnbtm">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="card crdBox">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Develop various mental tools for performance
+                                        enhancement (ex. imagery, goal setting, mindfulness).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="col-md-6 mrgnbtm">
+                    <div class="row">
+                        <div class="col-md-7 offset-md-4">
+                            <div class="card crdBox">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Successfully transition from sport or any other
+                                        career.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center mrgnbtm">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="card crdBox">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Improve recovery and rehabilitation from injury.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a (click)="toFormReg($event)" class="btn btn-primary joinusBtn">Join Us Now</a>
+        </div>
+    </div>
+
+    <div class="col-md-12 fifthSec">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-9 offset-md-3">
+                        <h1 class="certifLbl text-center">Program Certification</h1>
+                        <h4 class="certifPrph">Successfully completing the program offers a certification which
+                            demonstrates to
+                            clients, and the
+                            public at large that you have met the highest standards of professional practice, including:
+                        </h4>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card certifCard">
+                                    <div class="card-body">
+                                        <p class="card-text">Completing a combination of educational and clinical
+                                            requirements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card certifCard">
+                                    <div class="card-body">
+                                        <p class="card-text">Successfully passing a certification exam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card certifCard">
+                                    <div class="card-body">
+                                        <p class="card-text">Receiving clinical supervision by a licensed psychologist
+                                            (Dr. Sherif Zaher).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card certifCard">
+                                    <div class="card-body">
+                                        <p class="card-text">Adhering to ethical principles and committing to ongoing
+                                            professional development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="certifNote">
+                            *Please note that gaining certification doesn’t guarantee employment opportunities. However,
+                            <span class="boldTxt">O7 certified candidates</span>
+                            will be used to fill the demand of clients as needed.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <img class="mountain" src="../../../../assets/images/Sports/mountain h@4x 1.svg" />
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 sixthSec">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="card eligCard">
+                    <div class="card-body">
+                        <h1 class="card-title eligHead">Eligibility Criteria</h1>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-8 offset-md-3">
+                                        <ul>
+                                            <li class="lstItem">Masters degree in either sport science or psychology (or
+                                                equivalent/closely related field) </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <ul>
+                                            <li class="lstItem">Demonstrated expertise in working with clients to
+                                                optimize
+                                                performance, enjoyment, and/or personal development in sport or other
+                                                domains</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-8 offset-md-3">
+                                        <ul>
+                                            <li class="lstItem">Minimum 2 years of clinical experience </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <ul>
+                                            <li class="lstItem">Fluent in both English and Arabic </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a (click)="toFormReg($event)" class="btn btn-primary joinusBtn">Join Us Now</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 seventhSec">
+        <div class="row">
+            <div class="col-md-11 offset-md-1">
+                <h6 class="detailsLbl">Program Details:</h6>
+                <p class="datesLbl">January 28th and 29th 2022</p>
+                <h6 class="locLbl">Location to be determined.</h6>
+                <h6 class="currLbl">$$$$ EGP</h6>
+                <p class="submitLbl">Submit your request in this form 
+                    <span *ngIf="currentWidth>720" class="arrowRight">
+                        <!-- <i class="fa fa-arrow-right"></i> -->
+                        <img (click)="toFormReg($event)" class="ArrowImg" src="../../../../assets/images/Sports/arrowWithRec.svg"  />
+
+                    </span>
+                </p>
+
+
+                <p style="margin-bottom: 40px;" class="text-center" *ngIf="currentWidth<=720">
+                    <span class="arrowDown">
+                        <!-- <i class="fa fa-arrow-down"></i> -->
+                        <img (click)="toFormReg($event)" class="ArrowImg" src="../../../../assets/images/Sports/btn arrow down.svg" />
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="eighthSec" id="formReg">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Application Form</h5>
+    
+                    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" formControlName="fullName" class="form-control inpType"
+                                    placeholder="name" [ngClass]="{ 'is-invalid': submitted && f.fullName.errors }" />
+                                <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
+                                    <div *ngIf="f.fullName.errors.required">Full Name is required</div>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="text" formControlName="email" class="form-control inpType" placeholder="email"
+                                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                    <div *ngIf="f.email.errors.required">Email is required</div>
+                                    <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12">
+                            <div class="form-group uploadCv">
+                                <label>Attach Resume</label>
+                                <input type="file" (change)="onFileChange($event);" #file style="display: none;">
+                                <input type="text" readonly formControlName="resume" class="form-control inpType"
+                                    placeholder="resume" [ngClass]="{ 'is-invalid': submitted && f.resume.errors }" />
+                                <!-- <i class="fa fa-upload" (click)="file.click()"></i> -->
+                                <img src="../../../../assets/images/Sports/upload.svg" (click)="file.click()">
+                                <div *ngIf="submitted && f.resume.errors" class="invalid-feedback">
+                                    <div *ngIf="f.resume.errors.required">Resume is required</div>
+                                </div>
+                                <p class="uploadLbl">Upload PDF or Doc. files maximum 3 mb</p>
+                            </div>
+                        </div>
+    
+                        <div class="col-12" style="margin-top: 15px;">
+                            <div class="form-group">
+                                <h2 class="rdioLbl">Are you currently an O7 Therapist? </h2>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" formControlName="o7Therapist" value=true>Yes
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" formControlName="o7Therapist" value=false>No
+                                    </label>
+                                </div>
+
+                                <div *ngIf="submitted && f.o7Therapist.errors" class="invalid-feedback">
+                                    <div *ngIf="f.o7Therapist.errors.required">This field is required</div>
+                                </div>
+    
+                                <p class="rdioCondLbl">*If yes, you will be eligible for financing  </p>
+                                <p class="rdioLimitLbl">*Limited capacity for the program, applicants will be screened first.  </p>
+                            </div>
+    
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary sbmtBtn">Submit</button>
+                            <!-- <button class="btn btn-secondary" type="reset" (click)="onReset()">Cancel</button> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+   
+
+
+
+
+
+
+</div>

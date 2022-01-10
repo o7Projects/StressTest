@@ -1,0 +1,644 @@
+@font-face {
+    font-family: abc;
+    src: url(../../../../assets/fonts/ABCFavorit-Regular-Trial.otf) format("opentype");
+}
+
+* {
+    font-family: "abc", "arial", sans-serif;
+}
+// ------------------------------------- First section -------------------------------------
+.firstSec {
+    @media (max-width: 2000px) and (min-width: 720px) {
+        background-image: url("../../../../assets/images/Sports/Sports\ Psychology\ Landing\ Page_Desktop\ View\ 2.svg");
+        background-size: cover;
+    }
+    @media (max-width: 720px) and (min-width: 320px) {
+        height: 600px;
+        background-image: url("../../../../assets/images/Sports/Sports\ Psychology\ Landing\ Page_Desktop\ View\ 2_mobile.svg");
+        background-size: cover;
+    }
+    @media (max-width: 320px) {
+        height: 600px;
+        background-image: url("../../../../assets/images/Sports/Sports\ Psychology\ Landing\ Page_Desktop\ View\ 2_mobile.svg");
+        background-size: contain;
+    }
+
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    @media (max-width: 1100px) and (min-width: 900px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @media (max-width: 900px) and (min-width: 720px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media (max-width: 720px) {
+        padding-top: 220px;
+        padding-bottom: 220px;
+    }
+}
+.firstSec .interestedLbl {
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 40px;
+    }
+    @media (max-width: 1100px) and (min-width: 800px) {
+        font-size: 35px;
+    }
+    @media (max-width: 800px) and (min-width: 500px) {
+        font-size: 30px;
+    }
+    @media (max-width: 500px) and (min-width: 320px) {
+        font-size: 20px;
+    }
+    @media (max-width: 320px) {
+        font-size: 14px;
+    }
+}
+.firstSec .sportsLbl {
+    font-weight: bold;
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 40px;
+    }
+    @media (max-width: 1100px) and (min-width: 800px) {
+        font-size: 35px;
+    }
+    @media (max-width: 800px) and (min-width: 500px) {
+        font-size: 30px;
+    }
+    @media (max-width: 500px) and (min-width: 350px) {
+        font-size: 20px;
+    }
+    @media (max-width: 350px) {
+        font-size: 17px;
+    }
+}
+.firstSec .remainLbl {
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 23px;
+        margin-top: 60px;
+    }
+    @media (max-width: 1100px) and (min-width: 720px) {
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    @media (max-width: 720px) {
+        font-size: 14px;
+        margin-top: 40px;
+    }
+}
+.firstSec .arrow {
+    font-size: 25px;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #7c7171;
+    cursor: pointer;
+    @media (max-width: 2000px) and (min-width: 720px) {
+        margin-top: 60px;
+    }
+    @media (max-width: 720px) {
+        margin-top: 120px;
+    }
+}
+// ------------------------------------- Second section -------------------------------------
+.secondSec {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.secondSec .performLbl {
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 40px;
+    }
+    @media (max-width: 1100px) and (min-width: 800px) {
+        font-size: 35px;
+    }
+    @media (max-width: 800px) and (min-width: 500px) {
+        font-size: 30px;
+    }
+    @media (max-width: 500px) and (min-width: 320px) {
+        font-size: 18px;
+    }
+    @media (max-width: 320px) {
+        font-size: 15px;
+    }
+}
+.secondSec .eliteLbl {
+    font-weight: bold;
+    margin-bottom: 80px;
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 40px;
+    }
+    @media (max-width: 1100px) and (min-width: 800px) {
+        font-size: 35px;
+    }
+    @media (max-width: 800px) and (min-width: 500px) {
+        font-size: 30px;
+    }
+    @media (max-width: 500px) and (min-width: 350px) {
+        font-size: 20px;
+    }
+    @media (max-width: 350px) {
+        font-size: 17px;
+    }
+}
+.secondSec .cardItem {
+    background: #ffffff;
+    box-shadow: 2px 2px 23px 7px rgba(193, 193, 193, 0.25);
+    border-radius: 5px;
+    color: #666666;
+}
+.secondSec .vedioImg {
+    border-radius: 5px;
+    cursor: pointer;
+    @media (max-width: 2000px) and (min-width: 720px) {
+        margin-left: -50px;
+        margin-top: 35%;
+        width: 70%;
+    }
+    @media (max-width: 720px) {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+.secondSec .signature {
+    width: 100px;
+    display: block;
+    margin-bottom: 40px;
+}
+.secondSec .boldTxt {
+    font-weight: bold;
+}
+.secondSec .joinusBtn {
+    background-color: #60a49f;
+    color: white;
+    border: #60a49f;
+    border-radius: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.secondSec .joinusBtn:hover {
+    background-color: #ffffff;
+    color: #60a49f;
+    border: 1px solid #60a49f;
+}
+// ------------------------------------- Third section -------------------------------------
+.thirdSec {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+.thirdSec .headLbls {
+    @media (max-width: 2000px) and (min-width: 720px) {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+    @media (max-width: 720px) {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+.thirdSec .meetLbl {
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 30px;
+    }
+    @media (max-width: 1100px) and (min-width: 800px) {
+        font-size: 25px;
+    }
+    @media (max-width: 800px) and (min-width: 500px) {
+        font-size: 20px;
+    }
+    @media (max-width: 500px) and (min-width: 320px) {
+        font-size: 18px;
+    }
+    @media (max-width: 320px) {
+        font-size: 15px;
+    }
+}
+.thirdSec .drNameLbl {
+    font-weight: bold;
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 40px;
+    }
+    @media (max-width: 1100px) and (min-width: 800px) {
+        font-size: 32px;
+    }
+    @media (max-width: 800px) and (min-width: 500px) {
+        font-size: 25px;
+    }
+    @media (max-width: 500px) and (min-width: 350px) {
+        font-size: 20px;
+    }
+    @media (max-width: 350px) {
+        font-size: 17px;
+    }
+}
+.thirdSec .readMore {
+    margin-top: 20px;
+}
+.thirdSec .readMore .readMoreArrow {
+    width: 80px;
+    height: 80px;
+    margin-left: 25px;
+    background-color: #60a49f;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.thirdSec .readMore .readMoreArrowImg {
+    height: 30px;
+    width: 30px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.thirdSec .readMore .readMoreLbl {
+    font-size: 18px;
+    color: #60a49f;
+}
+.thirdSec .drImg {
+    @media (max-width: 2000px) and (min-width: 720px) {
+        height: 220px;
+    }
+    @media (max-width: 720px) {
+        height: 170px;
+    }
+}
+// ------------------------------------- Fourth section -------------------------------------
+.fourthSec {
+    padding-top: 70px;
+    padding-top: 25px;
+    background-image: url("../../../../assets/images/Sports/Sports\ Psychology\ Landing\ Page-05\ 1.svg");
+    background-repeat: no-repeat;
+
+    @media (max-width: 700px) {
+        background-position: bottom;
+    }
+}
+.fourthSec .trainLbl {
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 35px;
+    }
+    @media (max-width: 1100px) and (min-width: 800px) {
+        font-size: 30px;
+    }
+    @media (max-width: 800px) and (min-width: 500px) {
+        font-size: 25px;
+    }
+    @media (max-width: 500px) and (min-width: 320px) {
+        font-size: 18px;
+    }
+    @media (max-width: 320px) {
+        font-size: 15px;
+    }
+}
+.fourthSec .clientLbl {
+    font-weight: bold;
+    margin-bottom: 40px;
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 35px;
+    }
+    @media (max-width: 1100px) and (min-width: 800px) {
+        font-size: 30px;
+    }
+    @media (max-width: 800px) and (min-width: 500px) {
+        font-size: 25px;
+    }
+    @media (max-width: 500px) and (min-width: 350px) {
+        font-size: 20px;
+    }
+    @media (max-width: 350px) {
+        font-size: 17px;
+    }
+}
+.fourthSec .mrgnbtm {
+    margin-bottom: 15px;
+}
+.fourthSec .crdBox {
+    background: #ffffff;
+    box-shadow: 2px 2px 15px 7px rgba(193, 193, 193, 0.25);
+    border-radius: 5px;
+    min-height: 100px;
+}
+.fourthSec .crdBox :hover {
+    color: #ffffff;
+    background-color: #60a49f;
+    cursor: pointer;
+}
+.fourthSec .joinusBtn {
+    background-color: #60a49f;
+    color: white;
+    border: #60a49f;
+    border-radius: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.fourthSec .joinusBtn:hover {
+    background-color: #ffffff;
+    color: #60a49f;
+    border: 1px solid #60a49f;
+}
+// ------------------------------------- Fifth section -------------------------------------
+.fifthSec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.fifthSec .certifLbl {
+    font-weight: bold;
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 37px;
+    }
+    @media (max-width: 1100px) and (min-width: 800px) {
+        font-size: 33px;
+    }
+    @media (max-width: 800px) and (min-width: 500px) {
+        font-size: 30px;
+    }
+    @media (max-width: 500px) and (min-width: 350px) {
+        font-size: 20px;
+    }
+    @media (max-width: 350px) {
+        font-size: 17px;
+    }
+}
+.fifthSec .certifPrph {
+    font-size: 18px;
+    line-height: 26px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+.fifthSec .certifNote {
+    font-size: 16px;
+    line-height: 23px;
+    color: #666666;
+    margin-top: 20px;
+}
+.fifthSec .certifCard {
+    background: #ffffff;
+    box-shadow: 2px 2px 15px 7px rgba(193, 193, 193, 0.25);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    min-height: 113px;
+}
+.fifthSec .certifCard :hover {
+    color: #ffffff;
+    background-color: #60a49f;
+    cursor: pointer;
+}
+.fifthSec .mountain {
+    width: 90%;
+}
+.fifthSec .boldTxt {
+    font-weight: bold;
+}
+// ------------------------------------- Sixth section -------------------------------------
+.sixthSec {
+    padding-bottom: 40px;
+}
+.sixthSec .eligCard {
+    background: #ffffff;
+    box-shadow: 2px 2px 15px 7px rgba(193, 193, 193, 0.25);
+    border-radius: 5px;
+}
+.sixthSec .eligCard .eligHead {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 37px;
+    }
+    @media (max-width: 1100px) and (min-width: 800px) {
+        font-size: 32px;
+    }
+    @media (max-width: 800px) and (min-width: 500px) {
+        font-size: 30px;
+    }
+    @media (max-width: 500px) and (min-width: 350px) {
+        font-size: 20px;
+    }
+    @media (max-width: 350px) {
+        font-size: 17px;
+    }
+}
+.sixthSec .joinusBtn {
+    background-color: #60a49f;
+    color: white;
+    border: #60a49f;
+    border-radius: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.sixthSec .joinusBtn:hover {
+    background-color: #ffffff;
+    color: #60a49f;
+    border: 1px solid #60a49f;
+}
+.sixthSec .lstItem {
+    color: #666666;
+}
+
+// ------------------------------------- Seventh section -------------------------------------
+.seventhSec {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #60a49f;
+    border-radius: 5px;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+    @media (max-width: 720px) {
+        padding-bottom: 200px;
+    }
+}
+.seventhSec .detailsLbl {
+    font-size: 18px;
+    color: #ffffff;
+}
+.seventhSec .datesLbl {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.seventhSec .locLbl {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.seventhSec .currLbl {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+.seventhSec .submitLbl {
+    font-size: 18px;
+    color: #ffffff;
+}
+.seventhSec .arrowRight {
+    width: 80px;
+    height: 80px;
+    margin-left: 25px;
+    color: white;
+    cursor: pointer;
+}
+.seventhSec .arrowDown {
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+}
+.seventhSec .arrowDown ArrowImg{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+// ------------------------------------- Eighth section -------------------------------------
+.eighthSec {
+    background: #ffffff;
+    box-shadow: 4px 4px 17px 8px rgba(154, 154, 154, 0.25);
+    border-radius: 6px;
+    // float: right;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        width: 38%;
+        position: absolute;
+        right: 5%;
+        top: -150px;
+    }
+    @media (max-width: 720px) {
+        width: 90%;
+        position: absolute;
+        right: 5%;
+    }
+}
+.eighthSec .card-title {
+    font-weight: bold;
+    @media (max-width: 2000px) and (min-width: 1100px) {
+        font-size: 35px;
+    }
+    @media (max-width: 1100px) and (min-width: 800px) {
+        font-size: 30px;
+    }
+    @media (max-width: 800px) and (min-width: 500px) {
+        font-size: 25px;
+    }
+    @media (max-width: 500px) and (min-width: 350px) {
+        font-size: 20px;
+    }
+    @media (max-width: 350px) {
+        font-size: 17px;
+    }
+}
+
+.eighthSec .inpType {
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    &::placeholder {
+        color: #979797;
+        opacity: 1;
+    }
+}
+.eighthSec .sbmtBtn {
+    background: #60a49f;
+    border-radius: 8px;
+    border-color: #60a49f;
+    color: white;
+    width: 100%;
+}
+.eighthSec .sbmtBtn:hover {
+    background-color: #ffffff;
+    color: #60a49f;
+    border: 1px solid #60a49f;
+}
+
+.eighthSec .uploadCv img {
+    position: absolute;
+    right: 25px;
+    top: 42px;
+    color: #60a49f;
+    cursor: pointer;
+}
+.eighthSec .uploadLbl {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+.eighthSec .rdioLbl {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.eighthSec .rdioCondLbl {
+    color: #666666;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.eighthSec .rdioLimitLbl {
+    color: #666666;
+    font-size: 15px;
+}
+.eighthSec .form-check-inline {
+    width: 25%;
+}
+.eighthSec .form-check-inline .form-check-label {
+    font-size: 20px;
+}
+.eighthSec .form-check-inline .form-check-input{
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.eighthSec input[type="radio"]:checked::after{
+    background-color: #60a49f !important;
+    color: #60a49f !important;
+}
+.eighthSec input[type="radio"]::after{
+    background-color: #60a49f !important;
+    color: #60a49f !important;
+}
+.eighthSec input[type="radio"]:checked::before{
+    background-color: #60a49f !important;
+    color: #60a49f !important;
+}
+.eighthSec input[type="radio"]::before{
+    background-color: #60a49f !important;
+    color: #60a49f !important;
+}
+// ------------------------------------- Modal style -------------------------------------
+
+.modalDrImg {
+    height: 150px;
+    width: 150px;
+}
+
+.modal-header {
+    border-bottom: 0px !important;
+}
+.modal-body {
+    padding: 3rem;
+}

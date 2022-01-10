@@ -9,10 +9,12 @@ import { Settings } from './app.settings';
 import { ToastrModule } from 'ngx-toastr';
 
 import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
   imports: [
+    NgbModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     Ng2DeviceDetectorModule.forRoot(),
