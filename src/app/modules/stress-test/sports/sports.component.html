@@ -163,7 +163,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <p class="card-text" style="margin-top: 25px; font-size: 18px;">Dr. Zaher has
+                                            <p class="card-text" style="margin-top: 25px; font-size: 18px; color: #666666;">Dr. Zaher has
                                                 a doctorate in
                                                 clinical psychology, a masters in Kinesiology (sports
                                                 performance) and a bachelor's in psychology. He’s also a
@@ -191,8 +191,6 @@
                                 </div>
 
                             </ng-template>
-
-
                         </div>
                     </div>
                 </div>
@@ -414,7 +412,7 @@
 
             </div>
             <div class="col-md-6">
-                <img class="mountain" src="../../../../assets/images/Sports/mountatio@4x 2.svg" />
+                <img class="mountain" src="../../../../assets/images/Sports/mountatio4x 1.png" />
             </div>
         </div>
     </div>
@@ -537,7 +535,7 @@
                         <div class="col-12">
                             <div class="form-group uploadCv">
                                 <label>Attach Resume</label>
-                                <input type="file" (change)="onFileChange($event);" #file style="display: none;">
+                                <input type="file" (change)="onFileChange($event);" accept=".pdf,.doc" #file style="display: none;">
                                 <input type="text" readonly formControlName="resume" class="form-control inpType"
                                     placeholder="resume" [ngClass]="{ 'is-invalid': submitted && f.resume.errors }" />
                                 <!-- <i class="fa fa-upload" (click)="file.click()"></i> -->

@@ -63,8 +63,18 @@ export class SportsComponent implements OnInit {
     debugger;
     this.selectedFiles = event.target.files;
 
-    this.registerForm.get("resume").setValue(this.selectedFiles[0].name)
-    console.log(event);
+    let fileName = this.selectedFiles[0].name;
+    var ext =  fileName.split('.').pop();
+
+    if(fileName.includes(".pdf") || fileName.includes(".docx") || fileName.includes("doc"))
+    {
+      this.registerForm.get("resume").setValue(fileName)
+      console.log(event);  
+    }
+    else{
+      alert("File must be pdf or word only");
+    }
+
   }
 
   upload(): void {
