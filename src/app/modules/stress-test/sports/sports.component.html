@@ -1,4 +1,8 @@
 <div class="body" (window:resize)="onResize($event)">
+    <div class="col-md-12 headSec text-center">
+        <img src="../../../../assets/images/Sports/o7Logo.png" class="headLogo" (click)="logoClick()">
+    </div>
+
     <div class="col-md-12 firstSec text-center">
         <h3 class="interestedLbl">Interested in</h3>
         <h1 class="sportsLbl">Sports Psychology?</h1>
@@ -9,9 +13,9 @@
             designed by a former professional<br /> athlete and coach, who also has a clinical<br /> educational
             background. Thereby, combining<br /> experience with evidence-based treatments.</h4>
 
-        <div class="arrow">
+        <div (click)="toFormReg($event)" class="arrow">
             <!-- <i class="fa fa-arrow-down"></i> -->
-            <img (click)="toFormReg($event)" src="../../../../assets/images/Sports/arrowDown.svg"
+            <img src="../../../../assets/images/Sports/arrowDown.svg"
                 style="height: 48px; width: 20px;" />
         </div>
     </div>
@@ -21,7 +25,7 @@
         <h1 class="eliteLbl text-center">Elite Training Program</h1>
         <div class="col-sm-12">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-8 col-sm-10">
                     <div class="row">
                         <div class="col-md-10 offset-md-2">
                             <div class="card">
@@ -62,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-4 col-sm-2">
                     <img class="vedioImg" src="../../../../assets/images/Sports/vedioImg.PNG" />
                 </div>
 
@@ -112,7 +116,7 @@
 
                                 </div>
                                 <div class="col-4 text-center">
-                                    <img class="drImg" src="../../../../assets/images/Sports/Mask Group.png" />
+                                    <img class="drImg" src="../../../../assets/images/Sports/Dr.sherif headshot.png" />
                                 </div>
                             </div>
                             <div *ngIf="currentWidth<=720" class="row" style="margin-top: 25px;">
@@ -155,11 +159,11 @@
                                             </div>
                                             <div class="col-6 text-center">
                                                 <img class="modalDrImg"
-                                                    src="../../../../assets/images/Sports/Mask Group.png" />
+                                                    src="../../../../assets/images/Sports/Dr.sherif headshot.png" />
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <p class="card-text" style="margin-top: 25px;">Dr. Zaher has
+                                            <p class="card-text" style="margin-top: 25px; font-size: 18px;">Dr. Zaher has
                                                 a doctorate in
                                                 clinical psychology, a masters in Kinesiology (sports
                                                 performance) and a bachelor's in psychology. He’s also a
@@ -410,7 +414,7 @@
 
             </div>
             <div class="col-md-6">
-                <img class="mountain" src="../../../../assets/images/Sports/mountain h@4x 1.svg" />
+                <img class="mountain" src="../../../../assets/images/Sports/mountatio@4x 2.svg" />
             </div>
         </div>
     </div>
@@ -502,7 +506,7 @@
 
         <div class="eighthSec" id="formReg">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body" *ngIf="!isSuccess">
                     <h5 class="card-title">Application Form</h5>
     
                     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
@@ -574,12 +578,26 @@
                         </div>
                     </form>
                 </div>
+
+                <div class="card-body text-center" *ngIf="isSuccess">
+                    <div class="ok">
+                        <img src="../../../../assets/images/Sports/Ok.svg" class="okImg"/>
+                        <p class="doneLbl">All Done!</p>
+                        <div class="col-md-10 offset-md-1">
+                            <p class="thnxLbl">Thanks for submitting, we will review your
+                                application and contact you shortly. </p>    
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
     </div>
 
-   
+    <div class="col-md-12 footSec text-center">
+        <img src="../../../../assets/images/Sports/O7 Logo - White Variation 1 1.svg" class="footLogo">
+        <p class="footCopyRights">All copyrights @O7Therapy 2022</p>
+    </div>
 
 
 

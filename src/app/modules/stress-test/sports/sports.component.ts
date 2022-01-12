@@ -12,6 +12,7 @@ import { Observable } from 'rxjs';
 export class SportsComponent implements OnInit {
   registerForm: FormGroup;
   submitted = false;
+  isSuccess:boolean = false;
   currentWidth = window.innerWidth;
   closeResult: string = '';
   selectedFiles?: FileList;
@@ -50,6 +51,9 @@ export class SportsComponent implements OnInit {
     if (this.registerForm.invalid) {
       return;
     }
+
+    // if success submit form must set (isSuccess = true)
+    this.isSuccess = true;
 
     // display form values on success
     alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
@@ -121,6 +125,10 @@ export class SportsComponent implements OnInit {
   toFormReg() {
     document.getElementById("formReg").scrollIntoView();
   }
-  
+  logoClick(){
+    window.open( 
+      "https://o7therapy.com", "_blank");
+
+  }
 
 }

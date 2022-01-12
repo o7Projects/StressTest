@@ -6,6 +6,16 @@
 * {
     font-family: "abc", "arial", sans-serif;
 }
+
+// ------------------------------------- Header section -------------------------------------
+.headSec{
+    background-color: #ffffff;
+}
+.headSec .headLogo{
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+}
 // ------------------------------------- First section -------------------------------------
 .firstSec {
     @media (max-width: 2000px) and (min-width: 720px) {
@@ -60,16 +70,16 @@
 .firstSec .sportsLbl {
     font-weight: bold;
     @media (max-width: 2000px) and (min-width: 1100px) {
-        font-size: 40px;
+        font-size: 72px;
     }
     @media (max-width: 1100px) and (min-width: 800px) {
-        font-size: 35px;
+        font-size: 72px;
     }
     @media (max-width: 800px) and (min-width: 500px) {
-        font-size: 30px;
+        font-size: 65px;
     }
     @media (max-width: 500px) and (min-width: 350px) {
-        font-size: 20px;
+        font-size: 35px;
     }
     @media (max-width: 350px) {
         font-size: 17px;
@@ -77,7 +87,7 @@
 }
 .firstSec .remainLbl {
     @media (max-width: 2000px) and (min-width: 1100px) {
-        font-size: 23px;
+        font-size: 18px;
         margin-top: 60px;
     }
     @media (max-width: 1100px) and (min-width: 720px) {
@@ -150,15 +160,14 @@
     background: #ffffff;
     box-shadow: 2px 2px 23px 7px rgba(193, 193, 193, 0.25);
     border-radius: 5px;
-    color: #666666;
 }
 .secondSec .vedioImg {
     border-radius: 5px;
     cursor: pointer;
     @media (max-width: 2000px) and (min-width: 720px) {
-        margin-left: -50px;
-        margin-top: 35%;
-        width: 70%;
+        margin-left: -45px;
+        margin-top: 27%;
+        width: 65%;
     }
     @media (max-width: 720px) {
         width: 100%;
@@ -189,6 +198,12 @@
     background-color: #ffffff;
     color: #60a49f;
     border: 1px solid #60a49f;
+}
+.secondSec .card .card-text{
+    color: #666666;
+}
+.secondSec .card-body{
+    padding: 2.25rem;
 }
 // ------------------------------------- Third section -------------------------------------
 .thirdSec {
@@ -271,6 +286,9 @@
     @media (max-width: 720px) {
         height: 170px;
     }
+}
+.thirdSec .drDescLbl{
+    font-size: 18px;
 }
 // ------------------------------------- Fourth section -------------------------------------
 .fourthSec {
@@ -399,7 +417,9 @@
     cursor: pointer;
 }
 .fifthSec .mountain {
-    width: 90%;
+    width: 75%;
+    height: 70%;
+    margin-top: 5%;
 }
 .fifthSec .boldTxt {
     font-weight: bold;
@@ -521,10 +541,12 @@
     // float: right;
 
     @media (max-width: 2000px) and (min-width: 720px) {
-        width: 38%;
+        width: 30%;
         position: absolute;
-        right: 5%;
+        right: 8%;
         top: -150px;
+        height: 550px;
+
     }
     @media (max-width: 720px) {
         width: 90%;
@@ -629,8 +651,39 @@
     background-color: #60a49f !important;
     color: #60a49f !important;
 }
+// .eighthSec .card{
+//     border-bottom: 0;
+// }
+.eighthSec .ok .okImg{
+    width: 150px;
+    height: 150px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.eighthSec .ok .doneLbl{
+    font-size: 28px;
+    color: #60A49F;
+}
+.eighthSec .ok .thnxLbl{
+    font-size: 18px;
+    color: #666666;
+}
+// ------------------------------------- Footer section -------------------------------------
+.footSec{
+    height: 100px;
+    background: #5ABFB5;
+    padding-top: 25px;
+    margin-top: 200px;
+}
+.footSec .footLogo{
+    width: 50px;
+    height: 50px;
+}
+.footSec .footCopyRights{
+    font-size: 12px;
+    color: #ffffff;
+}
 // ------------------------------------- Modal style -------------------------------------
-
 .modalDrImg {
     height: 150px;
     width: 150px;
