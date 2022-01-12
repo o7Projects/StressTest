@@ -372,7 +372,7 @@
                             <div class="col-md-6">
                                 <div class="card certifCard">
                                     <div class="card-body">
-                                        <p class="card-text">Completing a combination of educational and clinical
+                                        <p class="card-text text-center">Completing a combination of educational and clinical
                                             requirements.</p>
                                     </div>
                                 </div>
@@ -380,14 +380,14 @@
                             <div class="col-md-6">
                                 <div class="card certifCard">
                                     <div class="card-body">
-                                        <p class="card-text">Successfully passing a certification exam.</p>
+                                        <p class="card-text text-center">Successfully passing a certification exam.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="card certifCard">
                                     <div class="card-body">
-                                        <p class="card-text">Receiving clinical supervision by a licensed psychologist
+                                        <p class="card-text text-center">Receiving clinical supervision by a licensed psychologist
                                             (Dr. Sherif Zaher).</p>
                                     </div>
                                 </div>
@@ -395,7 +395,7 @@
                             <div class="col-md-6">
                                 <div class="card certifCard">
                                     <div class="card-body">
-                                        <p class="card-text">Adhering to ethical principles and committing to ongoing
+                                        <p class="card-text text-center">Adhering to ethical principles and committing to ongoing
                                             professional development.</p>
                                     </div>
                                 </div>
@@ -536,7 +536,7 @@
                             <div class="form-group uploadCv">
                                 <label>Attach Resume</label>
                                 <input type="file" (change)="onFileChange($event);" accept=".pdf,.doc" #file style="display: none;">
-                                <input type="text" readonly formControlName="resume" class="form-control inpType"
+                                <input type="text" (click)="file.click()" readonly formControlName="resume" class="form-control inpType"
                                     placeholder="resume" [ngClass]="{ 'is-invalid': submitted && f.resume.errors }" />
                                 <!-- <i class="fa fa-upload" (click)="file.click()"></i> -->
                                 <img src="../../../../assets/images/Sports/upload.svg" (click)="file.click()">
