@@ -45,6 +45,7 @@ import { AngularResizedEventModule } from 'angular-resize-event';
 import { SummaryComponent } from './summary/summary.component';
 import { ElnadaComponent } from './elnada/elnada.component';
 import { SportsComponent } from './sports/sports.component';
+import { SportsClientComponent } from './sports-client/sports-client.component';
 
 @NgModule({
     imports: [
@@ -89,7 +90,8 @@ import { SportsComponent } from './sports/sports.component';
         SurveyComponent,
         SummaryComponent,
         ElnadaComponent,
-        SportsComponent
+        SportsComponent,
+        SportsClientComponent
     ],
    
     entryComponents: [HomeComponent],

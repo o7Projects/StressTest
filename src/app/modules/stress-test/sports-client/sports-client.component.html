@@ -1,0 +1,556 @@
+<div class="body" (window:resize)="onResize($event)">
+
+    <div class="col-md-12 firstSec">
+        <div class="row">
+            <div class="col-md-9 offset-md-3">
+                <div class="row txts">
+                    <div class="col-md-12">
+                        <h3 class="transLbl">Transform Your Mind</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <h3 class="chngLbl">A GAME CHANGER</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="prph">
+                            Introducing the first Sports Psychology Program in MENA, directed by Dr. Sherif <br />
+                            Zaher, a
+                            former professional athlete, coach, and clinical psychologist.
+                        </p>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <a (click)="toAbtInf($event)" class="btn btn-primary lrnMoreBtn">Learn More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 secondSec">
+        <div class="row">
+            <div class="col-md-5 offset-md-1" style="padding: 25px 10px;">
+                <h3 class="sprtsLbl">Sports and Performance</h3>
+                <h3 class="enhLbl">Enhancement Program</h3>
+
+                <p class="prph">
+                    One of the main differences between amateur and professional athletes is the ability to consistently
+                    deliver high level performances, which is a feat that can only be achieved throw mastering specific
+                    mental skills.
+                    <br /> <br />
+                    Sport Psychology is a form of psychotherapy focused on enhancing mental skills and strategies
+                    designed to assist in overcoming challenges negatively impacting emotional, psychological, and
+                    athletic functioning.
+                </p>
+            </div>
+
+            <div class="col-md-5">
+                <iframe class="vid" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 thirdSec text-center">
+        <h1 class="head">
+            Program Benefits
+        </h1>
+
+        <div *ngIf="currentWidth>=820">
+            <div class="col-md-12">
+                <div class="row text-center">
+                    <div class="boxesInfo">
+                        <div class="box">
+                            Learn how to <br /> think and act <br /> like a champion
+                        </div>
+                        <div class="box">
+                            Gain expertise in <br /> outlining mental <br /> game plans
+                        </div>
+                        <div class="box">
+                            Develop coping <br /> skills to overcome <br /> performance barriers
+                        </div>
+                        <div class="box">
+                            Acquire a mindset <br /> that maximizes your <br /> potential
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="currentWidth<820">
+            <div class="col-md-12">
+                <div class="row">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="3"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="text"><span class="spanBold">Depression and anxiety</span> are the two most
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="text"><span class="spanBold">Depression and anxiety</span> are the two most
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="text"><span class="spanBold">Depression and anxiety</span> are the two most
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="text"><span class="spanBold">Depression and anxiety</span> are the two most
+                                </p>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-12 text-center">
+            <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a>
+        </div>
+
+    </div>
+
+    <div class="col-md-12 fourthSec text-center">
+        <h2 class="drLbl"> Notable clients who have used Dr. Zaher's </h2>
+        <h2 class="winLbl"> winning mindset program </h2>
+
+        <p class="prph">
+            <span class="drName">Dr. Zaher</span> helps athletes of all ages enhance their athletic performance by
+            teaching <br /> skills designed for achieving mastery in performance.
+        </p>
+
+        <div *ngIf="currentWidth>=820">
+            <div class="col-md-12">
+                <div class="row text-center">
+                    <div class="imgsInfo">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 1.png">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 2.png">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 3.png">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 4.png">
+                    </div>
+                    <div class="imgsInfo">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 5.png">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 6.png">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="currentWidth<820">
+            <div class="col-md-12">
+                <div class="row text-center">
+                    <div class="imgsInfo">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 1 mob.png">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 2 mob.png">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 3 mob.png">
+                    </div>
+                    <div class="imgsInfo">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 4 mob.png">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 5 mob.png">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 6 mob.png">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 fifthSec text-center">
+        <h1 class="head">
+            Program Offering
+        </h1>
+
+        <div *ngIf="currentWidth>=820">
+            <div class="col-md-12">
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="../../../../assets/images/SportsClient/maksym-tymchyk-bGOBoZorNoQ-unsplash 1.png"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Individual Sessions for Athletes </h5>
+                                <p class="card-text">One-on-one private sessions designed specifically to meet your
+                                    needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="../../../../assets/images/SportsClient/leah-hetteberg-Q-Qd44h6DZU-unsplash 1.png"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Teams/Clubs Support </h5>
+                                <p class="card-text">Complete care model, providing various levels of assistance to
+                                    athletes, coaches, and parents.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="../../../../assets/images/SportsClient/dylan-gillis-KdeqA3aTnBY-unsplash 1.png"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Topic Specific Workshops </h5>
+                                <p class="card-text">Group Workshops which include: stress management, focus,
+                                    confidence, goal-setting, managing and recovering from injuries, etc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="../../../../assets/images/SportsClient/annie-spratt-MChSQHxGZrQ-unsplash 1.png"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Non-Sport Performance Enhancement </h5>
+                                <p class="card-text">For individuals who are looking to improve their mindset (for
+                                    example: entertainers and top executive employers).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="currentWidth<820">
+            <div class="col-md-12">
+                <div class="row">
+                    <div id="demo2" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo2" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo2" data-slide-to="1"></li>
+                            <li data-target="#demo2" data-slide-to="2"></li>
+                            <li data-target="#demo2" data-slide-to="3"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            </div>
+                            <div class="carousel-item">
+                            </div>
+                            <div class="carousel-item">
+                            </div>
+                            <div class="carousel-item">
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo2" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-12 text-center">
+            <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a>
+        </div>
+
+    </div>
+
+    <div class="col-md-12 sixthSec">
+        <div class="row">
+            <div class="col-md-5">
+                <img *ngIf="currentWidth>=820" src="../../../../assets/images/SportsClient/why image2.png">
+                <img *ngIf="currentWidth<820" src="../../../../assets/images/SportsClient/why mob2.png">
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-12 box">
+                        <div class="row">
+                            <h2 class="headLbl">Why Sports Psychology?</h2>
+                            <p class="prph">There are several barriers that are commonly experienced while
+                                performing that
+                                negatively impact the process, and ultimately the desired outcome. Developing mental
+                                skills
+                                to navigate and overcome these challenges is how we are able to tap into a state of
+                                flow,
+                                also commonly known as the zone, where peak performance is achieved. Athletes
+                                working on
+                                their mindset gain a mental edge on their competition, which is often the key
+                                component to
+                                winning.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 seventhSec text-center">
+        <h2 class="phychLbl">Seeing a Sports Psychologist</h2>
+        <h2 class="impLbl">Will Improve Your:</h2>
+
+        <div class="col-md-12">
+            <div class="row text-center">
+                <div class="boxesInfo">
+                    <div class="box">
+                        Confidence
+                    </div>
+                    <div class="box">
+                        Focus
+                    </div>
+                    <div class="box">
+                        Self-Talk
+                    </div>
+                    <div class="box">
+                        Goal Setting
+                    </div>
+                    <div class="box">
+                        Motivation
+                    </div>
+                </div>
+
+                <div class="boxesInfo">
+                    <div class="box">
+                        Recovering from injury
+                    </div>
+                    <div class="box">
+                        Dealing with Setbacks
+                    </div>
+                    <div class="box">
+                        Parenting Skills
+                    </div>
+                    <div class="box">
+                        Team Dynamics
+                    </div>
+                </div>
+
+                <div class="boxesInfo">
+                    <div class="box">
+                        Coaching Effectiveness
+                    </div>
+                    <div class="box">
+                        Emotion Regulation
+                    </div>
+                    <div class="box">
+                        Avoiding Burnout
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-12 eighthSec text-center">
+        <p class="queLbl">
+            Are you a therapist interested in Sports Psychology?
+        </p>
+        <a (click)="toAbtInf($event)" class="btn btn-primary queBtn">Learn More</a>
+
+    </div>
+
+    <div class="col-md-12 ninthSec">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 offset-md-2 col-10 offset-1 box text-center">
+                <h2 class="jnLbl">Join</h2>
+                <h2 class="prgLbl">Our Program</h2>
+                <p class="prph">
+                    If you have a passion for sports, and would like to know how you can maximize your or your athletes
+                    full potential, this program is for you.
+                </p>
+
+                <div class="col-md-12 text-center">
+                    <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a>
+                </div>
+
+            </div>
+
+            <ng-template #mymodal let-modal>
+                <div class="modal-body" style="margin: 0px; padding: 0px;">
+                    <div *ngIf="currentWidth>=820">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="frmhead">Request Consultation</h2>
+                                        <p class="frmPrph">Share your information below to submit your request, and we
+                                            will
+                                            be in contact soon.</p>
+                                        <div class="row">
+                                            <div class="col-12" style="margin-bottom: 30px;">
+                                                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label class="frmLbl">Organization Name</label>
+                                                            <input type="text" formControlName="orgName"
+                                                                class="form-control inpType"
+                                                                placeholder="e.g. Club Name, Company ... etc"
+                                                                [ngClass]="{ 'is-invalid': submitted && f.orgName.errors }" />
+                                                            <div *ngIf="submitted && f.orgName.errors"
+                                                                class="invalid-feedback">
+                                                                <div *ngIf="f.orgName.errors.required">Organization Name
+                                                                    is
+                                                                    required</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="form-group">
+                                                                    <label class="frmLbl">Full Name*</label>
+                                                                    <input type="text" formControlName="fullName"
+                                                                        class="form-control inpType"
+                                                                        placeholder="Enter full name"
+                                                                        [ngClass]="{ 'is-invalid': submitted && f.fullName.errors }" />
+                                                                    <div *ngIf="submitted && f.fullName.errors"
+                                                                        class="invalid-feedback">
+                                                                        <div *ngIf="f.fullName.errors.required">Full
+                                                                            Name is
+                                                                            required</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="form-group">
+                                                                    <label class="frmLbl">Title*</label>
+                                                                    <input type="text" formControlName="title"
+                                                                        class="form-control inpType"
+                                                                        placeholder="e.g. Coach, PR ... etc"
+                                                                        [ngClass]="{ 'is-invalid': submitted && f.title.errors }" />
+                                                                    <div *ngIf="submitted && f.title.errors"
+                                                                        class="invalid-feedback">
+                                                                        <div *ngIf="f.title.errors.required">Title is
+                                                                            required</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="form-group">
+                                                                    <label class="frmLbl">Email*</label>
+                                                                    <input type="text" formControlName="email"
+                                                                        class="form-control inpType"
+                                                                        placeholder="Enter your email"
+                                                                        [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                                                    <div *ngIf="submitted && f.email.errors"
+                                                                        class="invalid-feedback">
+                                                                        <div *ngIf="f.email.errors.required">Email is
+                                                                            required</div>
+                                                                        <div *ngIf="f.email.errors.email">Email must be
+                                                                            a
+                                                                            valid email address</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="form-group">
+                                                                    <label class="frmLbl">Phone*</label>
+                                                                    <input type="text" formControlName="phone"
+                                                                        class="form-control inpType"
+                                                                        placeholder="Enter your phone number"
+                                                                        [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
+                                                                    <div *ngIf="submitted && f.phone.errors"
+                                                                        class="invalid-feedback">
+                                                                        <div *ngIf="f.phone.errors.required">Phone
+                                                                            number
+                                                                            is
+                                                                            required</div>
+                                                                        <div *ngIf="f.phone.errors.pattern">Phone number
+                                                                            must be a
+                                                                            valid phone</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label class="frmLbl">Need more info about*</label>
+                                                            <!-- <input type="text" formControlName="orgName"
+                                                                    class="form-control inpType" placeholder="e.g. Club Name, Company ... etc"
+                                                                    [ngClass]="{ 'is-invalid': submitted && f.orgName.errors }" /> -->
+                                                            
+                                                            <div *ngIf="submitted && f.info.errors"
+                                                                class="invalid-feedback">
+                                                                <div *ngIf="f.info.errors.required">Info is
+                                                                    required</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label class="frmLbl">Leave a message</label>
+                                                            <textarea class="form-control" formControlName="msg"
+                                                                class="form-control inpType"
+                                                                placeholder="Type your message here"
+                                                                [ngClass]="{ 'is-invalid': submitted && f.msg.errors }"
+                                                                rows="2"></textarea>
+
+                                                            <div *ngIf="submitted && f.msg.errors"
+                                                                class="invalid-feedback">
+                                                                <div *ngIf="f.msg.errors.required">Organization Name
+                                                                    is
+                                                                    required</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-12 text-center">
+                                                        <button type="submit" class="btn btn-primary sbmtBtn">Submit
+                                                            Request</button>
+                                                        <!-- <button class="btn btn-secondary" type="reset" (click)="onReset()">Cancel</button> -->
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../../../../assets/images/SportsClient/form pic desktop.png"
+                                    style="height: 100%; width: 100%;" />
+                                <i class="fa fa-times fa-lg fontIcon" (click)="modal.dismiss('Cross click')"></i>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div *ngIf="currentWidth<820">
+                        <div class="col-12">
+                            <img src="../../../../assets/images/SportsClient/form pic mob.png" style="height: 250px;" />
+                        </div>
+                        <div class="col-12">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </ng-template>
+        </div>
+    </div>
+</div>

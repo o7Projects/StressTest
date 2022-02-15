@@ -1,0 +1,722 @@
+@font-face {
+    font-family: abc;
+    src: url(../../../../assets/fonts/ABCFavorit-Regular-Trial.otf) format("opentype");
+}
+
+* {
+    font-family: "abc", "arial", sans-serif;
+}
+
+// ------------------------------------- First section -------------------------------------
+.firstSec {
+    @media (max-width: 2000px) and (min-width: 950px) {
+        background-image: url("../../../../assets/images/SportsClient/headr\ image.png");
+        background-size: cover;
+    }
+    @media (max-width: 950px) and (min-width: 320px) {
+        background-image: url("../../../../assets/images/SportsClient/header\ mobile.png");
+        background-size: cover;
+        background-repeat: round;
+        height: 550px;
+    }
+    @media (max-width: 320px) {
+        background-image: url("../../../../assets/images/SportsClient/header\ mobile.png");
+        background-size: cover;
+        background-repeat: round;
+    }
+
+    @media (max-width: 2000px) and (min-width: 1200px) {
+        height: 1170px;
+    }
+    @media (max-width: 1200px) and (min-width: 720px) {
+        height: 1100px;
+    }
+    @media (max-width: 720px) {
+        height: 550px;
+    }
+}
+.firstSec .txts {
+    margin-top: 20%;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.firstSec .transLbl {
+    color: #ffffff;
+    @media (max-width: 2000px) and (min-width: 720px) {
+        font-size: 60px;
+        text-align: end;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+.firstSec .chngLbl {
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    font-weight: bold;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        font-size: 85px;
+        text-align: end;
+    }
+
+    @media (max-width: 720px) and (min-width: 500px) {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+.firstSec .prph {
+    color: #ffffff;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        font-size: 18px;
+        text-align: end;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+.firstSec .lrnMoreBtn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    margin-top: 35px;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        padding: 7px 50px;
+        font-size: 21px;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+// ------------------------------------- Second section ------------------------------------
+.secondSec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.secondSec .sprtsLbl {
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    color: #000000;
+
+    @media (max-width: 720px) {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+.secondSec .enhLbl {
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    color: #c94634;
+    font-weight: bold;
+
+    @media (max-width: 720px) {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+.secondSec .prph {
+    color: #111111;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.secondSec .vid {
+    width: 100%;
+    height: 350px;
+}
+// ------------------------------------- Third section -------------------------------------
+.thirdSec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.thirdSec .head {
+    font-weight: bold;
+    font-size: 45px;
+    color: #c94634;
+    margin-bottom: 50px;
+
+    @media (max-width: 720px) {
+        font-size: 35px;
+    }
+}
+.thirdSec .box {
+    background: #ffffff;
+    border: 1px solid #cd5141;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    display: inline-block;
+
+    padding: 40px 40px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+.thirdSec .boxesInfo {
+    width: 100%;
+}
+.thirdSec .box:hover {
+    background-color: #cd5141;
+    color: white;
+}
+
+.thirdSec .frmBtn {
+    background-color: #cd5141;
+    color: #ffffff;
+    border: 1px solid #cd5141;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+
+    @media (max-width: 2000px) and (min-width: 820px) {
+        padding: 7px 50px;
+        font-size: 21px;
+    }
+
+    @media (max-width: 820px) {
+        margin-top: 65px;
+    }
+}
+.thirdSec .frmBtn:hover {
+    color: #cd5141;
+    background-color: #ffffff;
+}
+
+.thirdSec .carousel {
+    margin-left: 30%;
+}
+.thirdSec .carousel .carousel-indicators {
+    bottom: -50px;
+}
+.thirdSec .carousel .carousel-indicators li {
+    background: #c4c4c4;
+    width: 8px;
+    height: 0;
+    border-radius: 50%;
+}
+.thirdSec .carousel .carousel-indicators li.active {
+    background-color: #cd5141;
+    width: 8px;
+    height: 0;
+}
+
+.thirdSec .carousel .carousel-inner .carousel-item {
+    background: #ffffff;
+    border: 1px solid #cd5141;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px 10px;
+    font-family: "Open Sans", sans-serif;
+    width: 180px;
+}
+
+.thirdSec .carousel .carousel-inner .carousel-item p {
+    color: #cd5141;
+}
+// ------------------------------------- Fourth section -------------------------------------
+.fourthSec {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #f7f7f7;
+}
+
+.fourthSec .drLbl {
+    font-size: 30px;
+    color: #000000;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 25px;
+    }
+}
+
+.fourthSec .winLbl {
+    font-size: 30px;
+    color: #c94634;
+    font-weight: bold;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 25px;
+    }
+}
+
+.fourthSec .prph {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 16px;
+    }
+}
+.fourthSec .prph .drName {
+    color: #cd5141;
+}
+
+.fourthSec .imgsInfo {
+    width: 100%;
+}
+.fourthSec .imgsInfo .imgInfo {
+    margin: 20px;
+    @media (max-width: 720px) {
+        margin: 10px;
+    }
+}
+// ------------------------------------- Fifth section -------------------------------------
+.fifthSec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.fifthSec .head {
+    font-weight: bold;
+    font-size: 45px;
+    color: #c94634;
+    margin-bottom: 50px;
+
+    @media (max-width: 720px) {
+        font-size: 35px;
+    }
+}
+.fifthSec .boxesInfo {
+    width: 100%;
+}
+.fifthSec .card {
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+
+    height: 450px;
+}
+.fifthSec .card img {
+    height: 180px;
+}
+
+.fifthSec .card .card-body .card-title {
+    font-weight: bold;
+    font-size: 22px;
+    color: #cd5141;
+
+    @media (max-width: 1150px) and (min-width: 900px) {
+        font-size: 17px;
+    }
+    @media (max-width: 900px) and (min-width: 720px) {
+        font-size: 15px;
+    }
+}
+.fifthSec .card .card-body .card-text {
+    font-size: 18px;
+    color: #000000;
+
+    @media (max-width: 1150px) and (min-width: 900px) {
+        font-size: 15px;
+    }
+    @media (max-width: 900px) and (min-width: 720px) {
+        font-size: 14px;
+    }
+}
+
+.fifthSec .frmBtn {
+    background-color: #cd5141;
+    color: #ffffff;
+    border: 1px solid #cd5141;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+
+    @media (max-width: 2000px) and (min-width: 820px) {
+        padding: 7px 50px;
+        font-size: 21px;
+    }
+
+    @media (max-width: 820px) {
+        margin-top: 65px;
+    }
+}
+.fifthSec .frmBtn:hover {
+    color: #cd5141;
+    background-color: #ffffff;
+}
+
+.fifthSec .carousel {
+    margin-left: 30%;
+}
+.fifthSec .carousel .carousel-indicators {
+    bottom: -50px;
+}
+.fifthSec .carousel .carousel-indicators li {
+    background: #c4c4c4;
+    width: 8px;
+    height: 0;
+    border-radius: 50%;
+}
+.fifthSec .carousel .carousel-indicators li.active {
+    background-color: #cd5141;
+    width: 8px;
+    height: 0;
+}
+
+.fifthSec .carousel .carousel-inner .carousel-item {
+    background: #ffffff;
+    border: 1px solid #cd5141;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px 10px;
+    font-family: "Open Sans", sans-serif;
+    width: 180px;
+}
+
+.fifthSec .carousel .carousel-inner .carousel-item p {
+    color: #cd5141;
+}
+// ------------------------------------- Sixth section -------------------------------------
+.sixthSec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.sixthSec img {
+    width: 100%;
+    z-index: 999;
+}
+
+.sixthSec .box {
+    background-color: #f6f6f6;
+    z-index: -5;
+    @media (max-width: 2000px) and (min-width: 1250px) {
+        padding: 100px;
+        margin-top: 18%;
+        margin-left: -35px;
+    }
+    @media (max-width: 1250px) and (min-width: 770px) {
+        padding: 100px;
+        margin-top: 0%;
+        margin-left: -35px;
+    }
+
+    @media (max-width: 770px) {
+        padding: 40px;
+        margin: 15px;
+        margin-top: -30px;
+    }
+}
+
+.sixthSec .box .headLbl {
+    font-weight: bold;
+    color: #c94634;
+    margin-bottom: 20px;
+    @media (max-width: 2000px) and (min-width: 820px) {
+        font-size: 45px;
+    }
+    @media (max-width: 820px) {
+        font-size: 35px;
+    }
+}
+
+.sixthSec .box .prph {
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+
+    @media (max-width: 2000px) and (min-width: 820px) {
+        font-size: 18px;
+    }
+    @media (max-width: 820px) {
+        font-size: 16px;
+    }
+}
+
+// ------------------------------------- Seventh section -------------------------------------
+.seventhSec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.seventhSec .phychLbl {
+    font-size: 30px;
+    color: #000000;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 25px;
+    }
+}
+
+.seventhSec .impLbl {
+    font-size: 30px;
+    color: #c94634;
+    font-weight: bold;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        font-size: 30px;
+        margin-bottom: 75px;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+}
+
+.seventhSec .box {
+    background: #ffffff;
+    border: 1px solid #cd5141;
+    box-sizing: border-box;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-right: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.seventhSec .boxesInfo {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.seventhSec .box:hover {
+    background-color: #cd5141;
+    color: white;
+}
+
+// ------------------------------------- Eighth section -------------------------------------
+.eighthSec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-color: #c94634;
+}
+
+.eighthSec .queLbl {
+    font-weight: bold;
+    font-size: 23px;
+    color: #ffffff;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        display: inline-block;
+    }
+}
+
+.eighthSec .queBtn {
+    background: #ffffff;
+    border-radius: 5px;
+    color: #c94634;
+
+    font-weight: 600;
+    font-size: 21px;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+
+    @media (max-width: 2000px) and (min-width: 720px) {
+        margin-left: 80px;
+    }
+    @media (max-width: 720px) {
+        display: block;
+        font-size: 18px;
+        margin-top: 25px;
+
+        width: 70%;
+        margin: auto;
+    }
+}
+
+// ------------------------------------- ninth section -------------------------------------
+.ninthSec {
+    height: 600px;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media (max-width: 2000px) and (min-width: 950px) {
+        background-image: url("../../../../assets/images/SportsClient/join\ us\ desktop.png");
+        background-size: cover;
+    }
+    @media (max-width: 950px) and (min-width: 320px) {
+        background-image: url("../../../../assets/images/SportsClient/join\ us\ mob.png");
+        background-size: cover;
+        background-repeat: round;
+    }
+    @media (max-width: 320px) {
+        background-image: url("../../../../assets/images/SportsClient/join\ us\ mob.png");
+        background-size: cover;
+        background-repeat: round;
+    }
+}
+
+.ninthSec .box {
+    background: #ffffff;
+    opacity: 0.92;
+    border-radius: 5px;
+
+    @media (max-width: 2000px) and (min-width: 820px) {
+        padding: 40px;
+    }
+    @media (max-width: 820px) {
+        padding: 40px;
+    }
+}
+
+.ninthSec .jnLbl {
+    color: #000000;
+    @media (max-width: 2000px) and (min-width: 820px) {
+        font-size: 30px;
+    }
+    @media (max-width: 820px) {
+        font-size: 25px;
+    }
+}
+.ninthSec .prgLbl {
+    color: #cd5141;
+    font-weight: bold;
+    @media (max-width: 2000px) and (min-width: 820px) {
+        font-size: 30px;
+    }
+    @media (max-width: 820px) {
+        font-size: 25px;
+    }
+}
+
+.ninthSec .prph {
+    color: #182f43;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @media (max-width: 2000px) and (min-width: 820px) {
+        font-size: 18px;
+    }
+    @media (max-width: 820px) {
+        font-size: 16px;
+    }
+}
+
+.ninthSec .frmBtn {
+    background-color: #cd5141;
+    color: #ffffff;
+    border: 1px solid #cd5141;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+
+    @media (max-width: 2000px) and (min-width: 820px) {
+        padding: 7px 50px;
+        font-size: 21px;
+    }
+
+    @media (max-width: 820px) {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}
+.ninthSec .frmBtn:hover {
+    color: #cd5141;
+    background-color: #ffffff;
+}
+
+// ------------------------------------- form section -------------------------------------
+.frmhead {
+    color: #cd5141;
+    @media (max-width: 2000px) and (min-width: 820px) {
+        font-size: 35px;
+        padding: 5px 15px;
+    }
+    @media (max-width: 820px) {
+        font-size: 30px;
+    }
+}
+.frmPrph {
+    color: #000000;
+    @media (max-width: 2000px) and (min-width: 820px) {
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+
+    @media (max-width: 820px) {
+        font-size: 16px;
+    }
+}
+.inpType {
+    background: #ffffff !important;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 20px;
+    font-family: "Open Sans", sans-serif;
+
+    &::placeholder {
+        color: #979797;
+        opacity: 1;
+    }
+}
+
+.inpType::placeholder {
+    font-size: 12px;
+    color: #999999;
+    font-family: "Open Sans", sans-serif;
+}
+
+.frmLbl {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.sbmtBtn {
+    background-color: #cd5141;
+    color: #ffffff;
+    border: 1px solid #cd5141;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+
+    @media (max-width: 2000px) and (min-width: 820px) {
+        padding: 7px 50px;
+        font-size: 21px;
+    }
+
+    @media (max-width: 820px) {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}
+.sbmtBtn:hover {
+    color: #cd5141;
+    background-color: #ffffff;
+}
+.fontIcon {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
