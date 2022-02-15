@@ -44,7 +44,8 @@
             </div>
 
             <div class="col-md-5">
-                <iframe class="vid" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1"></iframe>
+                <iframe class="vid" src="https://www.youtube.com/embed/c_SsoOZ2ECs" frameborder="0"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -116,7 +117,8 @@
         </div>
 
         <div class="col-md-12 text-center">
-            <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a>
+            <!-- <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a> -->
+            <a class="btn btn-primary frmBtn">Request Consultation</a>
         </div>
 
     </div>
@@ -126,7 +128,8 @@
         <h2 class="winLbl"> winning mindset program </h2>
 
         <p class="prph">
-            <span class="drName">Dr. Zaher</span> helps athletes of all ages enhance their athletic performance by
+            <span class="drName" (click)="open(mymodal2)">Dr. Zaher</span> helps athletes of all ages enhance their
+            athletic performance by
             teaching <br /> skills designed for achieving mastery in performance.
         </p>
 
@@ -165,6 +168,46 @@
                 </div>
             </div>
         </div>
+
+        <ng-template #mymodal2 let-modal>
+            <div class="modal-header">
+                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2 style="font-size: 20px;"> Meet Dr. </h2>
+                            <h1 style="font-weight: bold; font-size: 40px; color: #cd5141;">Sherif
+                                Zaher</h1>
+                        </div>
+                        <div class="col-6 text-center">
+                            <img class="modalDrImg" src="../../../../assets/images/Sports/Dr.sherif headshot.png" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="card-text" style="margin-top: 25px; font-size: 18px; color: #111111;">Dr. Zaher has a
+                            doctorate in clinical psychology, a masters in Kinesiology (sports performance), and a
+                            bachelor's in psychology. He’s also a licensed clinical psychologist in the state of CA. and
+                            continues to offer his clinical and sport psychology services to clients via telehealth.
+                            <br /> <br />
+                            Dr. Zaher’s clinical background includes but is not limited to the following positions:
+                            junior specialist with UC Davis Children's Hospital, mental health rehabilitation specialist
+                            at a crisis residential center, and a psychological assistant at an outpatient mental health
+                            clinic. He considers his involvement in a patient's recovery process a great honor and
+                            focuses on adopting an eclectic approach that would provide each client with the necessary
+                            treatment that would help in overcoming the presenting symptoms experienced. He has a
+                            special interest in assisting patients struggling with depression and anxiety-related
+                            disorders. Dr. Zaher’s area of expertise is sport psychology, where he has been working with
+                            high-level athletes for 20+ years.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </ng-template>
     </div>
 
     <div class="col-md-12 fifthSec text-center">
@@ -263,7 +306,8 @@
         </div>
 
         <div class="col-md-12 text-center">
-            <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a>
+            <!-- <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a> -->
+            <a class="btn btn-primary frmBtn">Request Consultation</a>
         </div>
 
     </div>
@@ -373,7 +417,8 @@
                 </p>
 
                 <div class="col-md-12 text-center">
-                    <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a>
+                    <!-- <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a> -->
+                    <a class="btn btn-primary frmBtn">Request Consultation</a>
                 </div>
 
             </div>
@@ -381,7 +426,7 @@
             <ng-template #mymodal let-modal>
                 <div class="modal-body" style="margin: 0px; padding: 0px;">
                     <div *ngIf="currentWidth>=820">
-                        <div class="row">
+                        <div *ngIf="!isSuccess" class="row">
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-12">
@@ -486,10 +531,12 @@
                                                     <div class="col-12">
                                                         <div class="form-group">
                                                             <label class="frmLbl">Need more info about*</label>
-                                                            <!-- <input type="text" formControlName="orgName"
-                                                                    class="form-control inpType" placeholder="e.g. Club Name, Company ... etc"
-                                                                    [ngClass]="{ 'is-invalid': submitted && f.orgName.errors }" /> -->
-                                                            
+                                                            <select class="custom-select custom-select-sm"
+                                                                formControlName="info"
+                                                                placeholder="Select one or more of the program offerings"
+                                                                [ngClass]="{ 'is-invalid': submitted && f.info.errors }">
+                                                                <option value="1">One</option>
+                                                            </select>
                                                             <div *ngIf="submitted && f.info.errors"
                                                                 class="invalid-feedback">
                                                                 <div *ngIf="f.info.errors.required">Info is
@@ -532,19 +579,198 @@
                             <div class="col-md-6">
                                 <img src="../../../../assets/images/SportsClient/form pic desktop.png"
                                     style="height: 100%; width: 100%;" />
-                                <i class="fa fa-times fa-lg fontIcon" (click)="modal.dismiss('Cross click')"></i>
-
+                                <img class="fontIcon" src="../../../../assets/images/SportsClient/closeIcon.png"
+                                    (click)="modal.dismiss('Cross click')" />
                             </div>
                         </div>
 
+                        <!-- Close Red Icon -->
+                        <div *ngIf="isSuccess" class="text-center">
+                            <div class="ok">
+                                <div class="col-md-12">
+                                    <img class="fontIcon" style="width:20px"
+                                        src="../../../../assets/images/SportsClient/closeRedIcon.png"
+                                        (click)="modal.dismiss('Cross click')" />
+                                </div>
+
+                                <img src="../../../../assets/images/SportsClient/done icon desktop.png" class="okImg" />
+
+                                <p class="doneLbl">Thank you for your interest in the
+                                    Sports and Performance Enhancement Program!</p>
+
+                                <p class="cntctLbl">We will be in contact with next steps soon.</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div *ngIf="currentWidth<820">
-                        <div class="col-12">
-                            <img src="../../../../assets/images/SportsClient/form pic mob.png" style="height: 250px;" />
-                        </div>
-                        <div class="col-12">
+                        <div *ngIf="!isSuccess" class="col-12" style="padding: 0; margin-bottom: 25px;">
+                            <img src="../../../../assets/images/SportsClient/form pic mob.png"
+                                style="height: 250px; width: 100%;" />
+                            <img class="fontIcon" src="../../../../assets/images/SportsClient/closeIcon.png"
+                                (click)="modal.dismiss('Cross click')" />
 
+                        </div>
+                        <div *ngIf="!isSuccess" class="col-12">
+                            <div class="col-12">
+                                <h2 class="frmhead">Request Consultation</h2>
+                                <p class="frmPrph">Share your information below to submit your request, and we
+                                    will
+                                    be in contact soon.</p>
+                                <div class="row">
+                                    <div class="col-12" style="margin-bottom: 30px;">
+                                        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label class="frmLbl">Organization Name</label>
+                                                    <input type="text" formControlName="orgName"
+                                                        class="form-control inpType"
+                                                        placeholder="e.g. Club Name, Company ... etc"
+                                                        [ngClass]="{ 'is-invalid': submitted && f.orgName.errors }" />
+                                                    <div *ngIf="submitted && f.orgName.errors" class="invalid-feedback">
+                                                        <div *ngIf="f.orgName.errors.required">Organization Name
+                                                            is
+                                                            required</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label class="frmLbl">Full Name*</label>
+                                                            <input type="text" formControlName="fullName"
+                                                                class="form-control inpType"
+                                                                placeholder="Enter full name"
+                                                                [ngClass]="{ 'is-invalid': submitted && f.fullName.errors }" />
+                                                            <div *ngIf="submitted && f.fullName.errors"
+                                                                class="invalid-feedback">
+                                                                <div *ngIf="f.fullName.errors.required">Full
+                                                                    Name is
+                                                                    required</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label class="frmLbl">Title*</label>
+                                                            <input type="text" formControlName="title"
+                                                                class="form-control inpType"
+                                                                placeholder="e.g. Coach, PR ... etc"
+                                                                [ngClass]="{ 'is-invalid': submitted && f.title.errors }" />
+                                                            <div *ngIf="submitted && f.title.errors"
+                                                                class="invalid-feedback">
+                                                                <div *ngIf="f.title.errors.required">Title is
+                                                                    required</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label class="frmLbl">Email*</label>
+                                                            <input type="text" formControlName="email"
+                                                                class="form-control inpType"
+                                                                placeholder="Enter your email"
+                                                                [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                                            <div *ngIf="submitted && f.email.errors"
+                                                                class="invalid-feedback">
+                                                                <div *ngIf="f.email.errors.required">Email is
+                                                                    required</div>
+                                                                <div *ngIf="f.email.errors.email">Email must be
+                                                                    a
+                                                                    valid email address</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label class="frmLbl">Phone*</label>
+                                                            <input type="text" formControlName="phone"
+                                                                class="form-control inpType"
+                                                                placeholder="Enter your phone number"
+                                                                [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
+                                                            <div *ngIf="submitted && f.phone.errors"
+                                                                class="invalid-feedback">
+                                                                <div *ngIf="f.phone.errors.required">Phone
+                                                                    number
+                                                                    is
+                                                                    required</div>
+                                                                <div *ngIf="f.phone.errors.pattern">Phone number
+                                                                    must be a
+                                                                    valid phone</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label class="frmLbl">Need more info about*</label>
+                                                    <select class="custom-select custom-select-sm"
+                                                        formControlName="info"
+                                                        placeholder="Select one or more of the program offerings"
+                                                        [ngClass]="{ 'is-invalid': submitted && f.info.errors }">
+                                                        <option value="1">One</option>
+                                                    </select>
+                                                    <div *ngIf="submitted && f.info.errors" class="invalid-feedback">
+                                                        <div *ngIf="f.info.errors.required">Info is
+                                                            required</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label class="frmLbl">Leave a message</label>
+                                                    <textarea class="form-control" formControlName="msg"
+                                                        class="form-control inpType"
+                                                        placeholder="Type your message here"
+                                                        [ngClass]="{ 'is-invalid': submitted && f.msg.errors }"
+                                                        rows="2"></textarea>
+
+                                                    <div *ngIf="submitted && f.msg.errors" class="invalid-feedback">
+                                                        <div *ngIf="f.msg.errors.required">Organization Name
+                                                            is
+                                                            required</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-12 text-center">
+                                                <button type="submit" class="btn btn-primary sbmtBtn">Submit
+                                                    Request</button>
+                                                <!-- <button class="btn btn-secondary" type="reset" (click)="onReset()">Cancel</button> -->
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Close Red Icon -->
+                        <div *ngIf="isSuccess" class="text-center">
+                            <div class="ok">
+                                <div class="col-md-12">
+                                    <img class="fontIcon" style="width:20px"
+                                        src="../../../../assets/images/SportsClient/closeRedIcon.png"
+                                        (click)="modal.dismiss('Cross click')" />
+                                </div>
+                                <img src="../../../../assets/images/SportsClient/submit icon mobile.png"
+                                    class="okImg" />
+                                <p class="doneLbl">Thank you for your interest in the
+                                    Sports and Performance Enhancement Program!</p>
+
+                                <p class="cntctLbl">We will be in contact with next steps soon.</p>
+                            </div>
                         </div>
                     </div>
 
