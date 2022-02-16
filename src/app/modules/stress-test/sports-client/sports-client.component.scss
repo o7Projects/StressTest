@@ -101,7 +101,6 @@
         font-size: 18px;
         text-align: center;
         margin-top: 25px;
-
     }
 }
 // ------------------------------------- Second section ------------------------------------
@@ -204,9 +203,10 @@
 }
 
 .thirdSec .carousel {
-    margin-left: 30%;
+    margin: auto;
 }
 .thirdSec .carousel .carousel-indicators {
+    position: absolute;
     bottom: -50px;
 }
 .thirdSec .carousel .carousel-indicators li {
@@ -228,7 +228,7 @@
     border-radius: 5px;
     padding: 20px 10px;
     font-family: "Open Sans", sans-serif;
-    width: 180px;
+    width: 200px;
 }
 
 .thirdSec .carousel .carousel-inner .carousel-item p {
@@ -319,6 +319,10 @@
     margin-bottom: 20px;
 
     height: 450px;
+
+    @media (max-width: 820px) {
+        margin: auto;
+    }
 }
 .fifthSec .card img {
     height: 180px;
@@ -371,36 +375,39 @@
     background-color: #ffffff;
 }
 
-.fifthSec .carousel {
-    margin-left: 30%;
-}
+// slider
 .fifthSec .carousel .carousel-indicators {
-    bottom: -50px;
+    position: absolute;
+    bottom: -15px;
 }
 .fifthSec .carousel .carousel-indicators li {
     background: #c4c4c4;
-    width: 8px;
+    width: 15px;
     height: 0;
     border-radius: 50%;
 }
 .fifthSec .carousel .carousel-indicators li.active {
     background-color: #cd5141;
-    width: 8px;
-    height: 0;
 }
 
 .fifthSec .carousel .carousel-inner .carousel-item {
     background: #ffffff;
-    border: 1px solid #cd5141;
     box-sizing: border-box;
     border-radius: 5px;
     padding: 20px 10px;
     font-family: "Open Sans", sans-serif;
-    width: 180px;
 }
 
 .fifthSec .carousel .carousel-inner .carousel-item p {
-    color: #cd5141;
+    color: #000000;
+}
+
+.fifthSec .carousel-control-prev-icon {
+    background-color: #cd5141;
+}
+
+.fifthSec .carousel-control-next-icon {
+    background-color: #cd5141;
 }
 // ------------------------------------- Sixth section -------------------------------------
 .sixthSec {
