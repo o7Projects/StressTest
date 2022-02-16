@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <div class="col-md-12 secondSec">
+    <div class="col-md-12 secondSec" id="secondSec">
         <div class="row">
             <div class="col-md-5 offset-md-1" style="padding: 25px 10px;">
                 <h3 class="sprtsLbl">Sports and Performance</h3>
@@ -112,7 +112,6 @@
 
         <div class="col-md-12 text-center">
             <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a>
-            <!-- <a class="btn btn-primary frmBtn">Request Consultation</a> -->
         </div>
 
     </div>
@@ -334,7 +333,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -343,7 +342,6 @@
 
         <div class="col-md-12 text-center">
             <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a>
-            <!-- <a class="btn btn-primary frmBtn">Request Consultation</a> -->
         </div>
 
     </div>
@@ -438,7 +436,8 @@
         <p class="queLbl">
             Are you a therapist interested in Sports Psychology?
         </p>
-        <a (click)="toAbtInf($event)" class="btn btn-primary queBtn">Learn More</a>
+        <!-- <a (click)="toAbtInf($event)" class="btn btn-primary queBtn">Learn More</a> -->
+        <a (click)="redirectClick()" class="btn btn-primary queBtn">Learn More</a>
 
     </div>
 
@@ -454,7 +453,6 @@
 
                 <div class="col-md-12 text-center">
                     <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a>
-                    <!-- <a class="btn btn-primary frmBtn">Request Consultation</a> -->
                 </div>
 
             </div>
