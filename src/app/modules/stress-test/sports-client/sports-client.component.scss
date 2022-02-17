@@ -249,9 +249,10 @@
     border: 1px solid #cd5141;
     box-sizing: border-box;
     border-radius: 5px;
-    padding: 20px 10px;
+    padding: 25px;
     font-family: "Open Sans", sans-serif;
     width: 200px;
+    height: 215px;
 }
 
 .thirdSec .carousel .carousel-inner .carousel-item p {
@@ -350,10 +351,22 @@
     height: 550px;
     width: 95%;
     margin: auto;
+    margin-bottom: 20px;
 
-    @media (max-width: 820px) {
+    @media (max-width: 720px) and (min-width: 350px){
         margin: auto;
+        margin-bottom: 20px;
+        width: 75%;
+        height: 450px;
     }
+    @media (max-width: 350px) {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 80%;
+        height: 520px;
+    }
+
+
 }
 .fifthSec .card img {
     height: 180px;
@@ -370,8 +383,14 @@
     @media (max-width: 1150px) and (min-width: 900px) {
         font-size: 17px;
     }
-    @media (max-width: 900px) and (min-width: 720px) {
+    @media (max-width: 900px) and (min-width: 350px) {
         font-size: 15px;
+        height: 60px;
+
+    }
+    @media (max-width: 350px) {
+        font-size: 14px;
+        height: 40px;
     }
 }
 .fifthSec .card .card-body .card-text {
