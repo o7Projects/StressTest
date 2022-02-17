@@ -3,6 +3,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import { Observable } from 'rxjs';
+import { WhiteSpaceValidator } from 'src/app/whitespace.validator';
 
 @Component({
   selector: 'app-sports-client',
@@ -31,13 +32,13 @@ export class SportsClientComponent implements OnInit {
   ngOnInit() {
 
     this.registerForm = this.formBuilder.group({
-      fullName: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      orgName: ['', Validators.required],
-      title: ['', Validators.required],
-      phone: ['', Validators.required],
-      info: ['', Validators.required],
-      msg: ['', Validators.required],
+      fullName: ['', [Validators.required, WhiteSpaceValidator.noWhiteSpace]],
+      email: ['', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"), WhiteSpaceValidator.noWhiteSpace]],
+      orgName: [''],
+      title: ['', [Validators.required, WhiteSpaceValidator.noWhiteSpace]],
+      phone: ['', [Validators.required,Validators.pattern("^(0|[1-9][0-9]*)$"), WhiteSpaceValidator.noWhiteSpace]],
+      info: ['', [Validators.required, WhiteSpaceValidator.noWhiteSpace]],
+      msg: [''],
 
     });
 
@@ -62,9 +63,9 @@ export class SportsClientComponent implements OnInit {
 
     // if success submit form must set (isSuccess = true)
     this.isSuccess = true;
-
+    this.registerForm.reset();
     // display form values on success
-    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
+    // alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
   }
 
   
@@ -84,7 +85,7 @@ export class SportsClientComponent implements OnInit {
   }
 
   open(content:any) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title',size: 'lg'}).result.then((result) => {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title',size: 'xl'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
@@ -92,6 +93,8 @@ export class SportsClientComponent implements OnInit {
   }
 
   private getDismissReason(reason: any): string {
+    this.isSuccess = false;
+    this.submitted = false;
     if (reason === ModalDismissReasons.ESC) {
       return 'by pressing ESC';
     } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
