@@ -138,7 +138,7 @@
                         <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 4 v2.png">
                     </div>
                     <div class="imgsInfo">
-                        <img class="imgInfo" src="../../../../assets/images/SportsClient/favicon 1.png">
+                        <img class="imgInfo" src="../../../../assets/images/SportsClient/logo 5.png" style="height: 150px;">
                         <img class="imgInfo" src="../../../../assets/images/SportsClient/uspta-logo 1.png">
                     </div>
 
@@ -176,8 +176,8 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-6" style="padding-top: 30px;">
-                            <h2 style="font-size: 40px;"> Meet Dr. </h2>
-                            <h1 style="font-weight: bold; font-size: 45px; color: #cd5141;">Sherif
+                            <h2 class="metLbl"> Meet Dr. </h2>
+                            <h1 class="drNmeLbl">Sherif
                                 Zaher</h1>
                         </div>
                         <div class="col-6 text-center">
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <p class="card-text" style="margin-top: 25px; font-size: 18px; color: #111111;">Dr. Zaher has a
+                        <p class="card-text prphLbl">Dr. Zaher has a
                             doctorate in clinical psychology, a masters in Kinesiology (sports performance), and a
                             bachelor's in psychology. He’s also a licensed clinical psychologist in the state of CA. and
                             continues to offer his clinical and sport psychology services to clients via telehealth.
@@ -344,7 +344,7 @@
 
         </div>
 
-        <div class="col-md-12 text-center" style="margin-top: 50px;">
+        <div class="col-md-12 text-center" style="margin-top: 35px;">
             <a (click)="open(mymodal)" class="btn btn-primary frmBtn">Request Consultation</a>
         </div>
 
@@ -352,7 +352,7 @@
 
     <div class="col-md-12 sixthSec">
         <div class="row">
-            <div class="col-md-4" style="padding-left: 0;">
+            <div class="col-md-4 tenis" >
                 <img *ngIf="currentWidth>=820" src="../../../../assets/images/SportsClient/why 3x.png">
                 <img *ngIf="currentWidth<820" src="../../../../assets/images/SportsClient/why mob2.png">
             </div>
@@ -463,7 +463,7 @@
 
             <ng-template #mymodal let-modal>
                 <div class="modal-body" style="margin: 0px; padding: 0px;">
-                    <div *ngIf="currentWidth>=820">
+                    <div *ngIf="currentWidth>=1000">
                         <div *ngIf="!isSuccess" class="row">
                             <div class="col-md-6">
                                 <div class="row">
@@ -663,7 +663,7 @@
                         </div>
                     </div>
 
-                    <div *ngIf="currentWidth<820">
+                    <div *ngIf="currentWidth<1000">
                         <div *ngIf="!isSuccess" class="col-12" style="padding: 0; margin-bottom: 25px;">
                             <img src="../../../../assets/images/SportsClient/form pic mob.png"
                                 style="height: 250px; width: 100%;" />
@@ -673,12 +673,12 @@
                         </div>
                         <div *ngIf="!isSuccess" class="col-12">
                             <div class="col-12">
-                                <h2 class="frmhead">Request Consultation</h2>
-                                <p class="frmPrph">Share your information below to submit your request, and we
+                                <h2 style="padding: 0;" class="frmhead">Request Consultation</h2>
+                                <p style="padding: 0;" class="frmPrph">Share your information below to submit your request, and we
                                     will
                                     be in contact soon.</p>
                                 <div class="row">
-                                    <div class="col-12" style="margin-bottom: 30px;">
+                                    <div class="col-12" style="margin-bottom: 30px; padding: 0;">
                                         <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
 
                                             <div class="col-12">
