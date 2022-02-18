@@ -23,6 +23,11 @@ export class SportsClientComponent implements OnInit {
   message = '';
   fileInfos?: Observable<any>;
 
+  emailPatternV2 = "^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$";
+  phonePattern = "^(0|[1-9][0-9]*)$";
+
+  emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+
   constructor(private formBuilder: FormBuilder,private modalService: NgbModal) { }
 
   @HostListener('window:resize', ['$event'])
@@ -33,7 +38,7 @@ export class SportsClientComponent implements OnInit {
 
     this.registerForm = this.formBuilder.group({
       fullName: ['', [Validators.required, WhiteSpaceValidator.noWhiteSpace]],
-      email: ['', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"), WhiteSpaceValidator.noWhiteSpace]],
+      email: ['', [Validators.required, Validators.pattern("^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"), WhiteSpaceValidator.noWhiteSpace]],
       orgName: [''],
       title: ['', [Validators.required, WhiteSpaceValidator.noWhiteSpace]],
       phone: ['', [Validators.required,Validators.pattern("^(0|[1-9][0-9]*)$"), WhiteSpaceValidator.noWhiteSpace]],

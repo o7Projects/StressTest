@@ -136,7 +136,7 @@
     color: #000000;
 
     @media (max-width: 720px) {
-        font-size: 35px;
+        font-size: 23px;
         text-align: center;
     }
 }
@@ -148,7 +148,7 @@
     font-weight: bold;
 
     @media (max-width: 720px) {
-        font-size: 35px;
+        font-size: 23px;
         text-align: center;
     }
 }
@@ -179,7 +179,7 @@
     margin-bottom: 50px;
 
     @media (max-width: 720px) {
-        font-size: 35px;
+        font-size: 23px;
     }
 }
 .thirdSec .box {
@@ -289,7 +289,7 @@
     }
 
     @media (max-width: 720px) {
-        font-size: 35px;
+        font-size: 23px;
     }
 }
 
@@ -318,9 +318,13 @@
     margin: 20px;
     width: 150px;
 
-    @media (max-width: 720px) {
+    @media (max-width: 720px) and (min-width: 375px) {
         margin: 10px;
         width: 95px;
+    }
+    @media (max-width: 375px) {
+        margin: 10px;
+        width: 60px;
     }
 }
 // ------------------------------------- Fifth section -------------------------------------
@@ -337,7 +341,7 @@
     margin-bottom: 50px;
 
     @media (max-width: 720px) {
-        font-size: 35px;
+        font-size: 23px;
     }
 }
 .fifthSec .boxesInfo {
@@ -362,8 +366,8 @@
     @media (max-width: 350px) {
         margin: auto;
         margin-bottom: 20px;
-        width: 80%;
-        height: 520px;
+        width: 90%;
+        height: 500px;
     }
 }
 .fifthSec .card img {
@@ -387,7 +391,7 @@
     }
     @media (max-width: 350px) {
         font-size: 14px;
-        height: 40px;
+        height: 30px;
     }
 }
 .fifthSec .card .card-body .card-text {
@@ -447,6 +451,7 @@
     border-radius: 5px;
     padding: 20px 10px;
     font-family: "Open Sans", sans-serif;
+    font-size: 16px;
 }
 
 .fifthSec .carousel .carousel-inner .carousel-item p {
@@ -509,7 +514,8 @@
         font-size: 45px;
     }
     @media (max-width: 820px) {
-        font-size: 35px;
+        font-size: 23px;
+        text-align: center;
     }
 }
 
@@ -522,6 +528,7 @@
     }
     @media (max-width: 820px) {
         font-size: 16px;
+        text-align: center;
     }
 }
 
@@ -555,7 +562,7 @@
     }
 
     @media (max-width: 720px) {
-        font-size: 35px;
+        font-size: 23px;
         margin-bottom: 40px;
     }
 }
@@ -660,19 +667,19 @@
 
     @media (max-width: 2000px) and (min-width: 1150px) {
         padding: 50px;
-        height: 450px;
+        // height: 450px;
     }
     @media (max-width: 1150px) and (min-width: 650px) {
         padding: 40px;
-        height: 550px;
+        // height: 550px;
     }
     @media (max-width: 650px) and (min-width: 400px) {
         padding: 40px;
-        height: 450px;
+        // height: 450px;
     }
     @media (max-width: 400px) {
         padding: 40px;
-        height: 550px;
+        // height: 550px;
     }
 }
 
@@ -692,14 +699,14 @@
         font-size: 45px;
     }
     @media (max-width: 820px) {
-        font-size: 35px;
+        font-size: 23px;
     }
 }
 
 .ninthSec .prph {
     color: #182f43;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     @media (max-width: 2000px) and (min-width: 820px) {
         font-size: 18px;
     }
@@ -723,8 +730,8 @@
     }
 
     @media (max-width: 820px) {
-        margin-top: 30px;
-        font-size: 15px;
+        // margin-top: 30px;
+        font-size: 18px;
     }
 }
 .ninthSec .frmBtn:hover {
@@ -809,6 +816,11 @@
     top: 10px;
     right: 25px;
     width: 25px;
+
+    @media (max-width: 700px) {
+        width: 15px;
+        right: 15px;
+    }
 }
 .modalDrImg {
     @media (max-width: 2000px) and (min-width: 400px) {
@@ -816,7 +828,13 @@
     }
 
     @media (max-width: 400px) {
-        height: 140px;
+        height: 120px;
+        // width: 100px;
+    }
+}
+.modal-body{
+    @media (max-width: 300px) {
+        padding: 15px !important;
     }
 }
 
@@ -834,10 +852,16 @@
 }
 
 .ok .okImg {
-    width: 150px;
-    height: 150px;
+    // width: 150px;
     margin-top: 100px;
     margin-bottom: 70px;
+
+    @media (max-width: 2000px) and (min-width: 400px) {
+        height: 200px;
+    }
+    @media (max-width: 400px) {
+        height: 150px;
+    }
 }
 
 .ok .doneLbl {
@@ -876,7 +900,12 @@
     top: 20px;
     right: 20px;
     width: 27px;
-    height: 27px;
+    // height: 27px;
+
+    @media (max-width: 700px) {
+        width: 15px;
+        right: 15px;
+    }
 }
 
 .metLbl {
@@ -897,7 +926,7 @@
     }
 
     @media (max-width: 820px) {
-        font-size: 30px;
+        font-size: 23px;
     }
 }
 .prphLbl {
