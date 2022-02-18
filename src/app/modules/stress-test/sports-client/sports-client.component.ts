@@ -63,12 +63,24 @@ export class SportsClientComponent implements OnInit {
 
     // if success submit form must set (isSuccess = true)
     this.isSuccess = true;
-    this.registerForm.reset();
+    this.resetForm();
     // display form values on success
     // alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
   }
 
-  
+  resetForm(){
+
+    this.registerForm.get("fullName").setValue("");
+    this.registerForm.get("email").setValue("");
+    this.registerForm.get("orgName").setValue("");
+    this.registerForm.get("title").setValue("");
+    this.registerForm.get("info").setValue("");
+    this.registerForm.get("phone").setValue("");
+    this.registerForm.get("msg").setValue("");
+
+    this.submitted=false;
+
+  }
 
 
   toFormReg() {
@@ -94,7 +106,7 @@ export class SportsClientComponent implements OnInit {
 
   private getDismissReason(reason: any): string {
     this.isSuccess = false;
-    this.submitted = false;
+    // this.submitted = false;
     if (reason === ModalDismissReasons.ESC) {
       return 'by pressing ESC';
     } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
