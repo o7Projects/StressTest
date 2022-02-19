@@ -246,19 +246,20 @@
 
 .thirdSec .carousel .carousel-inner .carousel-item {
     background: #ffffff;
-    border: 1px solid #cd5141;
     box-sizing: border-box;
-    border-radius: 5px;
-    padding: 25px;
+    padding: 50px;
     font-family: "Open Sans", sans-serif;
-    width: 200px;
-    height: 215px;
+    width: 100%;
+    height: 250px;
 }
 
 .thirdSec .carousel .carousel-inner .carousel-item p {
     color: #000000;
     font-size: 23px;
     margin: auto;
+    border: 1px solid #cd5141;
+    border-radius: 5px;
+    padding:  20px;
 }
 // ------------------------------------- Fourth section -------------------------------------
 .fourthSec {
@@ -338,7 +339,7 @@
     font-weight: bold;
     font-size: 45px;
     color: #c94634;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     @media (max-width: 720px) {
         font-size: 23px;
@@ -387,7 +388,7 @@
     }
     @media (max-width: 900px) and (min-width: 350px) {
         font-size: 15px;
-        height: 60px;
+        height: 30px;
     }
     @media (max-width: 350px) {
         font-size: 14px;
