@@ -247,10 +247,9 @@
 .thirdSec .carousel .carousel-inner .carousel-item {
     background: #ffffff;
     box-sizing: border-box;
-    padding: 50px;
+    padding: 10px 50px;
     font-family: "Open Sans", sans-serif;
     width: 100%;
-    height: 250px;
 }
 
 .thirdSec .carousel .carousel-inner .carousel-item p {
@@ -260,6 +259,9 @@
     border: 1px solid #cd5141;
     border-radius: 5px;
     padding:  20px;
+    padding-top: 25%;
+    margin: auto;
+    height: 250px;
 }
 // ------------------------------------- Fourth section -------------------------------------
 .fourthSec {
