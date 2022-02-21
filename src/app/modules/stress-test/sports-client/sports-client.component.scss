@@ -26,10 +26,10 @@
     }
 
     @media (max-width: 2000px) and (min-width: 1200px) {
-        height: 1030px;
+        height: 1130px;
     }
     @media (max-width: 1200px) and (min-width: 720px) {
-        height: 1030px;
+        height: 1130px;
     }
     @media (max-width: 720px) {
         height: 550px;
@@ -235,9 +235,9 @@
 }
 .thirdSec .carousel .carousel-indicators li {
     background: #c4c4c4;
-    width: 15px;
+    width: 12px;
     height: 0;
-    border-radius: 50%;
+    border-radius: 70%;
 }
 .thirdSec .carousel .carousel-indicators li.active {
     background-color: #cd5141;
@@ -247,21 +247,27 @@
 .thirdSec .carousel .carousel-inner .carousel-item {
     background: #ffffff;
     box-sizing: border-box;
-    padding: 10px 50px;
+    // padding: 10px 50px;
     font-family: "Open Sans", sans-serif;
     width: 100%;
 }
 
-.thirdSec .carousel .carousel-inner .carousel-item p {
-    color: #000000;
-    font-size: 23px;
+.thirdSec .carousel .carousel-inner .carousel-item .boxSlider {
     margin: auto;
     border: 1px solid #cd5141;
     border-radius: 5px;
-    padding:  20px;
-    padding-top: 25%;
-    margin: auto;
-    height: 250px;
+    width: 60%;
+    // height: 200px;
+    min-height: 150px;
+    padding: 10px;
+}
+
+.thirdSec .carousel .carousel-inner .carousel-item .boxSlider p {
+    color: #000000;
+    font-size: 23px;
+    text-align: center;
+    height: 75%;
+    margin-bottom:0;
 }
 // ------------------------------------- Fourth section -------------------------------------
 .fourthSec {
@@ -360,21 +366,30 @@
     margin: auto;
     margin-bottom: 20px;
 
-    @media (max-width: 720px) and (min-width: 350px) {
+    @media (max-width: 768px) and (min-width: 720px) {
+        height: 350px;
+    }
+    @media (max-width: 720px) and (min-width: 600px) {
         margin: auto;
         margin-bottom: 20px;
-        width: 75%;
+        width: 45%;
         height: 450px;
+    }
+    @media (max-width: 600px) and (min-width: 350px) {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 55%;
+        height: 540px;
     }
     @media (max-width: 350px) {
         margin: auto;
         margin-bottom: 20px;
         width: 90%;
-        height: 500px;
+        height: 480px;
     }
 }
 .fifthSec .card img {
-    height: 180px;
+    max-height: 180px;
 }
 
 .fifthSec .card .card-body .card-title {
@@ -440,9 +455,9 @@
 }
 .fifthSec .carousel .carousel-indicators li {
     background: #c4c4c4;
-    width: 15px;
+    width: 12px;
     height: 0;
-    border-radius: 50%;
+    border-radius: 70%;
 }
 .fifthSec .carousel .carousel-indicators li.active {
     background-color: #cd5141;
